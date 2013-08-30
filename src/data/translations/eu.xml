@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation revision="7" language="Euskera" languageInEnglish="Basque" author="Tumaker">
+<t id="M_FILE" ver="1">Fitxategia</t>
+<t id="M_CONFIG" ver="1">Konfigurazioa</t>
+<t id="M_SLICER" ver="1">Slicer</t>
+<t id="M_TEMPERATURE" ver="1">Temperatura</t>
+<t id="M_PRINTER" ver="1">Inprimagailua</t>
+<t id="M_HELP" ver="1">Laguntza</t>
+<t id="M_LOAD_GCODE" ver="1">Ireki</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">Lan helbidea erakusti</t>
+<t id="M_LANGUAGE" ver="1">Hizkuntza</t>
+<t id="M_PRINTER_SETTINGS" ver="1">Inprimagailuaren konfigurazioa</t>
+<t id="M_EEPROM_SETTINGS" ver="1">EEPROM Firmwarearen konfigurazioa</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">3D bisorearen konfigurazioa</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Repetierraren ajuste orokorra</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">Slicing testaren parametroak</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">Soinuaren konfigurazioa</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">Estrusorearen tenperatura erakutsi</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">Ohearen tenperatura erakutsi</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">Objektiboaren temperaturak erakutsi</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">Bataz besteko tenperaturak erakutsi</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">Berotze potentzia erakutsi</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">Autoscroll-an temperaturaren bista</t>
+<t id="M_TIMEPERIOD" ver="1">Bitarte</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">Zooma</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">... inguruko bataz bestekoa sortu</t>
+<t id="M_30_SECONDS" ver="1">30 Segundu</t>
+<t id="M_1_MINUTE" ver="1">Minutu 1</t>
+<t id="M_2_MINUTES" ver="1">2 Minutu</t>
+<t id="M_5_MINUTES" ver="1">5 Minutu</t>
+<t id="M_10_MINUTES" ver="1">10 Minutu</t>
+<t id="M_15_MINUTES" ver="1">15 Minutu</t>
+<t id="M_30_MINUTES" ver="1">30 Minutu</t>
+<t id="M_60_MINUTES" ver="1">60 Minutu</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">Bistaratze jarraitua</t>
+<t id="M_DISABLE" ver="1">Deskonektatu</t>
+<t id="M_EXTRUDER_1" ver="1">1 Estrusorea</t>
+<t id="M_EXTRUDER_2" ver="1">2 Estrusorea</t>
+<t id="M_HEATED_BED" ver="1">Berotutako ohea</t>
+<t id="M_PRINTER_INFORMATION" ver="1">Inprimagailuari buruzko informazioa</t>
+<t id="M_JOB_STATUS" ver="1">Inpresioaren egoera</t>
+<t id="M_SD_CARD_MANAGER" ver="1">SDaren kudeatzailea</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">SDaren kudeaketa</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">Probarako pieza sortu</t>
+<t id="M_SEND_SCRIPT_1" ver="1">1go Scripta bidali</t>
+<t id="M_SEND_SCRIPT_2" ver="1">2garren Scripta bidali</t>
+<t id="M_SEND_SCRIPT_3" ver="1">3garren Scripta bidali</t>
+<t id="M_SEND_SCRIPT_4" ver="1">4garren Scripta bidali</t>
+<t id="M_SEND_SCRIPT_5" ver="1">5garren Scripta bidali</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Repetier-Hosten web orria</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Repetier-Hostetik deskargak</t>
+<t id="M_MANUAL" ver="1">Repetier-Hosten gidaliburua</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Slic3r proiektuaren web orria</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Skeinforge proiektuaren web orria</t>
+<t id="M_REPRAP_WEBSITE" ver="1">RepRap proiektuaren web orria</t>
+<t id="M_REPRAP_FORUM" ver="1">RepRap proiektuaren foroa </t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverseko produktu berriak</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverseko produktu ospetsuenak</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">Repetier-Hostari buruz</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">Eguneraketak bilatu</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">Inprimagailua deskonektatu</t>
+<t id="L_CONNECT_PRINTER" ver="1">Inprimagailua konektatu</t>
+<t id="M_DISCONNECT" ver="1">Deskonektatu</t>
+<t id="M_CONNECT" ver="1">Konektatu</t>
+<t id="M_QUIT" ver="1">Itxi</t>
+<t id="TAB_3D_VIEW" ver="1">3D bista</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">Tenperatura kurba</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">Objektuen kokagunea</t>
+<t id="TAB_SLICER" ver="1">Slicer</t>
+<t id="TAB_GCODE_EDITOR" ver="1">G-Kodearen editorea</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">Eskuzko kontrola</t>
+<t id="M_EMERGENCY_STOP" ver="1">Larrialdi geldialdia</t>
+<t id="M_LOAD" ver="1">Artxiboa</t>
+<t id="M_SAVE_JOB" ver="1">Lana gorde</t>
+<t id="M_RUN_JOB" ver="1">Lana inprimatu</t>
+<t id="M_PAUSE_JOB" ver="1">Inpresioa gelditu</t>
+<t id="M_KILL_JOB" ver="1">Inpresioa ezeztatu</t>
+<t id="M_SD_CARD" ver="1">SD txartela</t>
+<t id="M_TOGGLE_LOG" ver="1">Erregistroa ikusi</t>
+<t id="M_SHOW_FILAMENT" ver="1">Filamentua erakutsi</t>
+<t id="M_HIDE_FILAMENT" ver="1">Filamentua izkutatu</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">Filamentuaren bistaratzea ezeztu</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">Filamentuaren bistaratzea baieztu</t>
+<t id="L_LOAD_FILE" ver="1">Artxiboa kargatu</t>
+<t id="L_IMPORT_G_CODE" ver="1">G-Kodea inportatu</t>
+<t id="L_SAVE_G_CODE" ver="1">G-Kodea gorde</t>
+<t id="L_ERROR" ver="1">Errorea</t>
+<t id="L_PAUSE_MSG" ver="1">OK sakatu jarraitzeko. Zure kodigoan geldialdiak ezarri ditzazkezu 
+@pause honako testu batekin </t>
+<t id="L_UPDATING..." ver="1">Eguneratzen ...</t>
+<t id="L_SLICE_WITH" ver="1">Slicea $1 bidez</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">Larrialdiko geldialdi bat bidaltzen du inprimagailura. Baliteke jarraitzeko inprimagailua berriro piztu behar izana.</t>
+<t id="L_TRANSLATION:" ver="1">Traslazioa</t>
+<t id="L_SCALE:" ver="1">Eskalatu</t>
+<t id="L_ROTATE:" ver="1">Biraketa</t>
+<t id="L_STL_OBJECTS" ver="1">STL objektuak</t>
+<t id="B_SAVE_AS_STL" ver="1">STL bezala gorde</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">Objektua deuseztatu</t>
+<t id="B_ADD_STL_OBJECT" ver="1">Objektua ezarri</t>
+<t id="B_AUTOPOSITION" ver="1">Kokatze automatikoa</t>
+<t id="B_DROP_OBJECT" ver="1">Objektua askatu</t>
+<t id="B_COPY_OBJECTS" ver="1">Objektuak kopiatu</t>
+<t id="B_CENTER_OBJECT" ver="1">Objektuak zentratu</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">Itxura erlazioa blokeatu</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">Slice-aren sorrera gelditu</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">Ajusteak</t>
+<t id="B_SETUP_SLIC3R" ver="1">Ajusteak</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">Konfiguratu</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">Konfiguratu</t>
+<t id="B_ACTIVE" ver="1">Aktibatu</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">Filamentuaren ajusteak:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">Inprimagailuaren ajusteak:</t>
+<t id="L_PRINT_SETTINGS" ver="1">Inpresio ajusteak</t>
+<t id="L_PROFILE" ver="1">Profila: </t>
+<t id="B_SEND" ver="1">Bidali</t>
+<t id="B_SIMULATE_OK" ver="1">OK</t>
+<t id="B_STOP_MOTOR" ver="1">Motorra gelditu</t>
+<t id="B_PARK" ver="1">Atseden posizioa</t>
+<t id="B_RETRACT" ver="1">Atzera egin</t>
+<t id="B_EXTRUDE" ver="1">Estruitu</t>
+<t id="L_OUTPUT_PERCENT" ver="1">$1% irtera</t>
+<t id="B_POWER" ver="1">Elikatze</t>
+<t id="B_HEAT_EXTRUDER" ver="1">Estrusorea berotu</t>
+<t id="B_HEAT_PRINTBED" ver="1">Ohea berotu</t>
+<t id="B_FAN" ver="1">Haizegailua</t>
+<t id="B_DEBUG_ERRORS" ver="1">Erroreak</t>
+<t id="B_DEBUG_ECHO" ver="1">Errepikatu</t>
+<t id="B_DRY_RUN" ver="1"> Hutsean inprimatu</t>
+<t id="B_DEBUG_INFO" ver="1">Info</t>
+<t id="L_EXTRUDER" ver="1">Estrusorea</t>
+<t id="L_PRINTBED" ver="1">Ohea</t>
+<t id="L_SPEED_MULTIPLY" ver="1">Abiaduraren biderkatzailea</t>
+<t id="L_EXTRUDE_MM" ver="1">[mm] estruitzen d(it)u</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">Abiadura [mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">[mm] Atzera egiten d(it)u</t>
+<t id="L_TEMP" ver="1">Tenp.</t>
+<t id="L_DISCONNECTED" ver="1">Deskonektatuta</t>
+<t id="L_CONNECTED" ver="1">Konektatuta</t>
+<t id="L_HEATING_BED" ver="1">Ohea berotzen</t>
+<t id="L_HEATING_EXTRUDER" ver="1">Estrusorea berotzen</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">Inpresioa ezeztatuta</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">Inpresioa geldituta</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">Inpresioa amaituta</t>
+<t id="L_UPLOADING..." ver="1">Kargatzen ...</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">Egindako portzentaia $1</t>
+<t id="L_IDLE" ver="1">Idle</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">$1 Komandoaren zai</t>
+<t id="L_EXTRUDER:" ver="1">Estrusorea:</t>
+<t id="L_BED:" ver="1">Ohea:</t>
+<t id="L_OFF" ver="1">Itzali</t>
+<t id="L_NOT_A_NUMBER" ver="1">Ez da zenbakia</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">Zenbaki positibo bat behar du</t>
+<t id="L_NOT_AN_INTEGER" ver="1">Ez da zenbaki osoa</t>
+<t id="L_RESET_OUTPUT" ver="1">Berrezarri irteera. Itxaron ondoren, $1 dut bakarrik. </t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">Errore mezuak jasotzen dira soilik. Komunikazioa geldituta.</t>
+<t id="L_PRINTING..ETA" ver="1">Inprimatutako portzentaia $1</t>
+<t id="L_LAYER_X/Y" ver="1"> Geruza $1/$2</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">Datuak bidali bitartean sortutako errorea</t>
+<t id="L_CONNECTION_ERROR" ver="1">Konexio errorea</t>
+<t id="L_SERIAL_COM_ERROR" ver="1">Serie portuko errorea:</t>
+<t id="L_SHOW_IN_LOG" ver="1">Erregistroan erakutsi</t>
+<t id="B_ACK" ver="1">ACK</t>
+<t id="B_AUTO_SCROLL" ver="1">Scroll automatikoa</t>
+<t id="B_COMMANDS" ver="1">Komandoak</t>
+<t id="B_LOG_ERRORS" ver="1">Erroreak</t>
+<t id="B_LOG_INFO" ver="1">Informazioa</t>
+<t id="B_LOG_WARNINGS" ver="1">Oharrak</t>
+<t id="B_COPY" ver="1">Kopiatu</t>
+<t id="B_CLEAR_LOG" ver="1">Erregistroa garbitu</t>
+<t id="L_COPY" ver="1">Kopiatu</t>
+<t id="L_CUT" ver="1">Moztu</t>
+<t id="L_NEW_TEXT" ver="1">Testu berria</t>
+<t id="L_SAVE" ver="1">Gorde</t>
+<t id="L_PASTE" ver="1">Itsatsi</t>
+<t id="L_UNDO" ver="1">Desegin</t>
+<t id="L_REDO" ver="1">Berregin</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">Aurreikuspenaren auto eguneraketa</t>
+<t id="L_START_CODE" ver="1">Hasierako G-Kodea</t>
+<t id="L_END_CODE" ver="1">Bukaerako G-Kodea</t>
+<t id="L_RUN_ON_KILL" ver="1">Ezeztatuan exekutatu</t>
+<t id="L_RUN_ON_PAUSE" ver="1">Etenaldian exekutatu</t>
+<t id="L_SCRIPT_X" ver="1">Script $1</t>
+<t id="L_LAYER_X" ver="1">Geruza $1</t>
+<t id="L_EXTRUDER_X" ver="1">Estrusore $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">Berridatzi</t>
+<t id="L_INSERT" ver="1">Txertatu</t>
+<t id="L_SYNTAX" ver="1">Sintaxia</t>
+<t id="TAB_HELP" ver="1">Laguntza</t>
+<t id="TAB_VISUALIZATION" ver="1">Bistaratzea</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">Dena erakutsi</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">Geruza mailak erakutsi</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">Geruza bakarra erakutsi</t>
+<t id="L_FIRST_LAYER" ver="1">Lehen geruza: </t>
+<t id="L_LAST_LAYER" ver="1">Azken geruza:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1">Ziur al zaude $1 -rentzako ajuste guztiak deuseztatu nahi dituzula?</t>
+<t id="L_SECURITY_QUESTION" ver="1">Segurtasun galdera</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">Inprimazio denbora gehitu</t>
+<t id="L_BAUD_RATE" ver="1">Baudioak:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">Arduinotik harrera katxea 127tik 63 bytetara jaitsi da!</t>
+<t id="L_CHECK_EVERY_X" ver="1">$1 segunduro egiaztatu.</t>
+<t id="L_CONNECTION_INFO" ver="1">Inprimagailuaren ajusteak goikaldean autatutako inprimagailuari dagozkiote. OK edo Aplikatu sakatuta gordetzen dira baloreak. Inprimagailu berri bat sortzeko, izen berri bat idatzi eta Intro sakatu. Inpresora berriak erabilitako azken baloreak jasoko ditu.</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1"> Aurrez ezarritako tenperatura:</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">Aurrez ezarritako ohearen tenperatura:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">Profund. area de volcado:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">Y area de volcado:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">X area de volcado:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">Anchura area de volcado:</t>
+<t id="L_FILTER_INFO" ver="1"> Filtrazio programa bat exekutatu dezakezu slicing ekintza bakoitzaren ondoren. Filtrazioa, slicer-ek sortutako G-Kode-an exekutatuko da.
+#in eta #out erabili input eta output fitxategiak parametro moduan txertatzeko.</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">Filtrazio eta parametro ibilbidea:</t>
+<t id="L_PARITY" ver="1">Parekotasun:</t>
+<t id="L_PARK_POSITION" ver="1">Atseden posizioa:</t>
+<t id="L_PORT" ver="1">Portua:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">Inpri. gunearen sakonera:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">Inprimatze gunearen alt.:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">Inprimatze gunearen zabal.:</t>
+<t id="L_PRINTER" ver="1">Inprimagailua:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">Harrera katxea:</t>
+<t id="L_STOPBITS" ver="1">Geldialdirako Bits-ak:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">Transf. protokoloa:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">Estrusio gabeko despl. abiadura:</t>
+<t id="L_ZFEED_RATE" ver="1">Z ardatzeko aurreratze abiadura:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">Inpresioa amaitzean edo deuseztatzean estrusoresa deskonektatu</t>
+<t id="L_DISABLE_MOTORS" ver="1">Inpresioa amaitzean edo deuseztatzean motoreak deskonektatu</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">Inpresioa amaitzean edo deuseztatzean ohea deskonektatu</t>
+<t id="L_GO_PARK_POSITION" ver="1">Inpresioa amaitzean edo deuseztatzean atseden posiziora itzuli.</t>
+<t id="L_HAS_DUMP_AREA" ver="1">Existe Area de Volcado</t>
+<t id="L_HOME_X_MAX" ver="1">Karrera amaiera X Max</t>
+<t id="L_HOME_Y_MAX" ver="1">Karrera amaiera Y Max</t>
+<t id="L_HOME_Z_MAX" ver="1">Karrera amaiera Z Max</t>
+<t id="L_PING_PONG_MODE" ver="1">"Ping-pong" erako komunikazioa erabili (soilik Ok sakatu ondoren bidali)</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">Filtroa exekutatu Slice bakoitzaren ondoren</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">Estrusore eta ohearen tenperaturak egiaztatu</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">Erregistrotik M105 kodigoa kendu</t>
+<t id="B_CANCEL" ver="1">Ezeztatu</t>
+<t id="B_APPLY" ver="1">Aplikatu</t>
+<t id="B_OK" ver="1">OK</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">Inprimagailu ajuste hauek ezabatu</t>
+<t id="TAB_CONNECTION" ver="1">Konexioa</t>
+<t id="TAB_PRINTER" ver="1">Inprimagailua</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">Inpresioaren dimentsioak</t>
+<t id="TAB_ADVANCED" ver="1">Aurreratuta</t>
+<t id="W_PRINTER_SETTINGS" ver="1">Inprimagailuaren ajusteak</t>
+<t id="L_POST_SLICE_FILTER" ver="1">Post-Slice filtrazioa</t>
+<t id="L_Z_MIN" ver="1">Z-Min</t>
+<t id="W_PRINT_PAUSED" ver="1">Inpresioa geldituta</t>
+<t id="L_PAUSE_HINT" ver="1">Aholkua: Estrusorea mugitu eta filamentua estruitu dezakezu filamentua aldatzeko edo ahokoa betetzeko, izerditu egin badu. Programak berrezarriko du extruderra inprimaketa eten den posizioan.</t>
+<t id="B_CONTINUE_PRINTING" ver="1">Jarraitu inprimatzen</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Repetier-Hosten eguneraketak bilatu </t>
+<t id="B_DOWNLOAD" ver="1">Deskargatu</t>
+<t id="B_REMIND_ME_LATER" ver="1">Gero gogorarazi</t>
+<t id="B_SKIP_VERSION" ver="1">Bertsio hau alde batera utzi</t>
+<t id="L_AVAILABLE_VERSION" ver="1">Bertsio erabilgarria:</t>
+<t id="L_INSTALLED_VERSION" ver="1">Istalatutako bertsioa:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">Informazioa eguneratzen</t>
+<t id="L_NO_NEW_UPDATES" ver="1">Ez dago eguneraketa berririk. Azken bertsioa erabiltzen hari zara.</t>
+<t id="L_UPDATE_STATUS" ver="1">Eguneraketaren egoera</t>
+<t id="W_SLICING_INFO" ver="1">Slicing Info</t>
+<t id="L_ACTION:" ver="1">Akzioa:</t>
+<t id="L_DURATION:" ver="1">Iraupena:</t>
+<t id="L_SLICER:" ver="1">Slicer:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">Slicing-a egin ondoren inprimitzen hasi</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">Repetier-Host-i buruz</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">Lizentziak eta Libreriak</t>
+<t id="L_REPETIER_INFO" ver="1">Software hau, RepRap-en oinarritutako 3D imprimagailuekin lan egiteko garatuta dago. Repetier firmware-arentzat optimizatuta dago, ezaugarri guztiak jasaten dituelako. Beste firmwares-ak, Marlin, Teacup, Sprinter edo 5D GKode ajuste egokiekin funtzionatzen dute.</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">Autatutako objektuak kopiatu </t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">Kopia kopurua:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">Objektuak ezarri ostean kokatu automatikoki</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1"> $2 tik $1 garren geruza inprimatzen</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">Inpresioa eraikitzen...</t>
+<t id="L_PRINTING..." ver="1">Inprimatzen...</t>
+<t id="L_JOB_KILLED" ver="1">Inpresioa deuseztatuta</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">$1 tan inpresioa amaituta</t>
+<t id="L_PRINTING_TIME:" ver="1">Inprimatzeko behar duen denbora:$1</t>
+<t id="L_LINES_SEND:X" ver="1">Lerro kopurua: $1</t>
+<t id="L_FINISHED_IN" ver="1"> $1 tan amaituta</t>
+<t id="L_TIME_H:" ver="1">$1h:</t>
+<t id="L_TIME_M:" ver="1">$1m:</t>
+<t id="L_TIME_S" ver="1">$1s</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1"> EEPROM Firmwarearen ajusteak</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">Ez da sortutako G-Kodea aurkitzen</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">Esperotako artxibo eta helbidea</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">Ezin dut sortutako G-Kodea aurkitu.
+
+Izan daiteke:
+- Slicer-ak errore bat duelako eta ez du slicing-a ondo amaitu. Irteera erregistroa komprobatu.
+- Slicer-ak artxiboa espero ez zen izen batekin gorde duelako. </t>
+<t id="B_CLOSE" ver="1">Itxi</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Repetier-aren ajusteak</t>
+<t id="L_BEHAVIOUR" ver="1">Jokaera</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">Artxiboak eta helbideak</t>
+<t id="L_GUI" ver="1">Interfaz Graf.</t>
+<t id="L_INFO_WORKDIR" ver="1">Lan helbidean, erregistro fitxategia eta slicing-erako fitxategi temporalak gordetzen dira. Erregistro aukera aktibatuta badago, repetier.log fitxategi bat egongo da programa ixterakoan. Programa abian jarri ezgero, aurreko erregistro fitxategia ezabatuko da! Inprimagailuarekiko komunikazio guztiak erregistro fitxategiak dauzka, nahiz eta bere bistaratzea desaktibatuta egon. Erregistroan egindako aldaketak, berrabiaraztean aktibatuko dira.</t>
+<t id="L_LOG_SESSION" ver="1">Sesioaren erregistroa</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">Tresna barraren tamaina txikitu</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">Kalitate murrizketa deskonektatu</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">¡Lan helbide bat behar da!</t>
+<t id="L_WORKDIR:" ver="1">Lan helbidea:</t>
+<t id="B_BROWSE" ver="1">Arakatu...</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">Lan helbidea aukeratu</t>
+<t id="L_PAST_60_MINUTES" ver="1">60 minutu pasata</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">3D bistaratzearen ezarpenak  </t>
+<t id="L_COLORS" ver="1">Koloreak</t>
+<t id="L_EDITOR" ver="1">Editorea</t>
+<t id="L_VISUALIZATION" ver="1">Bistaratzea:</t>
+<t id="L_AMBIENT_COLOR" ver="1">Inguruko kolorea:</t>
+<t id="L_BACKGROUND" ver="1">Atzeko planoa:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">Zehaztugabeko kolorea:</t>
+<t id="L_DRAW_METHOD" ver="1">Marrazketa metodoa:</t>
+<t id="L_EDGES" ver="1">Ertzak:</t>
+<t id="L_EXTRUDER_X:" ver="1">Extrusorea $1:</t>
+<t id="L_FACES" ver="1">Planoak:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">Filamentuaren forma, geruzaren altueragatik eta geruzaren zabalera/altuera erlazioarengatik egiten da edo filamentuaren diametroagatik, geruzaren zabalera/altuera erlazioarekin eta G-Kodeko E baloreekin.
+Bigarren bertsioak emaitza hobeagoak eskaintzen ditu, geruzaren altuerak aldatzen badu, hau Skeinforge-aren bertsio berrietan gertatu daiteke.</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">Filamentuaren bistaratzea:</t>
+<t id="L_HOT_FILAMENT" ver="1">Filamentu beroa:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">Filamentu beroaren luzera:</t>
+<t id="L_LIGHT_X" ver="1">Argitasuna $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">Plataforma kampoko objek.:</t>
+<t id="L_PRINTER_BASE" ver="1">Oinarrizko inprima.:</t>
+<t id="L_SELECTED_FACES" ver="1">Aukeratutako planoak:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">Aukeratutako filamentua:</t>
+<t id="L_SPECULAR_COLOR" ver="1">Kolore islapena:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">Geruzaren altuera/zabalera erlazioa:</t>
+<t id="L_X_DIRECTION" ver="1">X norantza:</t>
+<t id="L_Y_DIRECTION" ver="1">Y norantza:</t>
+<t id="L_Z_DIRECTION" ver="1">Z norantza:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">Filamentuaren bistaraztea desaktibatu </t>
+<t id="L_ENABLE_LIGHT" ver="1">Argia aktibatu</t>
+<t id="L_SHOW_EDGES" ver="1">Ertzak erakutsi</t>
+<t id="L_SHOW_FACES" ver="1">Planoak erakutsi</t>
+<t id="L_SHOW_PRINTBED" ver="1">Plataforma erakutsi</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">Sakatu, objektua imprimagarria ez bada</t>
+<t id="TAB_GENERAL" ver="1">Generala</t>
+<t id="TAB_FILAMENT" ver="1">Filamentua</t>
+<t id="TAB_MODEL" ver="1">Eredua</t>
+<t id="TAB_LIGHTS" ver="1">Argiak</t>
+<t id="L_LAYER_HEIGHT" ver="1">Plano altuera:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">Filamentu diametroa:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">Onena auto-detektatu</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (azkarrena)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">Arrays (bitartekoa)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Immediate (motela)</t>
+<t id="W_JOB_STATUS" ver="1">Inprimaketaren egoera</t>
+<t id="L_ETA:" ver="1">Ehunekoa:</t>
+<t id="L_FINISH_TIME:" ver="1">Amaitze ordua:</t>
+<t id="L_LINES_SEND:" ver="1">Bidalitako lerroak:</t>
+<t id="L_START_TIME:" ver="1">Hasiera ordua:</t>
+<t id="L_STATUS:" ver="1">Egoera:</t>
+<t id="L_TOTAL_LINES:" ver="1">Lerro kopurua:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">Definitu gabeko inpresioa</t>
+<t id="L_RUNNING..." ver="1">Exekutatzen ...</t>
+<t id="L_FINISHED" ver="1">Bukatuta</t>
+<t id="L_ABORTED" ver="1">Kantzelatuta</t>
+<t id="W_PRINTER_INFO" ver="1">Inprimagailuaren informazioa</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">Konexio informazioa</t>
+<t id="L_PRINTER_DATA" ver="1">Inprimagailuaren datuak</t>
+<t id="L_BYTES_SEND:" ver="1">Bytes bidaliak:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">Jasotako erroreak:</t>
+<t id="L_FIRMWARE:" ver="1">Firmware:</t>
+<t id="L_FIRMWARE_URL:" ver="1">Firmware URL:</t>
+<t id="L_MACHINE_TYPE:" ver="1">Maquina mota:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">Extrusore kopurua:</t>
+<t id="L_PROTOCOL:" ver="1">Protokoloa:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">Ez da 8.3 fitxategirako balio duen izena.</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">SD txartela fitxategia</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">Fitxategia prest:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">Bukatutako inpresioaren komandoak sartu </t>
+<t id="L_INCLUDE_START_END_CODE" ver="1">"Hasierako kodigoa" eta "bukaerako kodigoa" sartu</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">Kanpoko fitxategiak kargatu</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">Kargatu uneko G-Kodea</t>
+<t id="L_FILE:" ver="1">Fitxategi:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">Gorde G-kodea inpresio zuzenaz</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">Gordetzeko era honekin, SD txartelatik exekutatzeko G-Kodea sortzen du. Arrazoi honengatik amaierako komando erregularrera, hasierako eta amierako kodigoa gehitu daitezke, ordenagailutik zuzenean inprimatzeko exekutatuak izango balitz bezala. Hala ere host-eko komentario eta komando guztiak ezabatu egingo dira. Soilik G-Kodea zure editorean gorde nahi baduzu, erabili G-Kodeko editorearen gorde botoia.</t>
+<t id="L_SAVE_AS_BINARY" ver="1">Gorde binario formatuan (Repetier-Firmwarentzat)</t>
+<t id="B_SAVE" ver="1">Gorde</t>
+<t id="W_SD_CARD_MANAGER" ver="1">SD txartelaren kudeatzailea</t>
+<t id="L_FILENAME" ver="1">Fitxategiaren izena</t>
+<t id="L_SIZE" ver="1">Tamaina</t>
+<t id="L_UPLOAD_FILE" ver="1">Fitxategia kargatu</t>
+<t id="L_DELETE_FILE" ver="1">Fitxategia ezabatu</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">Aukeratutako fitxategia exekutatu/Gelditutako impresioa jarraitu</t>
+<t id="L_STOP_UPLOAD" ver="1">Martxan dagoen SD-aren imprimaketa etendu/gelditu </t>
+<t id="L_MOUNT_SD_CARD" ver="1">SD txartela muntatu</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">SD txartela desmontatu</t>
+<t id="L_PRINT_FINISHED" ver="1">Inpresio bukatuta</t>
+<t id="L_UPLOAD_FINISHED" ver="1">Karga bukatuta</t>
+<t id="L_SD_PRINTING..." ver="1">SD Inprimatzen ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">Karga huts egina</t>
+<t id="L_FILE_DELETED" ver="1">Fitxategi ezabatua</t>
+<t id="L_DELETE_FAILED" ver="1">Ezabatu huts egina</t>
+<t id="L_UPLOADING_FILE..." ver="1">Fitxategia kargatzen ...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">Zure firmwareak ez du inplementazten fitxategiaren ezabaketa edo inplementazio ezezaguna du.</t>
+<t id="L_PRINT_ABORTED" ver="1">Inpresio kantzelatuta</t>
+<t id="L_PRINT_PAUSED" ver="1">Inpresio etendua</t>
+<t id="L_REMOVE_SD_CARD" ver="1">SD txartela kendu dezakezu.</t>
+<t id="L_INFORMATION" ver="1">Informazioa</t>
+<t id="L_REALLY_DELETE_X" ver="1">Benetan ezabatu $1</t>
+<t id="SOUND_CONFIGURATION" ver="1">Soinuaren konfigurazioa</t>
+<t id="L_SOUNDS" ver="1">Soinuak</t>
+<t id="L_ERROR_SOUND" ver="1">Erroreentzako soinuak</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">Bukatutako inpresioarentzako soinua</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">Etendutako inpresioaren soinua</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">@sound komandorako soinua</t>
+<t id="L_FILE:X" ver="1">Fitxategia:$1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">WAV fitxategia aukeratu erreproduzitzeko</t>
+<t id="W_SLIC3R_SETUP" ver="1">Slic3r-aren ajusteak</t>
+<t id="L_SLIC3R_SETUP" ver="1">Slic3r-aren ajusteak</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="1">Txuriz utzi barne bersioa erabiltzeko.</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Slic3raren konfigurazio helbidea</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Slic3r exekutablea</t>
+<t id="L_SLIC3R_INFO" ver="1">Ajuste hauekin, Slic3r-en bertsio ezberdinak erabili ahalko dituzu. Bersio berriak lortu ditzazkezu emen: http://www.slic3r.org Eskatzen den bertsio minimoa hau da: 0.9.0. Utzi hutsune guztiak txuriz barne bertsioa erabiltzeko.</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">Txuriz utzi aurkitutako direkzioa erabiltzeko.</t>
+<t id="W_EEPROM_MARLIN" ver="1">Marlin Firmware EEPROM-en ajusteak</t>
+<t id="L_M_ACCELERATION" ver="1">Azelerazioa:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">Aldagai aurreratuak:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">Karrera amaieretako desfasea:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">Azelerazio maximoa [mm/s²]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">Abiadura maximoa [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">Abiatze maximoa X-Y [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">Abiatze maximoa Z [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">Abiadura minimoa [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">Segmentuaren denbora minimoa [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">Estrusore gabeko desplazamenduaren abiadura minimoa [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">PID-aren ajusteak:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">mm bakoitzeko urratsak:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">Atzeratze azelerazioa:</t>
+<t id="B_M_LOAD" ver="1">Berriz kargatu konfigurazioa</t>
+<t id="B_M_RESTORE" ver="1">Fabrikako ezarpenak berreskuratu</t>
+<t id="B_M_SAVE" ver="1">EEPROM-a gorde</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">Ajusteak martxan dagoen konfigurazioan gordetak.
+Aldaketak EEPROM-an idatzi?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">Gordetako ajusteak</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">Berreskuratutako aldaketak EEPROM-ra gorde?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">Fabrikako ajusteak berreskuratutak</t>
+<t id="L_SLICING_STL_FILE..." ver="1">Slicing STL fitxategia...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">Slicing-eko azkeneko lana martxan oraindik. Lan berriaren Slicing-a kantzelatua izan da.</t>
+<t id="L_SKEIN_KILLED" ver="1">$1 Slicing prozesua erabiltzailearengatik kantzelatuta.</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Skeinforge/SFACT-en ajusteak </t>
+<t id="L_SKEIN_APPLICARTION" ver="1">Skeinforge aplikazioa:</t>
+<t id="L_SKEIN_CRAFT" ver="1">Skeinforge craft:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">Skeinforgen konfigurazio helbidean, profilen azpikarpeta aukeratu. Normalean HOME/.skeinforge/profiles helbidean egongo da. Hainbat bertsio pertsonalizatuentzat (SFACT adibidez) helbidea aldatu dezake. </t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">Profilen helbidea:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">Pypy instalatuta badago, Skeinforge-k slicing-a 3-4 aldiz azkarrago egingo du. Pypy instalatuta ez badago, txuriz utzi eta python-en interpretea erabiliko da bere ordez. Pypy-ren azkeneko bertsioa lortu dezakezu emen: en http://www.pypy.org/</t>
+<t id="L_SKEIN_PYTHON" ver="1">Python-en interpretea:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">Lanaren helbideak ezartzen du Sfact-ak non gordetzen dituen profilak!</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">Lanaren helbidea:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge aplikazioa</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Python-en interpretea</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge Craft aplikazioa</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python-en interpretea</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">Profilen karpeta aukeratu</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">Lan karpeta aukeratu</t>
+<t id="L_FEEDRATE:" ver="1">Aurreratze:</t>
+<t id="L_FLOWRATE:" ver="1">Kaudala:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">Ezin da eguneraketa zerbitzarira konektatu!</t>
+<t id="L_MOVE_CAMERA" ver="1">Kamara mugitu</t>
+<t id="L_MOVE_OBJECT" ver="1">Objektua mugitu</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">Ikus puntua mugitu</t>
+<t id="L_RESET_VIEW" ver="1">Bista berrabiatu</t>
+<t id="L_ROTATE" ver="1">Biratu</t>
+<t id="L_TOP_VIEW" ver="1">Planta ikuspegia</t>
+<t id="T_ZOOM_VIEW" ver="1">Zooma</t>
+<t id="T_CLEAR_OBJECTS" ver="1">Garbitu</t>
+<t id="L_DEBUG_OPTIONS" ver="2">Araztu aukerak</t>
+<t id="L_X_MIN:" ver="3">X Min</t>
+<t id="L_X_MAX:" ver="3">X Max</t>
+<t id="L_Y_MIN:" ver="3">Y Min</t>
+<t id="L_Y_MAX:" ver="3">Y Max</t>
+<t id="L_BED_LEFT:" ver="3">Koord. X Plat:</t>
+<t id="L_BED_FRONT:" ver="3">Koord. Y Plat:</t>
+<t id="L_SHAPE_INFO" ver="3">Balore minimo eta maximoak, estrusoreko kordenaden tartea zehazten dute. Kordenadak, negatiboak eta plataformatik atera daitezke. X/Y ezartzen dute plataformaren kordenadak non hasten diren. Plataaformak hasieratik duen zentroa balore min/max mugitzen aldatu dezakezu firmwareak jasaten badu. </t>
+<t id="L_SELECTION_BOX" ver="3">Hautaketa kutxa:</t>
+<t id="L_FILAMENT_NONE" ver="3">Bat ere/lehenengo estrusorearen berbera</t>
+<t id="L_REALLY_QUIT" ver="3">Bukatu gabeko inprimaketa. Atera hala ere?</t>
+<t id="M_DONATE" ver="3">Eman edo kolaboratu</t>
+<t id="L_FAN" ver="4">Haizagailua</t>
+<t id="L_HOME_X:" ver="4">X etxea:</t>
+<t id="L_HOME_Y:" ver="4">Y etxea:</t>
+<t id="L_HOME_Z:" ver="4">Z etxea:</t>
+<t id="L_MIN" ver="4">Min</t>
+<t id="L_MAX" ver="4">Max</t>
+<t id="L_PAUSED_FIRMWARE" ver="4">Inprimaketak etenaldi bat behar du.</t>
+<t id="L_CREATE_FOLDER" ver="4">Karpeta berria sortu</t>
+<t id="L_CREATE_FOLDER_INFO" ver="4">Karpetaren izena 8.3 fitxategiko formatuan jarri:</t>
+<t id="L_UPLOADING_TIME" ver="4">Kargatzearen denobora: $1</t>
+<t id="L_FILAMENT_POS" ver="4">Filamentua: $1</t>
+<t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">Desplazamendu bistaratzea deskonektatuta</t>
+<t id="M_HIDE_TRAVEL" ver="4">Desplazamendua gorde</t>
+<t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">Desplazamendu bistaratzea konektatuta</t>
+<t id="M_SHOW_TRAVEL" ver="4">Desplazamedua erakusti</t>
+<t id="L_TRAVEL_MOVES:" ver="4">Desplazamendu mugimenduak:</t>
+<t id="L_DISABLE_TRAVEL_MOVES_VIS" ver="4">Desplazamendu mugimendu bistaratzea deskonektatu</t>
+<t id="L_NUMBER_OF_EXTRUDER:" ver="5">Estrusore zenbakia:</t>
+<t id="L_NEW_FOLDER" ver="5">Karpeta berria</t>
+<t id="L_USE_PARALLEL_PROJECTION" ver="5">Proiekzio paraleloa erabili</t>
+<t id="L_USE_RED_GREEN_SWITCH" ver="5">Botoi verde/gorri-ak erabili (berrabiatzea beharrezkoa da) </t>
+<t id="L_SLIC3R_NOT_FOUND" ver="6">Slic3r-a ez da aurkitu.</t>
+<t id="L_ANALYSING_STL" ver="6">STL fitxategia aztertzen ...</t>
+<t id="L_SLICING_STL" ver="6">Slicing STL fitxategia ...</t>
+<t id="L_PYPY_NOT_FOUND" ver="6">Pypy edo Python interpretea ez da aurkitu.</t>
+<t id="L_SKEINCRAFT_NOT_FOUND" ver="6">Skeinforge lana ez da aurkitu.</t>
+<t id="L_PYTHON_NOT_FOUND" ver="6">Python interpretea ez da aurkitu.</t>
+<t id="L_SKEINFORGE_NOT_FOUND" ver="6">Skeinforge ez da aurkitu.</t>
+<t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">Skeinforge/SFACT profilaren lan helbidea ez da aurkitu.</t>
+<t id="B_REFRESH_PORTS" ver="6">Portuak eguneratu</t>
+<t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">Inpresioaren altuera:</t>
+<t id="L_ROS_PRINTABLE_RADIUS:" ver="6">Inpresioaren erradioa:</t>
+<t id="L_CARTESIAN_PRINTER" ver="6">Inprimagailu klasikoa</t>
+<t id="L_CARTESIAN_PRINTER_DUMP" ver="6">Inprimagailu klasikoa (con area de volcado)</t>
+<t id="L_ROSTOCK_CIRCLE" ver="6">Rostock inprimagailua (inprimaketa zirkular formarekin)</t>
+<t id="L_CORRECT_NORMALS" ver="7">Normal zuzendu (itxura hobeagoa du, memoria gehiago behar du)</t>
+</translation>
+

@@ -1,0 +1,292 @@
+Version 0.91
+  Added compass to 3d view.
+  Faster object import - analysis only on request.
+  Fixed several small bugs, many mono/linux related.
+	Name repetier instance in case you started it several times.
+	
+Version 0.90C 07-07-2013
+  Faster connect with reset
+  Fixed crash when stl loaded is modified later.
+  Printer Settings can be opened during print.
+  Better handling of connection without reset.
+  New algorithm for normal orientation detection.
+  Faster loading of files in some cases.
+  Pause does not delete the preview any more.	
+
+Version 0.90 23-06-2013
+  Slic3r 0.9.10 included.
+  Redesigned object placement tab.
+  Cut objects in any direction.
+  Analyse mesh, calc volume, surface, dimensions.
+  Import/export obj format files.
+  Use obj for exported models for slic3r.
+  Repair normal orientation.
+  Repair some simple mesh defects.
+  Show mesh defects.
+  Better viewing of edges.
+  Allow floating point values for all countries.
+  Fixed problem with G92 showing wrong coords.
+  Faster connects for most boards.
+  Different emergency button settings.
+  Import obj models.
+  Associate stl/obj/gcode/gco/g/g with Repetier-Host.
+  More default view angles.
+  New language: Basque
+  Belt and leadscrew calculator.
+  Many small fixes and improvements.
+
+Version 0.85
+  Slic3r 0.9.9 included
+  Store slicer selection with printer settings.
+	Drag and Drop of stl and g-code files into host.
+	Preview of G2/G3 in xy plane.
+	Fixed some viewing errors.
+	Set DTR to off on connect. Reduces error rate on some boards.
+	Security question if heaters are on during close.
+	Check if objects are inside printable area before slicing starts.
+	Better error correction with Marlin.
+	Create only as many filament configs as extruders enabled in host.
+	Added @execute host command to call programs during print.
+	In parallel top view user and view center are moved to stay on top.
+
+Version 0.84 09-02-2013
+  Added japanese translation by Hajime Ashida.
+  Fixed error marking elements outside even if inside.
+  Improved filament visualization.
+  Update printer shape when selecting printer over connect button.
+  Disable slic3r filament settings for non existent extruder.
+  Layer start is now at the z move starting a new layer.
+  Highlight line numbers depending on layer number even/odd.
+  Fixed bug not storing all 3d settings in registry.
+
+Version 0.83 22-01-2013
+  Slic3r 0.9.8 included
+  New translation: Latvian from www.ajmotion.lv
+  Rostock shape (circular)
+  Searches slic3r also in PATH environment.
+  Search python/pypy in PATH if not defined.
+  Show printer name in status bar if connected.
+  Switch ETA between duration/end time if clicked in status bar.
+  Fixed some multi-extruder issues.
+  Recheck port list on every call of printer settings.
+  Some small bug fixes.
+  
+Version 0.82b 26-11-2012
+  Slic3r 0.9.7 now included
+  New translation: Czech by Josef Průša
+  New translation: Russian by Eugenco
+  Better support for multiple extruder.
+  Fixed translation issues.
+  Switch button design selectable.
+    
+Version 0.80 11-11-2012
+  New translation: Spanish by Mecano
+  New translation: Portugues by Alexandre Dias
+  New translation: French by contact@labsud.org
+  New translation: Chinese by T.S.Wang
+  SD manager now supports directories.
+  SD manager can create directories (needs Repetier-Firmware 0.80 or higher)
+  Support for Repetier-Protocol V2.
+  Ready for Rostock.
+  Reduced RAM usage.
+  Show extruder usage in editor.
+  Jump to layer in editor.
+  Switch buttons now in blue/light blue for all with color vision defect.
+  Optional show travel moves.
+  Toggle between perspective and parallel projection.
+  In linux the "Save Job" function does not disable all buttons anymore.
+  Open connection resets Arduino for a clean start.
+  Emergency kill now also tries to reset the Arduino for faster stop.
+
+Version 0.74 29-09-2012
+  Slic3r 0.9.3 now included.
+  Fixed color change of some colors.
+  Added visualization of Mach3 like g-code.
+  More flexible coordinate system for e.g. Rostock delta printer.
+  Mark origin with a dot.
+  Better object placement, objects now follows mouse exactly.
+  Select different filament types for each extruder when using Slic3r.
+  Security question when exiting before print is finished.
+  M117 on Marlin shows no more garbage.
+  Homing to X, Y and Z max possible.
+  Temperatures are now floating point values.
+  New translation: dutch by M3chTroniC
+  New translation: italien by Sarah Camerino and Angelo Di Tullio
+
+Version 0.72 08-09-2012
+  Fixed crash on startup when toolbar size reduced.
+
+Version 0.71 03-09-2012
+  Made GUI localizable.
+  Added german language.
+  Automatic check for updates.
+  Extended EEPROM Support for Marlin (M206) - code submitted by scuba.
+  Slic3r 0.9.2 now included.
+  Many bug fixes.
+
+Version 0.70 11-08-2012
+  Show marken g-code lines in graphic preview.
+  Draw different extruders in different colors.
+  New icons.
+  Redesigned manual control tab.
+  New slice tab, where slicing configuration is selected.
+  Log window status bar redesigned.
+  Printer status in manual control.
+  Maximize windows now restores panel positions.
+  Numeric up/down for speed added.
+  Numeric up/down for temperatures/extruder.
+  Support for G28 with endstops at x/y max.
+  Center object now centers for any dimension.
+  Functionality customizable (needs data/custom.ini in installation).
+  .NET check in windows installer.
+  Fixed some issues with linux version.
+  Color change if object is outside printbed.
+  Lightning now definable in 3d visual settings.
+  After homing the movements over the panel are limited to the entered printer dimensions.
+  Own user definable scripts for kill/pause pressed.
+  5 scripts per printer definable.
+
+Version 0.52 17.7.2012
+  Upgraded to Slic3r 0.8.4
+  Better check if slicing was successful.
+  Show active slicer.
+  Show estimated printing time before print starts.
+  ETA is now based on computed printing time.
+  Added disable motors after job option.
+  
+Version 0.51 1.6.2012
+  Upgraded Slic3r to version 0.8.2
+  Grid has now 1cm spacing as site reference.
+  Added "Show workdirectory" menu entry to show it in file explorer.
+  Sounds for job finished/paused/error/@sound command
+  Added save job function to save a job for local storage on sd card.
+  Added ctrl+a and delete/backspace shortcut in object placement.
+  Use cursor keys to rotate graphic.
+  Better error messages if a sliced file was not found.
+  Some minor changes.
+  Fixed graphic bug in layer preview
+
+Version 0.50 22.4.2012
+  Upgraded Slic3r to version 0.7.2b.
+  New main window arrangement.
+  New temperature monitor with average and output view in main window.
+  Added speed slider for Repetier-Firmware and Marlin.
+  Backreport of values changed in Repetier-Firmware user interface.
+  Better graphic card capabilities detection.
+  
+Version 0.40 17.03.2012
+  Upgraded Slic3r to version 0.7.1
+  Reduced memory usage, allowing larger prints.
+  Write current printing layer of x layer into log.
+  G-Code editor now has layer and layer range visual preview.
+  Auto position of objects.
+  Copy one or more selected objects x times.
+  Asks for reload if stl file changed on disk.
+  Load multiple STL files at once with add STL file.
+  Automatic start of a job after slicing (selectable).
+
+Version 0.36 25.02.2012
+  Added EEPROM settings for Marlin (thanks scuba for providing the code)
+  You can addionally use an external Slic3r version with it's native .ini config
+  Upgraded Slic3r to 0.7.0
+  Fixed G92 bug.
+
+Version 0.35 18.02.2012
+  Added emergency stop
+  Updated 3d view. Toolbar now contains icons and is on the left.
+  Start view optimized.
+  Zoom optimized.
+  Added top view button.
+  G-Code selections better readable.
+  M105 commands can be removed from log.
+  Updated Slic3r parameter.
+  You can add an external post slice postprocessor, which is run after each slice.
+  You can kill a running slice job.
+  Moving the fan slider doesn't enable it.
+  Pause window is not modal any more. So you can use manual controls in pause mode!
+  Baudrate/Ping Pong mode/buffer slows down virtual printer. Use 250000 for max speed.
+  Multiple selections in object placement. Press strg to toggle right clicked object.
+  
+Version 0.34b 23.01.2012
+  Updated Slic3r to version 0.6.0
+
+Version 0.34 21.12.2012
+  Some CPUs hat problems with acos(1.000001) craiting wrong graphics. Fixed.
+  Changed print panel. Extuder control uses now text fields.
+  
+Version 0.33 20.12.2012
+  Printing has its own thread for better print performance.
+  Added virtual printer for testing purposes.
+  Autoreduce visual quality if rendering gets slow.
+  Mark untrusted coordinates in red.
+  New G-Code Host commands @hide and @show to disable/enable filament visualization.
+  Removed some graphic errors.
+  Host crash in eeprom settings on linux removed.
+  
+Version 0.32 8.1.2012
+  Filaments are drawn solid.
+  Faster 3d drawing algorithms. Now even in virtual hardware useable.
+  Filament visualization need 45% less data storage.
+  Select and move objects with right mouse button.
+  Move viewpoint with middle mouse button.
+  STL objects outside printable are start pulsing.
+  Removed several threading error conditions and other minor bugs.
+
+Version 0.31  1.1.2012
+  Updated Slic3r to version 0.5.7
+  Autodetect OpenGL capabilities and using the fasted method.
+  Pause function as button and command in G-Code (@pause Some text)
+  Log commands in G-Code (@info Text for log line)
+  New STL-Files are centered on the bed.
+  Show hot filament during print.
+  Minor bug fixes.
+  
+Version 0.30
+  Updated Slic3r to version 0.53
+  Loading STL files with G-button asks what to do - slice or add
+  
+Version 0.29 
+  Linux version available.
+  Mac OS X version available.
+  Faster and better log panel.
+  Fixed errors in editor.
+  Includes Slic3r as default slicer.
+  Optimized menu tree.
+
+Version 0.28 15.11.2011
+  Added SD-card support.
+  New editor with syntax highlighting and code explaination.
+  Automatic code preview update.
+  Variable filament width for preview.
+  Nicer GUI
+  Default extruder and heated bed temperatures.
+  Windows sizes and positions are stored.
+  Better 3d control.
+  File history.
+  Minor bug fixes
+  
+Version 0.26 2.10.2011
+  Added G161/G162 support
+  Added filename in title
+
+Version 0.25 30.9.2011
+  Fixed bug with fan slider
+  Fixed analycer related bug, disabling temp. on job start
+  Fixed spellings and gui.
+  Added Z-min for dump area
+
+Version 0.24 28.9.2011
+  Fixed black 3d screen for high printer dimensions.
+
+Version 0.23 27.9.2011
+  Fixed bug with filament drawing in Skainforge relative mode
+
+Version 0.22 24.9.2011
+  Added test case generator.
+  Improved configuration handling.
+
+Version 0.20a 9.9.2011
+  Improved G-Code preview.
+
+Version 0.20 7.9.2011
+  First public version.

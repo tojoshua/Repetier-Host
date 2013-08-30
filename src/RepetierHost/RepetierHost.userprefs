@@ -1,0 +1,14 @@
+﻿<Properties>
+  <AuthorInfo Name="Repetier" Email="repetierdev@googlemail.com" Copyright="Repetier" Company="" Trademark="" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="MacOSX" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+    <Files>
+      <File FileName="model/STL.cs" Line="37" Column="14" />
+      <File FileName="Main.cs" Line="145" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

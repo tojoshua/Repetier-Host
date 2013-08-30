@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation revision="8" language="日本語" languageInEnglish="japanese" author="Hajime Ashida">
+<t id="M_FILE" ver="1">ファイル</t>
+<t id="M_CONFIG" ver="1">設定</t>
+<t id="M_SLICER" ver="1">スライサー</t>
+<t id="M_TEMPERATURE" ver="1">温度</t>
+<t id="M_PRINTER" ver="1">プリンタ</t>
+<t id="M_HELP" ver="1">ヘルプ</t>
+<t id="M_LOAD_GCODE" ver="1">開く</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">作業フォルダ参照</t>
+<t id="M_LANGUAGE" ver="1">言語</t>
+<t id="M_PRINTER_SETTINGS" ver="1">プリンタ設定</t>
+<t id="M_EEPROM_SETTINGS" ver="1">ファームウェア EEPROM設定</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">3D ビュー設定</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Repetier設定</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">スライスパラメーターテストケース</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">サウンド設定</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">ホットエンド温度表示</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">ヒーテッドベッド温度表示</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">設定温度表示</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">平均表示</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">ヒーター出力表示</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">温度表示自動スクロール</t>
+<t id="M_TIMEPERIOD" ver="1">温度の記録</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">時間表示範囲</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">平均計算時間</t>
+<t id="M_30_SECONDS" ver="1">30秒</t>
+<t id="M_1_MINUTE" ver="1">1分</t>
+<t id="M_2_MINUTES" ver="1">2分</t>
+<t id="M_5_MINUTES" ver="1">5分</t>
+<t id="M_10_MINUTES" ver="1">10分</t>
+<t id="M_15_MINUTES" ver="1">15分</t>
+<t id="M_30_MINUTES" ver="1">30分</t>
+<t id="M_60_MINUTES" ver="1">60分</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">モニター中</t>
+<t id="M_DISABLE" ver="1">無効</t>
+<t id="M_EXTRUDER_1" ver="1">ホットエンド 1</t>
+<t id="M_EXTRUDER_2" ver="1">ホットエンド 2</t>
+<t id="M_HEATED_BED" ver="1">ヒーテッドベッド</t>
+<t id="M_PRINTER_INFORMATION" ver="1">プリンタ情報</t>
+<t id="M_JOB_STATUS" ver="1">プリントジョブ</t>
+<t id="M_SD_CARD_MANAGER" ver="1">SDカードマネージャー</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">SDカード管理</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">Generatorテストケース</t>
+<t id="M_SEND_SCRIPT_1" ver="1">スクリプト1を送信</t>
+<t id="M_SEND_SCRIPT_2" ver="1">スクリプト2を送信</t>
+<t id="M_SEND_SCRIPT_3" ver="1">スクリプト3を送信</t>
+<t id="M_SEND_SCRIPT_4" ver="1">スクリプト4を送信</t>
+<t id="M_SEND_SCRIPT_5" ver="1">スクリプト5を送信</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Repetier-Host ホームページ</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Repetier-Host ダウンロード</t>
+<t id="M_MANUAL" ver="1">Repetier-Host マニュアル</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Slic3r ホームページ</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Skeinforge ホームページ</t>
+<t id="M_REPRAP_WEBSITE" ver="1">RepRap ホームページ</t>
+<t id="M_REPRAP_FORUM" ver="1">RepRapフォーラム</t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse Newest Thingsへ</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverse Popular Thingsへ</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">Repetier-Hostについて</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">アップデートをチェック</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">プリンタ切断</t>
+<t id="L_CONNECT_PRINTER" ver="1">プリンタ接続</t>
+<t id="M_DISCONNECT" ver="1">プリンタ切断</t>
+<t id="M_CONNECT" ver="1">プリンタ接続</t>
+<t id="M_QUIT" ver="1">終了</t>
+<t id="TAB_3D_VIEW" ver="1">3Dビュー</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">温度モニタ</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">オブジェクト配置</t>
+<t id="TAB_SLICER" ver="1">スライサ</t>
+<t id="TAB_GCODE_EDITOR" ver="1">Gコードエディタ</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">プリンタ操作</t>
+<t id="M_EMERGENCY_STOP" ver="1">非常停止</t>
+<t id="M_LOAD" ver="1">ファイルを開く</t>
+<t id="M_SAVE_JOB" ver="1">ジョブ保存</t>
+<t id="M_RUN_JOB" ver="1">ジョブ実行</t>
+<t id="M_PAUSE_JOB" ver="1">ジョブ一時停止</t>
+<t id="M_KILL_JOB" ver="1">ジョブを終了</t>
+<t id="M_SD_CARD" ver="1">SDカード</t>
+<t id="M_TOGGLE_LOG" ver="1">ログ表示切替</t>
+<t id="M_SHOW_FILAMENT" ver="1">オブジェクト表示モード</t>
+<t id="M_HIDE_FILAMENT" ver="1">オブジェクト非表示モード</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">オブジェクトを表示します</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">オブジェクトを隠します。</t>
+<t id="L_LOAD_FILE" ver="1">ファイルを開く</t>
+<t id="L_IMPORT_G_CODE" ver="1">ファイルを開く</t>
+<t id="L_SAVE_G_CODE" ver="1">Gコードを保存</t>
+<t id="L_ERROR" ver="1">エラー</t>
+<t id="L_PAUSE_MSG" ver="1">リターンで継続
+コードに@pause を記入することで
+ポーズさせることができます</t>
+<t id="L_DISCONNECTED" ver="1">通信切断</t>
+<t id="L_UPDATING..." ver="1">更新中 ...</t>
+<t id="L_SLICE_WITH" ver="1">$1 でスライス</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">非常停止をプリンタに送ります。再開のためにはプリンタのリセットが必要です。</t>
+<t id="L_TRANSLATION:" ver="1">移動</t>
+<t id="L_SCALE:" ver="1">尺度</t>
+<t id="L_ROTATE:" ver="1">回転</t>
+<t id="L_STL_OBJECTS" ver="1">STL オブジェクト</t>
+<t id="B_SAVE_AS_STL" ver="1">STL形式で保存</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">オブジェクト削除</t>
+<t id="B_ADD_STL_OBJECT" ver="1">オブジェクト追加</t>
+<t id="B_AUTOPOSITION" ver="1">自動整列</t>
+<t id="B_DROP_OBJECT" ver="1">オブジェクト着地</t>
+<t id="B_COPY_OBJECTS" ver="1">オブジェクトのコピー</t>
+<t id="B_CENTER_OBJECT" ver="1">オブジェクトを中央に移動</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">縦横比を固定</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">停止</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">セットアップ</t>
+<t id="B_SETUP_SLIC3R" ver="1">セットアップ</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">設定</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">設定</t>
+<t id="B_ACTIVE" ver="1">有効</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">フィラメント設定:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">プリンタ設定:</t>
+<t id="L_PRINT_SETTINGS" ver="1">プリント設定:</t>
+<t id="L_PROFILE" ver="1">プロフィール:</t>
+<t id="B_SEND" ver="1">送信</t>
+<t id="B_SIMULATE_OK" ver="1">OK</t>
+<t id="B_STOP_MOTOR" ver="1">モーター停止</t>
+<t id="B_PARK" ver="1">待機位置</t>
+<t id="B_RETRACT" ver="1">引き込み</t>
+<t id="B_EXTRUDE" ver="1">押出し</t>
+<t id="L_OUTPUT_PERCENT" ver="1"> $1% 出力</t>
+<t id="B_POWER" ver="1">電源</t>
+<t id="B_HEAT_EXTRUDER" ver="1">ホットエンド加熱</t>
+<t id="B_HEAT_PRINTBED" ver="1">ヒーテッドベッド加熱</t>
+<t id="B_FAN" ver="1">ファン運転</t>
+<t id="B_DEBUG_ERRORS" ver="1">エラー</t>
+<t id="B_DEBUG_ECHO" ver="1">返信</t>
+<t id="B_DRY_RUN" ver="1">ドライ運転</t>
+<t id="B_DEBUG_INFO" ver="1">情報</t>
+<t id="L_EXTRUDER" ver="1">エクストルーダー</t>
+<t id="L_PRINTBED" ver="1">ヒーテッドベッド</t>
+<t id="L_SPEED_MULTIPLY" ver="1">送り速度</t>
+<t id="L_EXTRUDE_MM" ver="1">押出し [mm]</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">押出し速度[mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">引込み [mm]</t><a>"プリンタ"</a>
+<t id="L_TEMP" ver="1">温度</t>
+<t id="L_CONNECTED" ver="1">通信中</t>
+<t id="L_HEATING_BED" ver="1">ヒーテッドベッド</t>
+<t id="L_HEATING_EXTRUDER" ver="1">ホットエンド昇温</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">プリント中止</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">プリント一時停止中</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">プリント完了</t>
+<t id="L_UPLOADING..." ver="1">アップロード中 ...</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">プリントジョブ 残り時間 $1</t>
+<t id="L_IDLE" ver="1">待機中</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">$1 コマンド待ち</t>
+<t id="L_EXTRUDER:" ver="1">エクストルーダー:</t>
+<t id="L_BED:" ver="1">ベッド:</t>
+<t id="L_OFF" ver="1">オフ</t>
+<t id="L_NOT_A_NUMBER" ver="1">数字ではありません</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">有効な数字を要求します</t>
+<t id="L_NOT_AN_INTEGER" ver="1">整数ではありありません</t>
+<t id="L_RESET_OUTPUT" ver="1">リセット出力。しばらくしたのち $1を得ます</t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">エラーメッセージが受信されました。通信を終了します。</t>
+<t id="L_PRINTING..ETA" ver="1">プリント中...残り時間 $1</t>
+<t id="L_LAYER_X/Y" ver="1">レイヤー $1/$2</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">送信エラー:</t>
+<t id="L_CONNECTION_ERROR" ver="1">プリンタと接続できません</t><a>下側メッセージ</a>
+<t id="L_SERIAL_COM_ERROR" ver="1">シリアル通信エラー:</t>
+<t id="L_SHOW_IN_LOG" ver="1">ログ表示:</t>
+<t id="B_ACK" ver="1">ACK</t>
+<t id="B_AUTO_SCROLL" ver="1">オートスクロール</t>
+<t id="B_COMMANDS" ver="1">コマンド</t>
+<t id="B_LOG_ERRORS" ver="1">エラー</t>
+<t id="B_LOG_INFO" ver="1">情報</t>
+<t id="B_LOG_WARNINGS" ver="1">警告</t>
+<t id="B_COPY" ver="1">実行</t>
+<t id="B_CLEAR_LOG" ver="1">ログをクリア</t>
+<t id="L_COPY" ver="1">コピー</t>
+<t id="L_CUT" ver="1">カット</t>
+<t id="L_NEW_TEXT" ver="1">新しいテキスト</t>
+<t id="L_SAVE" ver="1">保存</t>
+<t id="L_PASTE" ver="1">ペースト</t>
+<t id="L_UNDO" ver="1">元に戻す</t>
+<t id="L_REDO" ver="1">やり直し</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">画面自動更新</t>
+<t id="L_START_CODE" ver="1">スタートコード</t>
+<t id="L_END_CODE" ver="1">エンドコード</t>
+<t id="L_RUN_ON_KILL" ver="1">停止</t><a>スライス</a>
+<t id="L_RUN_ON_PAUSE" ver="1">一時停止</t>
+<t id="L_SCRIPT_X" ver="1">スクリプト $1</t>
+<t id="L_LAYER_X" ver="1">レイヤー $1</t>
+<t id="L_EXTRUDER_X" ver="1">ホットエンド $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">上書き</t>
+<t id="L_INSERT" ver="1">挿入</t>
+<t id="L_SYNTAX" ver="1">シンタックス</t>
+<t id="TAB_HELP" ver="1">ヘルプ</t>
+<t id="TAB_VISUALIZATION" ver="1">表示</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">全てを表示</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">指定範囲のレイヤーを表示</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">単一のレイヤー表示</t>
+<t id="L_FIRST_LAYER" ver="1">表示開始レイヤー:</t>
+<t id="L_LAST_LAYER" ver="1">表示終了レイヤー:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1"> 設定 $1 を削除してもよろしいですか?</t>
+<t id="L_SECURITY_QUESTION" ver="1">確認</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">プリント時間加算分</t>
+<t id="L_BAUD_RATE" ver="1">ボーレート:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">Arduino 1 から受信キャッシュのサイズは 127バイトから 63 バイトに小さくされました。</t>
+<t id="L_CHECK_EVERY_X" ver="1"> チェック間隔　$1秒</t>
+<t id="L_CONNECTION_INFO" ver="1">OKボタン、または適用ボタンをクリックすることで上部で選択されたプリント設定が実行されます。
+新しいプリント設定を作った場合は名前をつけてから適用ボタンをクリックすると設定が登録されます。</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">ホットエンド温度初期値:</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">ヒーテッドベッド温度初期値:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">dumpエリア 奥行:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">dumpエリア 手前位置:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">dumpエリア 左位置:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">dumpエリア 幅:</t>
+<t id="L_FILTER_INFO" ver="1">スライス動作後にフィルタープログラムの起動が可能です。フィルターは Gコード上で指示します。
+ #in と #out はファイル名をパラメーターとして挿入します。</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">フィルターのパスとパラメータ:</t>
+<t id="L_PARITY" ver="1">パリティ:</t>
+<t id="L_PARK_POSITION" ver="1">待機位置:</t>
+<t id="L_PORT" ver="1">COMポート:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">可動エリア Y:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">可動エリア Z:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">可動エリア X:</t>
+<t id="L_PRINTER" ver="1">プリント設定:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">受信バッファサイズ:</t>
+<t id="L_STOPBITS" ver="1">ストップビット:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">送信プロトコル:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">送り速度:</t>
+<t id="L_ZFEED_RATE" ver="1">Z軸送り速度:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">プリント後にホットエンドを停止</t>
+<t id="L_DISABLE_MOTORS" ver="1">プリント後にモーターを停止</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">プリント後にヒーテッドベッドを停止</t>
+<t id="L_GO_PARK_POSITION" ver="1">プリント後に待機位置に戻る</t>
+<t id="L_HAS_DUMP_AREA" ver="1">dumpエリアを設定</t>
+<t id="L_HOME_X_MAX" ver="1">原点位置を X軸最大値に設定</t>
+<t id="L_HOME_Y_MAX" ver="1">原点位置を Y軸最大値に設定</t>
+<t id="L_HOME_Z_MAX" ver="1">原点位置を Y軸最大値に設定</t>
+<t id="L_PING_PONG_MODE" ver="1">ピンポン伝送を行う</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">スライスごとにフィルター起動</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">ホットエンドとヒーテッドベッドの温度をチェックする</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">Gコード中のM105命令を無視する</t>
+<t id="B_CANCEL" ver="1">キャンセル</t>
+<t id="B_APPLY" ver="1">適用</t>
+<t id="B_OK" ver="1">OK</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">プリント設定を破棄する</t>
+<t id="TAB_CONNECTION" ver="1">接続</t>
+<t id="TAB_PRINTER" ver="1">プリント設定</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">エリア設定</t>
+<t id="TAB_ADVANCED" ver="1">その他</t>
+<t id="W_PRINTER_SETTINGS" ver="1">プリンタ設定</t>
+<t id="L_POST_SLICE_FILTER" ver="1">ポストスライスフィルター</t>
+<t id="L_Z_MIN" ver="1">Z-Min</t>
+<t id="W_PRINT_PAUSED" ver="1">プリント一時停止</t>
+<t id="L_PAUSE_HINT" ver="1">ヒント：フィラメントの交換や補充のためエクストルーダーを動かすことが可能です。
+継続時、プログラムは一時停止を開始した位置までノズルを復元します。</t>
+<t id="B_CONTINUE_PRINTING" ver="1">プリント継続</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Repetier-Host アップデートのチェック</t>
+<t id="B_DOWNLOAD" ver="1">ダウンロード</t>
+<t id="B_REMIND_ME_LATER" ver="1">後で確認</t>
+<t id="B_SKIP_VERSION" ver="1">インストールしない</t>
+<t id="L_AVAILABLE_VERSION" ver="1">最新バージョン:</t>
+<t id="L_INSTALLED_VERSION" ver="1">現在のバージョン:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">アップデート情報</t>
+<t id="L_NO_NEW_UPDATES" ver="1">最新バージョンを使用中です。</t>
+<t id="L_UPDATE_STATUS" ver="1">アップデートステータス</t>
+<t id="W_SLICING_INFO" ver="1">スライシング情報</t>
+<t id="L_ACTION:" ver="1">動作:</t>
+<t id="L_DURATION:" ver="1">経過時間:</t>
+<t id="L_SLICER:" ver="1">スライサ:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">スライス後にプリントジョブを行う</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">Repetier-Hostについて</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">ライセンスとライブラリ</t>
+<t id="L_REPETIER_INFO" ver="1">このソフトウェアはRepRapを始めとする3Dプリンタのコントロール用に開発されました。 ファームウェアはRepetier-Firmwareであれば全機能が使えますが、 Marlin, Teacup, Sprinter, 5Dなども使用可能です。</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">選択オブジェクトのコピー</t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">コピー数:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">コピーしたオブジェクトを自動で配置する。</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1">プリントレイヤー $1 / $2</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">プリントジョブ構築中...</t>
+<t id="L_PRINTING..." ver="1">プリント中...</t>
+<t id="L_JOB_KILLED" ver="1">ジョブが停止されました</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">プリントジョブ終了 $1</t>
+<t id="L_PRINTING_TIME:" ver="1">プリント時間:$1</t>
+<t id="L_LINES_SEND:X" ver="1">送信:$1</t>
+<t id="L_FINISHED_IN" ver="1">終了時 $1</t>
+<t id="L_TIME_H:" ver="1">$1h:</t>
+<t id="L_TIME_M:" ver="1">$1m:</t>
+<t id="L_TIME_S" ver="1">$1s</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">ファームウェア EEPROM セッティング</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">生成G-Code 未検出</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">ファイル名とフォルダを要求</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">生成されたG-CODEファイルが見つかりません。
+
+考えられる理由:
+- エラーのためスライサーが終了していない。ログファイルを確認してください。
+- スライサーが別の名前でファイルを保存した。</t>
+<t id="B_CLOSE" ver="1">閉じる</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Repetier設定</t>
+<t id="L_BEHAVIOUR" ver="1">処理能力</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">ファイル設定</t>
+<t id="L_GUI" ver="1">ユーザーインターフェース</t>
+<t id="L_INFO_WORKDIR" ver="1">
+作業フォルダにログファイルとスライシングの一時ファイルが保存されます。
+ログファイルを記録する設定になっている場合、 プログラム終了時にrepetier.logとして保存されますが
+次にプログラムを起動したときに消去されます。
+ログ表示が無効になっている場合、ログを記録するかどうかの設定は次回起動時より変更されます。</t>
+<t id="L_LOG_SESSION" ver="1">ログセッション</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">ツールバーを小さくする</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">品質低下をしない</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">作業フォルダが存在しません。</t>
+<t id="L_WORKDIR:" ver="1">作業フォルダ:</t>
+<t id="B_BROWSE" ver="1">変更</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">作業フォルダ</t>
+<t id="L_PAST_60_MINUTES" ver="1">最近の60分間</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">3Dビュー設定</t>
+<t id="L_COLORS" ver="1">表示色</t>
+<t id="L_EDITOR" ver="1">表示</t>
+<t id="L_VISUALIZATION" ver="1">表示:</t>
+<t id="L_AMBIENT_COLOR" ver="1">周囲色:</t>
+<t id="L_BACKGROUND" ver="1">背景:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">散乱光:</t>
+<t id="L_DRAW_METHOD" ver="1">描画メソッド:</t>
+<t id="L_EDGES" ver="1">エッジ:</t>
+<t id="L_EXTRUDER_X:" ver="1">エクストルーダー $1:</t>
+<t id="L_FACES" ver="1">オブジェクト:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">フィラメントの形状はレイヤー高さ、厚みと幅の比または、フィラメント径、厚みと幅の比、G-Codeで指示された押出し量から計算されます。
+ 2つめの方法はレイヤー高さが変わっても正確な値を示します。</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">フィラメント表示:</t>
+<t id="L_HOT_FILAMENT" ver="1">ホットフィラメント:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">ホットフィラメント長さ:</t>
+<t id="L_LIGHT_X" ver="1">ライト $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">エリア外オブジェクト:</t>
+<t id="L_PRINTER_BASE" ver="1">ヒーテッドベッド:</t>
+<t id="L_SELECTED_FACES" ver="1">選択されたオブジェクト:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">選択されたフィラメント:</t>
+<t id="L_SPECULAR_COLOR" ver="1">反射光:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">厚みと幅の比:</t>
+<t id="L_X_DIRECTION" ver="1">X 回転:</t>
+<t id="L_Y_DIRECTION" ver="1">Y 回転:</t>
+<t id="L_Z_DIRECTION" ver="1">Z 回転:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">フィラメントを表示しない</t>
+<t id="L_ENABLE_LIGHT" ver="1">ライトを有効にする</t>
+<t id="L_SHOW_EDGES" ver="1">エッジを表示</t>
+<t id="L_SHOW_FACES" ver="1">面を表示</t>
+<t id="L_SHOW_PRINTBED" ver="1">ヒーテッドベッドを表示する</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">対象がプリントされていない場合一時停止</t>
+<t id="TAB_GENERAL" ver="1">全体</t>
+<t id="TAB_FILAMENT" ver="1">フィラメント</t>
+<t id="TAB_MODEL" ver="1">モデル</t>
+<t id="TAB_LIGHTS" ver="1">ライト</t>
+<t id="L_LAYER_HEIGHT" ver="1">レイヤー高さ:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">フィラメント径:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">自動設定</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (速い)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">Arrays (中)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Immediate (ゆっくり)</t>
+<t id="W_JOB_STATUS" ver="1">プリントジョブ</t>
+<t id="L_ETA:" ver="1">残り時間:</t>
+<t id="L_FINISH_TIME:" ver="1">終了時間:</t>
+<t id="L_LINES_SEND:" ver="1">完了長さ:</t>
+<t id="L_START_TIME:" ver="1">開始時間:</t>
+<t id="L_STATUS:" ver="1">ステータス:</t>
+<t id="L_TOTAL_LINES:" ver="1">全体長さ:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">停止</t>
+<t id="L_RUNNING..." ver="1">プリント中...</t>
+<t id="L_FINISHED" ver="1">完了</t>
+<t id="L_ABORTED" ver="1">Aborted</t>
+<t id="W_PRINTER_INFO" ver="1">プリンタ情報</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">接続情報</t>
+<t id="L_PRINTER_DATA" ver="1">プリンタデータ</t>
+<t id="L_BYTES_SEND:" ver="1">送信バイト:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">エラー受信:</t>
+<t id="L_FIRMWARE:" ver="1">ファームウェア:</t>
+<t id="L_FIRMWARE_URL:" ver="1">ファームウェア URL:</t>
+<t id="L_MACHINE_TYPE:" ver="1">マシンタイプ:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">ホットエンド数:</t>
+<t id="L_PROTOCOL:" ver="1">プロトコル:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">ファイル名が 8.3形式になっていません</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">SDカード　アップロード</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">アップロードファイル名:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">ジョブ終了コマンドを含める</t>
+<t id="L_INCLUDE_START_END_CODE" ver="1"> "Start"コード "End"コードを含める</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">別のファイルをアップロードする</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">現在のGコードをアップロードする</t>
+<t id="L_FILE:" ver="1">ファイル:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">Gコードを保存</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">これらの機能は、SDカードから実行することができるG-コード・ファイルを生成するのが目的です。
+ホストから直接プリントできるようにスタートおよびエンド・コードを付け加えることができます。
+コメントおよびホスト・コマンドはすべて削除されます!
+単にエディターの中でG-コードを保存したい場合は、保存を使用してください。</t>
+<t id="L_SAVE_AS_BINARY" ver="1">バイナリ形式で保存 (Repetier-Firmware用)</t>
+<t id="B_SAVE" ver="1">保存</t>
+<t id="W_SD_CARD_MANAGER" ver="1">SDカードマネージャー</t>
+<t id="L_FILENAME" ver="1">ファイル名</t>
+<t id="L_SIZE" ver="1">サイズ</t>
+<t id="L_UPLOAD_FILE" ver="1">ファイルをアップロードする</t>
+<t id="L_DELETE_FILE" ver="1">ファイルを削除する</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">選択されたファイルを実行 / プリント一時停止を解除</t>
+<t id="L_STOP_UPLOAD" ver="1">一時停止/SDカードからのプリントを停止</t>
+<t id="L_MOUNT_SD_CARD" ver="1">SDカードを接続する。</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">SDカードの取り出し</t>
+<t id="L_PRINT_FINISHED" ver="1">プリント終了</t>
+<t id="L_UPLOAD_FINISHED" ver="1">アップロード終了</t>
+<t id="L_SD_PRINTING..." ver="1">SDカードからプリント中 ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">アップロードに失敗</t>
+<t id="L_FILE_DELETED" ver="1">ファイル削除</t>
+<t id="L_DELETE_FAILED" ver="1">ファイル削除に失敗</t>
+<t id="L_UPLOADING_FILE..." ver="1">ファイルアップロード中 ...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">ファームウェアはファイルを削除したか、未知の動作を行っています。</t>
+<t id="L_PRINT_ABORTED" ver="1">プリント中止</t>
+<t id="L_PRINT_PAUSED" ver="1">プリント一時停止</t>
+<t id="L_REMOVE_SD_CARD" ver="1">SDカードを取り外すことができます。</t>
+<t id="L_INFORMATION" ver="1">情報</t>
+<t id="L_REALLY_DELETE_X" ver="1">本当に削除しますか？ $1</t>
+<t id="SOUND_CONFIGURATION" ver="1">サウンド設定</t>
+<t id="L_SOUNDS" ver="1">サウンド</t>
+<t id="L_ERROR_SOUND" ver="1">エラー</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">プリント終了</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">プリント一時停止</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">@sound コマンド</t>
+<t id="L_FILE:X" ver="1">File:$1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1"> WAVファイル選択</t>
+<t id="W_SLIC3R_SETUP" ver="1">Slic3r 設定</t>
+<t id="L_SLIC3R_SETUP" ver="1">Slic3r 設定</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="1">空白の場合はバンドル版を適用</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Slic3r コンフィギュレーションのあるフォルダ</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Slic3r 実行ファイルのあるフォルダ</t>
+<t id="L_SLIC3R_INFO" ver="1">Slic3rの別のバージョンを使用することも可能です。その場合は新しいバージョンを http://www.slic3r.orgからダウンロードしてください。最小使用要件は0.9.0.以降です。全ての入力が空白の場合はバンドル版が適用されます。</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">空白の場合は標準の設定</t>
+<t id="W_EEPROM_MARLIN" ver="1">Marlin ファームウェア EEPROM設定</t>
+<t id="L_M_ACCELERATION" ver="1">加速度:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">高度な変数:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">原点オフセット:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">最大加速 [mm/s2]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">最大送り速度 [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">最大 X-Y ジャーク [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">最大 Z ジャーク [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">最小送り速度 [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">最小セグメント時間 [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">最小トラベル送り速度 [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">PIDセッティング:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">1mmあたりのステップ:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">加速を行わない:</t>
+<t id="B_M_LOAD" ver="1">設定の再ロード</t>
+<t id="B_M_RESTORE" ver="1">初期値に戻す</t>
+<t id="B_M_SAVE" ver="1">EEPROMに保存</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">設定を保存します.
+EEPROMを上書きしますか?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">設定を保存</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">修正された内容を EEPROMに保存しますか?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">工場設定に戻すFactory Settings Retrieved</t>
+<t id="L_SLICING_STL_FILE..." ver="1">STLファイルスライス中 ...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">前のスライス動作が実行中です。新しいスライス動作はキャンセルされました。</t>
+<t id="L_SKEIN_KILLED" ver="1">ユーザー要求によりスライス動作がキャンセルされました$1</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Skeinforge/SFACT設定</t>
+<t id="L_SKEIN_APPLICARTION" ver="1">実行ファイルフォルダ:</t>
+<t id="L_SKEIN_CRAFT" ver="1">クラフトセクションフォルダ:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">設定ファイルのフォルダを指定してください。通常は HOME/.skeinforge/profilesが指定されます。SFACTなどのカスタムバージョンでは変更される場合があります。</t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">プロファイルフォルダ:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">pypyをインストールするとSkeinforgeの処理が速くなります。pypyがインストールされていない場合は空白にしておいてください。最新の pypy は http://www.pypy.org/</t>
+<t id="L_SKEIN_PYTHON" ver="1">Pythonインタープリタ:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">指定された作業フォルダに、SFACTはプロファイルを保存します。</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">作業フォルダ:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge アプリケーション</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Python インタープリタ</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge Craftアプリケーション</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python インタープリタ</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">プロファイルフォルダを選択</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">作業フォルダを選択</t>
+<t id="L_FEEDRATE:" ver="1">送りレート:</t>
+<t id="L_FLOWRATE:" ver="1">吐出レート:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">アップデートサーバーに接続することができませんでした。</t>
+<t id="L_MOVE_CAMERA" ver="1">視点移動</t>
+<t id="L_MOVE_OBJECT" ver="1">オブジェクト移動</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">ビュー平行移動</t>
+<t id="L_RESET_VIEW" ver="1">ビューをリセット</t>
+<t id="L_ROTATE" ver="1">ビュー回転</t>
+<t id="L_TOP_VIEW" ver="1">上面からのビュー</t>
+<t id="T_ZOOM_VIEW" ver="1">ビュー拡大</t>
+<t id="T_CLEAR_OBJECTS" ver="1">オブジェクト削除</t>
+<t id="L_DEBUG_OPTIONS" ver="2">デバッグオプション</t>
+<t id="L_X_MIN:" ver="3">X Min</t>
+<t id="L_X_MAX:" ver="3">X Max</t>
+<t id="L_Y_MIN:" ver="3">Y Min</t>
+<t id="L_Y_MAX:" ver="3">Y Max</t>
+<t id="L_BED_LEFT:" ver="3">左基準位置:</t>
+<t id="L_BED_FRONT:" ver="3">手前基準位置:</t>
+<t id="L_SHAPE_INFO" ver="3">Min/Maxは、押出機の座標範囲を定義します。これらの値はマイナスにしたりヒーテッドベッドの外側に設定することも可能です。左基準位置／手前基準位置は原点位置を定義します。ファームウェアでサポートされている場合、Max/Minを変更することによって、ヒーテッドベッドの中心に原点を移動することも可能です。</t>
+<t id="L_SELECTION_BOX" ver="3">選択オブジェクト枠:</t>
+<t id="L_FILAMENT_NONE" ver="3">いいえ/エクストルーダー 1 と同じ</t>
+<t id="L_REALLY_QUIT" ver="3">プリントが完了していません。終了しますか?</t>
+<t id="M_DONATE" ver="3">寄付または援助</t>
+<t id="L_FAN" ver="4">ファン</t>
+<t id="L_HOME_X:" ver="4">原点 X:</t>
+<t id="L_HOME_Y:" ver="4">原点 Y:</t>
+<t id="L_HOME_Z:" ver="4">原点 Z:</t>
+<t id="L_MIN" ver="4">Min</t>
+<t id="L_MAX" ver="4">Max</t>
+<t id="L_PAUSED_FIRMWARE" ver="4">プリンタがリクエストを要求</t>
+<t id="L_CREATE_FOLDER" ver="4">新しいフォルダの作成</t>
+<t id="L_CREATE_FOLDER_INFO" ver="4">8文字以内の英数字でフォルダ名を入力:</t>
+<t id="L_UPLOADING_TIME" ver="4">アップロード時間: $1</t>
+<t id="L_FILAMENT_POS" ver="4">フィル: $1</t>
+<t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">軌跡を表示します</t>
+<t id="M_HIDE_TRAVEL" ver="4">軌跡非表示モード</t>
+<t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">軌跡を隠します</t>
+<t id="M_SHOW_TRAVEL" ver="4">軌跡表示モード</t>
+<t id="L_TRAVEL_MOVES:" ver="4">ホットエンド軌跡:</t>
+<t id="L_DISABLE_TRAVEL_MOVES_VIS" ver="4">ホットエンドの軌跡表示を無効にする</t>
+<t id="L_NUMBER_OF_EXTRUDER:" ver="5">ホットエンド数:</t>
+<t id="L_NEW_FOLDER" ver="5">新しいフォルダ</t>
+<t id="L_USE_PARALLEL_PROJECTION" ver="5">平行投影で表示</t>
+<t id="L_USE_RED_GREEN_SWITCH" ver="5">ボタン表示を赤/緑にする(再起動後変更)</t>
+<t id="L_SLIC3R_NOT_FOUND" ver="6">Slic3r が見つかりません</t>
+<t id="L_ANALYSING_STL" ver="6">STLファイル分析中 ...</t>
+<t id="L_SLICING_STL" ver="6">STLファイルスライス中 ...</t>
+<t id="L_PYPY_NOT_FOUND" ver="6">PypyもしくはPythonインタラプタが見つかりません。</t>
+<t id="L_SKEINCRAFT_NOT_FOUND" ver="6">Skeinforgeクラフトが見つかりません。</t>
+<t id="L_PYTHON_NOT_FOUND" ver="6">Pythonインタラプタが見つかりません。</t>
+<t id="L_SKEINFORGE_NOT_FOUND" ver="6">Skeinforgeが見つかりません。</t>
+<t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">Skeinforge/SFACT プロファイルフォルダが見つかりません</t>
+<t id="B_REFRESH_PORTS" ver="6">ポート再読み込み</t>
+<t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">プリント高さ:</t>
+<t id="L_ROS_PRINTABLE_RADIUS:" ver="6">プリント半径:</t>
+<t id="L_CARTESIAN_PRINTER" ver="6">クラシックプリンタ(ダンプエリアなし)</t>
+<t id="L_CARTESIAN_PRINTER_DUMP" ver="6">クラシックプリンタ (ダンプエリアあり)</t>
+<t id="L_ROSTOCK_CIRCLE" ver="6">Rostockプリンタ (サーキュラプリントシェイプ)</t>
+<t id="L_CORRECT_NORMALS" ver="7">correct normalsで描画 (品質は向上するがメモリ使用量は増加します)</t>
+<t id="L_WARNING" ver="8">警告</t>
+<t id="L_HEATERS_ON_QUEST" ver="8">ヒーターがONのままです。ヒーターだけOFFにします。</t>
+<t id="L_OBJECTS_OUTSIDE_SLICE_QUEST" ver="8">プリントエリアの外に一つ以上のものがあります。スライスしてもよろしいですか?</t>
+<t id="L_CNC_ROUTER" ver="8">CNC ルーター</t>
+<t id="L_SLIC3R_VERSION" ver="8">Slic3r バージョン</t>
+</translation>
+

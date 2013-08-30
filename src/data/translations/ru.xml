@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<translation revision="4" language="Russian" languageInEnglish="Russian" author="Eugenco">
+<t id="M_FILE" ver="1">Файл</t>
+<t id="M_CONFIG" ver="1">Конфигурация</t>
+<t id="M_SLICER" ver="1">Слайсер</t>
+<t id="M_TEMPERATURE" ver="1">График температур</t>
+<t id="M_PRINTER" ver="1">Принтер</t>
+<t id="M_HELP" ver="1">Справка</t>
+<t id="M_LOAD_GCODE" ver="1">Загрузить G-Код</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">Открыть рабочую папку</t>
+<t id="M_LANGUAGE" ver="1">Язык</t>
+<t id="M_PRINTER_SETTINGS" ver="1">Настройки принтера</t>
+<t id="M_EEPROM_SETTINGS" ver="1">Конфигурация EEPROM</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">Конфигурация 3D</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Настройки программы</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">Тестовые настройки слайсинга</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">Настройки звука</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">Показать температуру экструдера</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">Показать температуру термопанели</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">Показать температуру сопла</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">Показать среднюю температуру</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">Показать питание нагревателя</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">Автопрокрутка графика</t>
+<t id="M_TIMEPERIOD" ver="1">Временной период</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">Масштаб</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">Среднее значение за...</t>
+<t id="M_30_SECONDS" ver="1">30 секунд</t>
+<t id="M_1_MINUTE" ver="1">1 Минуту</t>
+<t id="M_2_MINUTES" ver="1">2 Минуты</t>
+<t id="M_5_MINUTES" ver="1">5 Минут</t>
+<t id="M_10_MINUTES" ver="1">10 Минут</t>
+<t id="M_15_MINUTES" ver="1">15 Минут</t>
+<t id="M_30_MINUTES" ver="1">30 Минут</t>
+<t id="M_60_MINUTES" ver="1">60 Минут</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">Мониторинг</t>
+<t id="M_DISABLE" ver="1">Отключен</t>
+<t id="M_EXTRUDER_1" ver="1">Экструдер 1</t>
+<t id="M_EXTRUDER_2" ver="1">Экструдер 2</t>
+<t id="M_HEATED_BED" ver="1">Термопанель</t>
+<t id="M_PRINTER_INFORMATION" ver="1">Инфо о принтере</t>
+<t id="M_JOB_STATUS" ver="1">Статус задачи</t>
+<t id="M_SD_CARD_MANAGER" ver="1">Менеджер SD-карты</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">Управление SD-картой</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">Генератор тестов</t>
+<t id="M_SEND_SCRIPT_1" ver="1">Отправить скрипт 1</t>
+<t id="M_SEND_SCRIPT_2" ver="1">Отправить скрипт 2</t>
+<t id="M_SEND_SCRIPT_3" ver="1">Отправить скрипт 3</t>
+<t id="M_SEND_SCRIPT_4" ver="1">Отправить скрипт 4</t>
+<t id="M_SEND_SCRIPT_5" ver="1">Отправить скрипт 5</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Домашняя страница Repetier-Host</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Загрузка Repetier-Host</t>
+<t id="M_MANUAL" ver="1">Инструкция Repetier-Host</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Домашняя страница Slic3r</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Домашняя страница Skeinforge</t>
+<t id="M_REPRAP_WEBSITE" ver="1">Домашняя страница RepRap</t>
+<t id="M_REPRAP_FORUM" ver="1">Форум RepRap</t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse Newest Things</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverse Popular Things</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">О программе Repetier-Host</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">Проверить обновления</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">Отсоединить принтер</t>
+<t id="L_CONNECT_PRINTER" ver="1">Подсоединить принтер</t>
+<t id="M_DISCONNECT" ver="1">Отсоединить</t>
+<t id="M_CONNECT" ver="1">Подсоединить</t>
+<t id="M_QUIT" ver="1">Выход</t>
+<t id="TAB_3D_VIEW" ver="1">3D-Вид</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">График температур</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">Размещение объекта</t>
+<t id="TAB_SLICER" ver="1">Слайсер</t>
+<t id="TAB_GCODE_EDITOR" ver="1">Редактор G-Кода</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">Управление</t>
+<t id="M_EMERGENCY_STOP" ver="1">Аварийная остановка</t>
+<t id="M_LOAD" ver="1">Загрузить</t>
+<t id="M_SAVE_JOB" ver="1">Сохранить задание</t>
+<t id="M_RUN_JOB" ver="1">Пуск</t>
+<t id="M_PAUSE_JOB" ver="1">Пауза</t>
+<t id="M_KILL_JOB" ver="1">Остановить</t>
+<t id="M_SD_CARD" ver="1">SD-карта</t>
+<t id="M_TOGGLE_LOG" ver="1">Журнал</t>
+<t id="M_SHOW_FILAMENT" ver="1">Спрятать нить</t>
+<t id="M_HIDE_FILAMENT" ver="1">Показать нить</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">Визуализация нити отключена</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">Визуализация нити включена</t>
+<t id="L_LOAD_FILE" ver="1">Загрузить файл</t>
+<t id="L_IMPORT_G_CODE" ver="1">Импорт G-Кода</t>
+<t id="L_SAVE_G_CODE" ver="1">Сохранить G-Код</t>
+<t id="L_ERROR" ver="1">Ошибка</t>
+<t id="L_PAUSE_MSG" ver="1">Нажмите OK для продолжения.
+Вы можете добавлять паузы в ваш код.</t>
+<t id="L_DISCONNECTED" ver="1">Отключено</t>
+<t id="L_UPDATING..." ver="1">Обновление ...</t>
+<t id="L_SLICE_WITH" ver="1">Слайсинг с $1</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">Аварийная остановка. Вам потребуется перезапустить принтер!</t>
+<t id="L_TRANSLATION:" ver="1">Перемещение</t>
+<t id="L_SCALE:" ver="1">Масштабирование</t>
+<t id="L_ROTATE:" ver="1">Вращение</t>
+<t id="L_STL_OBJECTS" ver="1">STL объекты</t>
+<t id="B_SAVE_AS_STL" ver="1">Сохранить как STL</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">Удалить объект</t>
+<t id="B_ADD_STL_OBJECT" ver="1">Добавить объект</t>
+<t id="B_AUTOPOSITION" ver="1">Автопозиция</t>
+<t id="B_DROP_OBJECT" ver="1">Бросить объект</t>
+<t id="B_COPY_OBJECTS" ver="1">Копировать объект(ы)</t>
+<t id="B_CENTER_OBJECT" ver="1">Центровать объект</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">Сохранять пропорции</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">Отменить слайсинг</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">Настройка</t>
+<t id="B_SETUP_SLIC3R" ver="1">Настройка</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">Настройка</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">Настройка</t>
+<t id="B_ACTIVE" ver="1">Включить</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">Настройки нити:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">Настройки принтера:</t>
+<t id="L_PRINT_SETTINGS" ver="1">Настройки печати:</t>
+<t id="L_PROFILE" ver="1">Профиль:</t>
+<t id="B_SEND" ver="1">Отправить</t>
+<t id="B_SIMULATE_OK" ver="1">ОК</t>
+<t id="B_STOP_MOTOR" ver="1">Остановить мотор</t>
+<t id="B_PARK" ver="1">Парковать</t>
+<t id="B_RETRACT" ver="1">Повтор</t>
+<t id="B_EXTRUDE" ver="1">Экструд.</t>
+<t id="L_OUTPUT_PERCENT" ver="1">Выход: $1%</t>
+<t id="B_POWER" ver="1">Питание</t>
+<t id="B_HEAT_EXTRUDER" ver="1">Нагреть экструдер</t>
+<t id="B_HEAT_PRINTBED" ver="1">Нагреть панель</t>
+<t id="B_FAN" ver="1">Вентилятор</t>
+<t id="B_DEBUG_ERRORS" ver="1">Ошибки</t>
+<t id="B_DEBUG_ECHO" ver="1">Эхо</t>
+<t id="B_DRY_RUN" ver="1">Пробный пуск</t>
+<t id="B_DEBUG_INFO" ver="1">Инфо</t>
+<t id="L_EXTRUDER" ver="1">Экструдер</t>
+<t id="L_PRINTBED" ver="1">Панель</t>
+<t id="L_SPEED_MULTIPLY" ver="1">Множитель скорости</t>
+<t id="L_EXTRUDE_MM" ver="1">Экструд. [mm]</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">Скорость [mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">Повтор [mm]</t>
+<t id="L_TEMP" ver="1">Темп.</t>
+<t id="L_CONNECTED" ver="1">Подключено</t>
+<t id="L_HEATING_BED" ver="1">Термопанель</t>
+<t id="L_HEATING_EXTRUDER" ver="1">Прогрев экструдера</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">Задание отменено</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">Пауза</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">Заданее завершено</t>
+<t id="L_UPLOADING..." ver="1">Отправка ...</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">Задание ETA $1</t>
+<t id="L_IDLE" ver="1">Готов</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">ожидание комманды $1</t>
+<t id="L_EXTRUDER:" ver="1">Экструдер:</t>
+<t id="L_BED:" ver="1">Панель:</t>
+<t id="L_OFF" ver="1">Откл.</t>
+<t id="L_NOT_A_NUMBER" ver="1">Не число</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">Нужно положительное число</t>
+<t id="L_NOT_AN_INTEGER" ver="1">Не число</t>
+<t id="L_RESET_OUTPUT" ver="1">Сброс. После ожидания получено только $1</t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">Только сообщения об ошибках. Подключение прервано.</t>
+<t id="L_PRINTING..ETA" ver="1">Печать...ETA $1</t>
+<t id="L_LAYER_X/Y" ver="1"> Слой $1/$2</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">Ошибка отправки данных:</t>
+<t id="L_CONNECTION_ERROR" ver="1">Ошибка подключения</t>
+<t id="L_SERIAL_COM_ERROR" ver="1">Ошибка com-порта:</t>
+<t id="L_SHOW_IN_LOG" ver="1">Показывать в журнале:</t>
+<t id="B_ACK" ver="1">Подтверждение</t>
+<t id="B_AUTO_SCROLL" ver="1">Автопрокрутка</t>
+<t id="B_COMMANDS" ver="1">Команды</t>
+<t id="B_LOG_ERRORS" ver="1">Ошибки</t>
+<t id="B_LOG_INFO" ver="1">Инфо</t>
+<t id="B_LOG_WARNINGS" ver="1">Предупраждения</t>
+<t id="B_COPY" ver="1">Копировать</t>
+<t id="B_CLEAR_LOG" ver="1">Очистить журнал</t>
+<t id="L_COPY" ver="1">Копировать</t>
+<t id="L_CUT" ver="1">Вырезать</t>
+<t id="L_NEW_TEXT" ver="1">Новый текст</t>
+<t id="L_SAVE" ver="1">Сохранить</t>
+<t id="L_PASTE" ver="1">Вставить</t>
+<t id="L_UNDO" ver="1">Отмена</t>
+<t id="L_REDO" ver="1">Повтор</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">Автообновление</t>
+<t id="L_START_CODE" ver="1">Запустить код</t>
+<t id="L_END_CODE" ver="1">Остановить код</t>
+<t id="L_RUN_ON_KILL" ver="1">Запустить при отмене</t>
+<t id="L_RUN_ON_PAUSE" ver="1">Запустить при паузе</t>
+<t id="L_SCRIPT_X" ver="1">Скрипт $1</t>
+<t id="L_LAYER_X" ver="1">Слой $1</t>
+<t id="L_EXTRUDER_X" ver="1">Экструдер $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">Переписать</t>
+<t id="L_INSERT" ver="1">Вставить</t>
+<t id="L_SYNTAX" ver="1">Синтакс</t>
+<t id="TAB_HELP" ver="1">Справка</t>
+<t id="TAB_VISUALIZATION" ver="1">Визуализация</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">Показать весь код</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">Показать диапазон слоев</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">Показать один слой</t>
+<t id="L_FIRST_LAYER" ver="1">Первый слой:</t>
+<t id="L_LAST_LAYER" ver="1">Последний слой:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1">Вы действительно хотите удалить все настройки для $1?</t>
+<t id="L_SECURITY_QUESTION" ver="1">Секретный вопрос</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">Доб. к времени печати</t>
+<t id="L_BAUD_RATE" ver="1">Скорость в бодах:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">Arduino в приемном буфере снижено 127 до 63 байт!</t>
+<t id="L_CHECK_EVERY_X" ver="1">Проверка каждые $1 секунды.</t>
+<t id="L_CONNECTION_INFO" ver="1">Настройки принтера всегда соответствуют выбраному принтеру.
+Они сохраняются при каждом шелчке по кнопке ОК или Применить.
+Чтобы создать новый принтер, введите имя для принтера и шелкните Применить.
+Новый принтер будет использовать последние выбранные настройки.</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">Темп. экструдера по-умолчанию:</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">Темп. панели по-умолчанию:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">Глубина дампа:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">Дамп спереди:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">Дамп слева:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">Ширина дампа:</t>
+<t id="L_FILTER_INFO" ver="1">Вы можете запускать фильтр после каждой операции слайсинга. 
+Фильтр будет запускатся на G-коде созданном слайсером.
+Используйте #in and #out для вставки имен файлов ввода-вывода в качестве параметров.</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">Фильтровать путь и параметр:</t>
+<t id="L_PARITY" ver="1">Четность:</t>
+<t id="L_PARK_POSITION" ver="1">Позиция парковки:</t>
+<t id="L_PORT" ver="1">Порт:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">Глубина печ. площади:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">Высота печ. площади:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">Ширина печ. площади:</t>
+<t id="L_PRINTER" ver="1">Принтер:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">Размер кэша:</t>
+<t id="L_STOPBITS" ver="1">Стоповые биты:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">Протокол передачи:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">Скорость перемещения:</t>
+<t id="L_ZFEED_RATE" ver="1">Скорость оси Z:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">Откл. экструдер после завершения</t>
+<t id="L_DISABLE_MOTORS" ver="1">Откл. моторы после завершения</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">Откл. термопанель после завершения</t>
+<t id="L_GO_PARK_POSITION" ver="1">Парковать после завершения</t>
+<t id="L_HAS_DUMP_AREA" ver="1">Есть площадь дампа</t>
+<t id="L_HOME_X_MAX" ver="1">Начало X Max</t>
+<t id="L_HOME_Y_MAX" ver="1">Начало Y Max</t>
+<t id="L_HOME_Z_MAX" ver="1">Начало Z Max</t>
+<t id="L_PING_PONG_MODE" ver="1">Коммуникация типа прием-передача (После ОК только отправка)</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">Фильтрация после каждой операции слайсинга</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">Контроль температур панели и экструдера</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">Удалять M105 запросы из журн.</t>
+<t id="B_CANCEL" ver="1">Отмена</t>
+<t id="B_APPLY" ver="1">Применить</t>
+<t id="B_OK" ver="1">ОК</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">Удалить эти настройки</t>
+<t id="TAB_CONNECTION" ver="1">Соединение</t>
+<t id="TAB_PRINTER" ver="1">Принтер</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">Размеры</t>
+<t id="TAB_ADVANCED" ver="1">Расширенные</t>
+<t id="W_PRINTER_SETTINGS" ver="1">Настройки принтера</t>
+<t id="L_POST_SLICE_FILTER" ver="1">Фильт после слайсинга</t>
+<t id="L_Z_MIN" ver="1">Z-Min</t>
+<t id="W_PRINT_PAUSED" ver="1">Пауза</t>
+<t id="L_PAUSE_HINT" ver="1">Подсказка: Во время паузы можно перемещать экструдер для заправки или чистки. Программа восстановит прежнюю позицию экструдера.</t>
+<t id="B_CONTINUE_PRINTING" ver="1">Продолжить печать</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Проверка обновлений</t>
+<t id="B_DOWNLOAD" ver="1">Загрузка</t>
+<t id="B_REMIND_ME_LATER" ver="1">Напомнить позже.</t>
+<t id="B_SKIP_VERSION" ver="1">Пропустить эту версию</t>
+<t id="L_AVAILABLE_VERSION" ver="1">Доступна версия:</t>
+<t id="L_INSTALLED_VERSION" ver="1">Установленная версия:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">Информация</t>
+<t id="L_NO_NEW_UPDATES" ver="1">Обновлений нет.
+Вы используете последнию версию.</t>
+<t id="L_UPDATE_STATUS" ver="1">Статус</t>
+<t id="W_SLICING_INFO" ver="1">Слайсинг</t>
+<t id="L_ACTION:" ver="1">Действие:</t>
+<t id="L_DURATION:" ver="1">Время:</t>
+<t id="L_SLICER:" ver="1">Слайсер:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">Пуск после слайсинга</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">О программе Repetier-Host</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">Лицензия и компоненты</t>
+<t id="L_REPETIER_INFO" ver="1">This software was developed for controlling RepRap like 3D-printer. It is best used with Repetier-Firmware, which supports all features. Other printer firmware like Marlin, Teacup, Sprinter or 5D GCode interpreter should work with proper settings.</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">Копировать отмеченные объекты</t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">Кол-во копий:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">Авторазмещение</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1">Печать слоя $1 из $2</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">Построение задачи...</t>
+<t id="L_PRINTING..." ver="1">Печать...</t>
+<t id="L_JOB_KILLED" ver="1">Отменено</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">Задача завершена в $1</t>
+<t id="L_PRINTING_TIME:" ver="1">Время печати:$1</t>
+<t id="L_LINES_SEND:X" ver="1">Отправлено строк:$1</t>
+<t id="L_FINISHED_IN" ver="1">Завершено $1</t>
+<t id="L_TIME_H:" ver="1">$1ч:</t>
+<t id="L_TIME_M:" ver="1">$1м:</t>
+<t id="L_TIME_S" ver="1">$1с</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">Настройки EEPROM</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">Сгенерированный G-код не найден</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">Имя файла и путь</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">Не найден файл G-кода.
+
+Возможные причины:
+- В слайсере ошибка и слайсинг был прерван. Проверьте журнал.
+- Неверное имя файла слайсера.</t>
+<t id="B_CLOSE" ver="1">Закрыть</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Настройки программы</t>
+<t id="L_BEHAVIOUR" ver="1">Поведение</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">Файлы и папки</t>
+<t id="L_GUI" ver="1">Интерфейс</t>
+<t id="L_INFO_WORKDIR" ver="1">В рабочей папке хранятся временные файлы слайсера и журнала . При запуске программы
+старый файл журнала удаляется. В этом файле содержатся все данные о коммуникации с принтером.</t>
+<t id="L_LOG_SESSION" ver="1">Сессия</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">Маленькие кнопки панели инструментов</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">Отключить понижение качества</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">Нужна рабочая папка!</t>
+<t id="L_WORKDIR:" ver="1">Рабочая папка:</t>
+<t id="B_BROWSE" ver="1">Обзор...</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">Выбрать рабочую папку</t>
+<t id="L_PAST_60_MINUTES" ver="1">Последние 60 минут</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">Настройки 3D-визуализации</t>
+<t id="L_COLORS" ver="1">Цвета</t>
+<t id="L_EDITOR" ver="1">Редактор</t>
+<t id="L_VISUALIZATION" ver="1">Визуализация:</t>
+<t id="L_AMBIENT_COLOR" ver="1">Рассеянный:</t>
+<t id="L_BACKGROUND" ver="1">Фон:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">Диффузный:</t>
+<t id="L_DRAW_METHOD" ver="1">Метод отрисовки:</t>
+<t id="L_EDGES" ver="1">Ребра:</t>
+<t id="L_EXTRUDER_X:" ver="1">Экструдер $1:</t>
+<t id="L_FACES" ver="1">Грани:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">Форма нити вычисляется на основе высоты и ширины слоя или на основе диаметра нити, Второе дает лучший результат если высота слоя меняется, это может быть в новой версии Skeinforge.</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">Визуализация нити:</t>
+<t id="L_HOT_FILAMENT" ver="1">Горячая нить:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">Длина горячей нити:</t>
+<t id="L_LIGHT_X" ver="1">Светильник $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">Объекты снаружи панели:</t>
+<t id="L_PRINTER_BASE" ver="1">Панель:</t>
+<t id="L_SELECTED_FACES" ver="1">Выбранные:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">Выбранная нить:</t>
+<t id="L_SPECULAR_COLOR" ver="1">Отраженный:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">Ширина на толщину:</t>
+<t id="L_X_DIRECTION" ver="1">Направление X:</t>
+<t id="L_Y_DIRECTION" ver="1">Направление Y:</t>
+<t id="L_Z_DIRECTION" ver="1">Направление Z:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">Отключить визуализацию нити</t>
+<t id="L_ENABLE_LIGHT" ver="1">Вкл.</t>
+<t id="L_SHOW_EDGES" ver="1">Отображать ребра</t>
+<t id="L_SHOW_FACES" ver="1">Отображать грани</t>
+<t id="L_SHOW_PRINTBED" ver="1">Отображать панель</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">Мигать если модель нельзя напечатать.</t>
+<t id="TAB_GENERAL" ver="1">Общие</t>
+<t id="TAB_FILAMENT" ver="1">Нить</t>
+<t id="TAB_MODEL" ver="1">Модель</t>
+<t id="TAB_LIGHTS" ver="1">Источники света</t>
+<t id="L_LAYER_HEIGHT" ver="1">Высота слоя:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">Диаметр нити:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">Автоопределение</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">Буфер вершин (Быстрый)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">Массивы (Средний)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Прямой (Медленный)</t>
+<t id="W_JOB_STATUS" ver="1">Статус задачи</t>
+<t id="L_ETA:" ver="1">ETA:</t>
+<t id="L_FINISH_TIME:" ver="1">Время окончания:</t>
+<t id="L_LINES_SEND:" ver="1">Отправлено строк:</t>
+<t id="L_START_TIME:" ver="1">Время начала:</t>
+<t id="L_STATUS:" ver="1">Статус:</t>
+<t id="L_TOTAL_LINES:" ver="1">Всего строк:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">Нет задания</t>
+<t id="L_RUNNING..." ver="1">Выполнение...</t>
+<t id="L_FINISHED" ver="1">Завершено</t>
+<t id="L_ABORTED" ver="1">Отменено</t>
+<t id="W_PRINTER_INFO" ver="1">Инфо принтера</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">Инфо соединения</t>
+<t id="L_PRINTER_DATA" ver="1">Данные принтера</t>
+<t id="L_BYTES_SEND:" ver="1">Отправлено байт:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">Получено ошибок:</t>
+<t id="L_FIRMWARE:" ver="1">Прошивка:</t>
+<t id="L_FIRMWARE_URL:" ver="1">Адрес прошивки:</t>
+<t id="L_MACHINE_TYPE:" ver="1">Тип устройства:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">Номер экструдера:</t>
+<t id="L_PROTOCOL:" ver="1">Протокол:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">Неверное имя файла</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">На SD-карту</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">Отправляемый файл:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">Включая комманды зав.задачи.</t>
+<t id="L_INCLUDE_START_END_CODE" ver="1">Включая коды запуска и остановки</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">Отправить внешний файл</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">Отправить текущий G-код</t>
+<t id="L_FILE:" ver="1">Файл:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">Сохранить G-код для печати напрямую</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">Эта функция сохранения подразумевает что сгенерированные файлы G-кода могут запускатся с SD-карты.
+По этой причине добавьте коды запуска и завершения вместе с обычными командами завершения.Если же вы просто хотите сохранить G-код в редакторе, используйте иконку сохранения.</t>
+<t id="L_SAVE_AS_BINARY" ver="1">Сохранить в двоичном формате</t>
+<t id="B_SAVE" ver="1">Сохранить</t>
+<t id="W_SD_CARD_MANAGER" ver="1">Менеджер SD-карты</t>
+<t id="L_FILENAME" ver="1">Имя файла</t>
+<t id="L_SIZE" ver="1">Размер</t>
+<t id="L_UPLOAD_FILE" ver="1">Отправить файл</t>
+<t id="L_DELETE_FILE" ver="1">Удалить файл</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">Запустить выбранный файл/Продолжить приостановленную печать</t>
+<t id="L_STOP_UPLOAD" ver="1">Пауза/Остановка печати с SD-карты</t>
+<t id="L_MOUNT_SD_CARD" ver="1">Вставить SD-карту</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">Извлечь SD-карту</t>
+<t id="L_PRINT_FINISHED" ver="1">Печать завершена</t>
+<t id="L_UPLOAD_FINISHED" ver="1">Отправка завершена</t>
+<t id="L_SD_PRINTING..." ver="1">Печать с SD-карты ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">Отправка неудалась</t>
+<t id="L_FILE_DELETED" ver="1">Файл удален</t>
+<t id="L_DELETE_FAILED" ver="1">Удалить ошибку</t>
+<t id="L_UPLOADING_FILE..." ver="1">Отправка файла...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">Ваша прошивка не поддерживает удаление файла.</t>
+<t id="L_PRINT_ABORTED" ver="1">Печать отменена</t>
+<t id="L_PRINT_PAUSED" ver="1">Пауза</t>
+<t id="L_REMOVE_SD_CARD" ver="1">Можете вынуть SD-карту</t>
+<t id="L_INFORMATION" ver="1">Информация</t>
+<t id="L_REALLY_DELETE_X" ver="1">Удалить $1</t>
+<t id="SOUND_CONFIGURATION" ver="1">Настройки звука</t>
+<t id="L_SOUNDS" ver="1">Звуки</t>
+<t id="L_ERROR_SOUND" ver="1">Ошибка</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">Печать завершена</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">Пауза</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">Звук для @sound Command</t>
+<t id="L_FILE:X" ver="1">Файл:$1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">Выберите файл WAV</t>
+<t id="W_SLIC3R_SETUP" ver="1">Slic3r настройка</t>
+<t id="L_SLIC3R_SETUP" ver="1">Slic3r настройка</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="1">Оставить пустым для пакетной версии</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Папка конфигурации Slic3r</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Рабочая папка Slic3r</t>
+<t id="L_SLIC3R_INFO" ver="1">С этими настройками вы можете использовать разные версии Slic3r. Версии можно скачать по адресу: http://www.slic3r.org</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">Оставить пустым</t>
+<t id="W_EEPROM_MARLIN" ver="1">Настройки Marlin EEPROM</t>
+<t id="L_M_ACCELERATION" ver="1">Ускорение:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">Расширенные переменные:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">Смещение:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">Максимальное ускорение [mm/s²]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">Максимальная скорость [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">Максимальный толчок X-Y [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">Максимальный толчок Z [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">Минимальная скорость [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">Минимальный сегмент времени [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">Минимальная скор.пути [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">Настройки ПИД:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">Шагов на мм:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">Ускорение ретрака:</t>
+<t id="B_M_LOAD" ver="1">Конфигурация перезагрузки</t>
+<t id="B_M_RESTORE" ver="1">Восстановить настройки</t>
+<t id="B_M_SAVE" ver="1">Сохранить EEPROM</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">Настройки сохранены в тек. конфигурации.
+Записать изменения в EEPROM?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">Настройки сохранены</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">Сохранить изменения в EEPROM?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">Настройки восстановлены</t>
+<t id="L_SLICING_STL_FILE..." ver="1">Слайсинг STL файла...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">Предидущий слайсинг еще не завершен. Новый слайсинг отменен.</t>
+<t id="L_SKEIN_KILLED" ver="1">$1 процесс слайсинга отменен по зпросу пользователя.</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Настройки Skeinforge/SFACT</t>
+<t id="L_SKEIN_APPLICARTION" ver="1">Приложение Skeinforge:</t>
+<t id="L_SKEIN_CRAFT" ver="1">Возможности Skeinforge:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">Выберите подпапку для профиля в конфиг.папке skeinforge.
+Обычно это: HOME/.skeinforge/profiles. Для некоторых версий (например SFACT) путь может быть другим.</t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">Папка профиля:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">If you have pypy installed, Skeinforge slices will run 3-4 times faster. If you don't have pypy installed, leave it blank and the python interpreter will be used instead. You can get the lastest pypy at http://www.pypy.org/</t>
+<t id="L_SKEIN_PYTHON" ver="1">Python Interpreter:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">The working directory determines, where SFACT will store profiles!</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">Working Directory:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge Application</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Python Interpreter</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge Craft Application</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python Interpreter</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">Select profiles Directory</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">Select Working Directory</t>
+<t id="L_FEEDRATE:" ver="1">Интенсивность:</t>
+<t id="L_FLOWRATE:" ver="1">Скорость подачи:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">Нет связи с сервером обновлений!</t>
+<t id="L_MOVE_CAMERA" ver="1">Перемещение камеры</t>
+<t id="L_MOVE_OBJECT" ver="1">Перемещение объекта</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">Перемещение вьюпорта</t>
+<t id="L_RESET_VIEW" ver="1">Сброс</t>
+<t id="L_ROTATE" ver="1">Вращение</t>
+<t id="L_TOP_VIEW" ver="1">Вид сверху</t>
+<t id="T_ZOOM_VIEW" ver="1">Масштаб</t>
+<t id="T_CLEAR_OBJECTS" ver="1">Очистить</t>
+<t id="L_DEBUG_OPTIONS" ver="2">Опции отладки</t>
+<t id="L_X_MIN:" ver="3">X Min</t>
+<t id="L_X_MAX:" ver="3">X Max</t>
+<t id="L_Y_MIN:" ver="3">Y Min</t>
+<t id="L_Y_MAX:" ver="3">Y Max</t>
+<t id="L_BED_LEFT:" ver="3">Слева:</t>
+<t id="L_BED_FRONT:" ver="3">Спереди:</t>
+<t id="L_SHAPE_INFO" ver="3">Значения Max и Min определяют диапазон координат экструдера.
+Эти координаты могут быть отрицательными и находится за пределами панели.
+Слева/Спереди определяют координаты начала печати.</t>
+<t id="L_SELECTION_BOX" ver="3">Куб выделения:</t>
+<t id="L_FILAMENT_NONE" ver="3">Нет/тот же что и экструдер 1</t>
+<t id="L_REALLY_QUIT" ver="3">Печать не завершена. Все равно выйти?</t>
+<t id="M_DONATE" ver="3">Donate or Support</t>
+<t id="L_FAN" ver="4">Вентилятор</t>
+<t id="L_HOME_X:" ver="4">Начало X:</t>
+<t id="L_HOME_Y:" ver="4">Начало Y:</t>
+<t id="L_HOME_Z:" ver="4">Начало Z:</t>
+<t id="L_MIN" ver="4">Min</t>
+<t id="L_MAX" ver="4">Max</t>
+<t id="L_PAUSED_FIRMWARE" ver="4">Ваш принтер запросил паузу.</t>
+<t id="L_CREATE_FOLDER" ver="4">Новая папка</t>
+<t id="L_CREATE_FOLDER_INFO" ver="4">Введите имя папки:</t>
+<t id="L_UPLOADING_TIME" ver="4">Время отправки: $1</t>
+<t id="L_FILAMENT_POS" ver="4">Нап.: $1</t>
+<t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">Визуализация пути отключена</t>
+<t id="M_HIDE_TRAVEL" ver="4">Показать путь</t>
+<t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">Визуализация пути включена</t>
+<t id="M_SHOW_TRAVEL" ver="4">Спрятать путь</t>
+<t id="L_TRAVEL_MOVES:" ver="4">Шаги пути:</t>
+<t id="L_DISABLE_TRAVEL_MOVES_VIS">Откл. визуализацию шагов пути</t>
+</translation>
+

@@ -1,0 +1,26 @@
+Installation
+
+1) Binary installation
+
+The prefered way is to install one of the binary installation packages.
+You find the latest downloads here: http://www.repetier.com/download/
+
+2) Compile from source
+
+You need a .NET ide with c# compiler. The software is developed using 
+Visual Studio 2008. Any later version will work as well. Also an installation
+of the latest OpenTK version (http://www.opentk.com) is needed.
+
+Step 1: Open RepetierHost.sln in src/RepetierHost
+
+Step 2: Build binary
+
+Step 3: Now you have a binary in bin/Debug or bin/Release. The binary expects
+  some files in the directory from where it runs. You need to copy them into
+  this directory. Most important is the data directory found in src. You can
+  also copy the Slic3r binary there if wanted. The main Folder must be named 
+  Slic3r with no version numbers etc. You should also copy the OpenTK binary
+  and configuration files in that directory.
+
+  
+Now you can start the application be starting it in debug mode (F5). 

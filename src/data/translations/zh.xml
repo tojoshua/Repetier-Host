@@ -1,0 +1,610 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<translation revision="9" languageInEnglish="Chinese" author="PanXinLong" language="简体中文">
+    <t id="M_FILE" ver="1">文件</t>
+    <t id="M_CONFIG" ver="1">配置</t>
+    <t id="M_SLICER" ver="1">代码生成器</t>
+    <t id="M_TEMPERATURE" ver="1">温度</t>
+    <t id="M_PRINTER" ver="1">打印机</t>
+    <t id="M_HELP" ver="1">帮助</t>
+    <t id="M_LOAD_GCODE" ver="1">载入打印文件</t>
+    <t id="M_SHOW_WORKDIRECTORY" ver="1">打开工作目录</t>
+    <t id="M_LANGUAGE" ver="1">语言</t>
+    <t id="M_PRINTER_SETTINGS" ver="1">打印机设置</t>
+    <t id="M_EEPROM_SETTINGS" ver="1">固件配置（非易失存储）</t>
+    <t id="M_3D_VIEWER_CONFIGURATION" ver="1">3维视窗配置</t>
+    <t id="M_REPETIER_SETTINGS" ver="1">通用设置</t>
+    <t id="M_TESTCASE_SETTINGS" ver="1">测试代码生成器参数</t>
+    <t id="M_SOUND_CONFIGURATION" ver="1">提示音配置</t>
+    <t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">显示挤出头温度</t>
+    <t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">显示加热床温度</t>
+    <t id="M_SHOW_TARGET_TEMPERATURES" ver="1">显示目标温度</t>
+    <t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">显示平均温度</t>
+    <t id="M_SHOW_HEATER_POWER" ver="1">显示加热器功率</t>
+    <t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">温度窗口自动滚动</t>
+    <t id="M_TIMEPERIOD" ver="1">温度曲线记录时长</t>
+    <t id="M_TEMPERATURE_ZOOM" ver="1">温度视窗时间格缩放</t>
+    <t id="M_BUILD_AVERAGE_OVER" ver="1">打印时间估算 ...</t>
+    <t id="M_30_SECONDS" ver="1">30 秒</t>
+    <t id="M_1_MINUTE" ver="1">1 分钟</t>
+    <t id="M_2_MINUTES" ver="1">2 分钟</t>
+    <t id="M_5_MINUTES" ver="1">5 分钟</t>
+    <t id="M_10_MINUTES" ver="1">10 分钟</t>
+    <t id="M_15_MINUTES" ver="1">15 分钟</t>
+    <t id="M_30_MINUTES" ver="1">30 分钟</t>
+    <t id="M_60_MINUTES" ver="1">60 分钟</t>
+    <t id="M_CONTINUOUS_MONITORING" ver="1">持续温度监控</t>
+    <t id="M_DISABLE" ver="1">禁止温度监控</t>
+    <t id="M_EXTRUDER_1" ver="1">挤出头 1</t>
+    <t id="M_EXTRUDER_2" ver="1">挤出头 2</t>
+    <t id="M_HEATED_BED" ver="1">加热床</t>
+    <t id="M_PRINTER_INFORMATION" ver="1">打印机信息</t>
+    <t id="M_JOB_STATUS" ver="1">任务状态信息</t>
+    <t id="M_SD_CARD_MANAGER" ver="1">SD卡管理器</t>
+    <t id="L_SD_CARD_MANAGEMENT" ver="1">SD卡管理</t>
+    <t id="M_TEST_CASE_GENERATOR" ver="1">测试用例生成器</t>
+    <t id="M_SEND_SCRIPT_1" ver="1">发送脚本 1</t>
+    <t id="M_SEND_SCRIPT_2" ver="1">发送脚本 2</t>
+    <t id="M_SEND_SCRIPT_3" ver="1">发送脚本 3</t>
+    <t id="M_SEND_SCRIPT_4" ver="1">发送脚本 4</t>
+    <t id="M_SEND_SCRIPT_5" ver="1">发送脚本 5</t>
+    <t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Repetier-Host主页</t>
+    <t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Repetier-Host下载页</t>
+    <t id="M_MANUAL" ver="1">Repetier-Host使用手册</t>
+    <t id="M_SLIC3R_HOMEPAGE" ver="1">Slic3r 主页</t>
+    <t id="M_SKEINFORGE_HOMEPAGE" ver="1">Skeinforge 主页</t>
+    <t id="M_REPRAP_WEBSITE" ver="1">RepRap 主页</t>
+    <t id="M_REPRAP_FORUM" ver="1">RepRap 论坛</t>
+    <t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse 最新设计</t>
+    <t id="M_THINGIVERSE_POPULAR" ver="1">Thingiveres 最热设计</t>
+    <t id="M_ABOUT_REPETIER_HOST" ver="1">关于Repetier-Host</t>
+    <t id="M_CHECK_FOR_UPDATES" ver="1">检查更新</t>
+    <t id="L_DISCONNECT_PRINTER" ver="1">断开打印机连接</t>
+    <t id="L_CONNECT_PRINTER" ver="1">连接打印机</t>
+    <t id="M_DISCONNECT" ver="1">断开</t>
+    <t id="M_CONNECT" ver="1">连接</t>
+    <t id="M_QUIT" ver="1">退出</t>
+    <t id="TAB_3D_VIEW" ver="1">3D 窗口</t>
+    <t id="TAB_TEMPERATURE_CURVE" ver="1">温度曲线</t>
+    <t id="TAB_OBJECT_PLACEMENT" ver="1">物体放置</t>
+    <t id="TAB_SLICER" ver="1">代码生成器</t>
+    <t id="TAB_GCODE_EDITOR" ver="1">代码编辑</t>
+    <t id="TAB_MANUAL_CONTROL" ver="1">手动控制</t>
+    <t id="M_EMERGENCY_STOP" ver="1">紧急停机</t>
+    <t id="M_LOAD" ver="1">载入</t>
+    <t id="M_SAVE_JOB" ver="1">保存任务</t>
+    <t id="M_RUN_JOB" ver="1">运行任务</t>
+    <t id="M_PAUSE_JOB" ver="1">暂停任务</t>
+    <t id="M_KILL_JOB" ver="1">中止任务</t>
+    <t id="M_SD_CARD" ver="1">SD卡</t>
+    <t id="M_TOGGLE_LOG" ver="1">是否日志记录</t>
+    <t id="M_SHOW_FILAMENT" ver="1">显示 材料</t>
+    <t id="M_HIDE_FILAMENT" ver="1">隐藏 材料</t>
+    <t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">材料 可视化允许</t>
+    <t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">材料 可视化禁止</t>
+    <t id="L_LOAD_FILE" ver="1">加载文件</t>
+    <t id="L_IMPORT_G_CODE" ver="1">导入打印文件</t>
+    <t id="L_SAVE_G_CODE" ver="1">保存打印文件</t>
+    <t id="L_ERROR" ver="1">错误</t>
+    <t id="L_PAUSE_MSG" ver="1">按 OK 键继续.&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+你可以在G-代码中增加暂停命令&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+示例文本（@pause）</t>
+    <t id="L_DISCONNECTED" ver="1">连接已断开</t>
+    <t id="L_UPDATING..." ver="1">更新中 ...</t>
+    <t id="L_SLICE_WITH" ver="1">  开始生成代码$1</t>
+    <t id="L_EMERGENCY_STOP_MSG" ver="1">发送紧急停止后，请重启打印机来恢复打印机!</t>
+    <t id="L_TRANSLATION:" ver="1">平移</t>
+    <t id="L_SCALE:" ver="1">缩放</t>
+    <t id="L_ROTATE:" ver="1">旋转</t>
+    <t id="L_STL_OBJECTS" ver="1">STL 物体</t>
+    <t id="B_SAVE_AS_STL" ver="1">另存为STL</t>
+    <t id="B_REMOVE_STL_OBJECT" ver="1">移除物体</t>
+    <t id="B_ADD_STL_OBJECT" ver="1">增加物体</t>
+    <t id="B_AUTOPOSITION" ver="1">自动放置</t>
+    <t id="B_DROP_OBJECT" ver="1">放下物体</t>
+    <t id="B_COPY_OBJECTS" ver="1">复制物体</t>
+    <t id="B_CENTER_OBJECT" ver="1">物体对中</t>
+    <t id="L_LOCK_ASPECT_RATIO" ver="1">锁定各轴比例</t>
+    <t id="B_KILL_SLICING_PROCESS" ver="1">中止操作</t>
+    <t id="B_SETUP_SKEINFORGE" ver="1">路径设置</t>
+    <t id="B_SETUP_SLIC3R" ver="1">路径设置</t>
+    <t id="B_CONFIGURE_SKEINFORGE" ver="1">参数配置</t>
+    <t id="B_CONFIGURE_SLIC3R" ver="1">参数配置</t>
+    <t id="B_ACTIVE" ver="1">激活</t>
+    <t id="L_FILAMENT_SETTINGS" ver="1">打印材料设置:</t>
+    <t id="L_PRINTER_SETTINGS" ver="1">打印机设置:</t>
+    <t id="L_PRINT_SETTINGS" ver="1">打印设置:</t>
+    <t id="L_PROFILE" ver="1">预设配置:</t>
+    <t id="B_SEND" ver="1">发送</t>
+    <t id="B_SIMULATE_OK" ver="1">确定</t>
+    <t id="B_STOP_MOTOR" ver="1">停止电机</t>
+    <t id="B_PARK" ver="1">停机位</t>
+    <t id="B_RETRACT" ver="1">回退</t>
+    <t id="B_EXTRUDE" ver="1">挤出</t>
+    <t id="L_OUTPUT_PERCENT" ver="1">输出 $1%</t>
+    <t id="B_POWER" ver="1">电源</t>
+    <t id="B_HEAT_EXTRUDER" ver="1">加热挤出头</t>
+    <t id="B_HEAT_PRINTBED" ver="1">加热加热床</t>
+    <t id="B_FAN" ver="1">风扇</t>
+    <t id="B_DEBUG_ERRORS" ver="1">错误</t>
+    <t id="B_DEBUG_ECHO" ver="1">调试信息</t>
+    <t id="B_DRY_RUN" ver="1">试运行</t>
+    <t id="B_DEBUG_INFO" ver="1">信息</t>
+    <t id="L_EXTRUDER" ver="1">挤出头</t>
+    <t id="L_PRINTBED" ver="1">加热床</t>
+    <t id="L_SPEED_MULTIPLY" ver="1">速度倍率</t>
+    <t id="L_EXTRUDE_MM" ver="1">挤出 [mm]</t>
+    <t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">速度 [mm/min]</t>
+    <t id="L_RETRACT_MM" ver="1">回退 [mm]</t>
+    <t id="L_TEMP" ver="1">温度.</t>
+    <t id="L_CONNECTED" ver="1">已连接</t>
+    <t id="L_HEATING_BED" ver="1">加热热床中</t>
+    <t id="L_HEATING_EXTRUDER" ver="1">加热挤出头中</t>
+    <t id="L_PRINT_JOB_KILLED" ver="1">打印已终止</t>
+    <t id="L_PRINT_JOB_PAUSED" ver="1">打印已暂停</t>
+    <t id="L_PRINT_JOB_FINISHED" ver="1">打印已结束</t>
+    <t id="L_UPLOADING..." ver="1">数据传送中 ...</t>
+    <t id="L_PRINTING_JOB_ETA" ver="1">打印完成剩余时间 $1</t>
+    <t id="L_IDLE" ver="1">无任务</t>
+    <t id="L_X_COMMANDS_WAITING" ver="1">$1 条命令等待传送</t>
+    <t id="L_EXTRUDER:" ver="1">挤出头:</t>
+    <t id="L_BED:" ver="1">热床:</t>
+    <t id="L_OFF" ver="1">关</t>
+    <t id="L_NOT_A_NUMBER" ver="1">不是数字</t>
+    <t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">需要正值</t>
+    <t id="L_NOT_AN_INTEGER" ver="1">不是整数</t>
+    <t id="L_RESET_OUTPUT" ver="1">重置输出，经等待，得到 $1</t>
+    <t id="L_RECEIVING_ONLY_ERRORS" ver="1">仅收到错误信息，通讯停止！</t>
+    <t id="L_PRINTING..ETA" ver="1">打印中，剩余打印时长 $1</t>
+    <t id="L_LAYER_X/Y" ver="1"> 层：$1/$2</t>
+    <t id="L_ERROR_SENDING_DATA:" ver="1">发送数据错误:</t>
+    <t id="L_CONNECTION_ERROR" ver="1">连接错误</t>
+    <t id="L_SERIAL_COM_ERROR" ver="1">串口号错误:</t>
+    <t id="L_SHOW_IN_LOG" ver="1">显示记录:</t>
+    <t id="B_ACK" ver="1">记录应答</t>
+    <t id="B_AUTO_SCROLL" ver="1">自动滚动</t>
+    <t id="B_COMMANDS" ver="1">记录命令</t>
+    <t id="B_LOG_ERRORS" ver="1">记录错误</t>
+    <t id="B_LOG_INFO" ver="1">记录信息</t>
+    <t id="B_LOG_WARNINGS" ver="1">记录警告</t>
+    <t id="B_COPY" ver="1">复制</t>
+    <t id="B_CLEAR_LOG" ver="1">清除记录</t>
+    <t id="L_COPY" ver="1">复制</t>
+    <t id="L_CUT" ver="1">剪切</t>
+    <t id="L_NEW_TEXT" ver="1">新文本</t>
+    <t id="L_SAVE" ver="1">保存</t>
+    <t id="L_PASTE" ver="1">粘贴</t>
+    <t id="L_UNDO" ver="1">撤销</t>
+    <t id="L_REDO" ver="1">重做</t>
+    <t id="L_AUTO_UPDATE_PREVIEW" ver="1">自动更新预览</t>
+    <t id="L_START_CODE" ver="1">起始代码</t>
+    <t id="L_END_CODE" ver="1">结束代码</t>
+    <t id="L_RUN_ON_KILL" ver="1">运行终止</t>
+    <t id="L_RUN_ON_PAUSE" ver="1">运行暂停</t>
+    <t id="L_SCRIPT_X" ver="1">脚本 $1</t>
+    <t id="L_LAYER_X" ver="1">层 $1</t>
+    <t id="L_EXTRUDER_X" ver="1">挤出头 $1</t>
+    <t id="L_EDITOR_C" ver="1">编辑器C$1</t>
+    <t id="L_EDITOR_R" ver="1">编辑器R$1</t>
+    <t id="L_OVERWRITE" ver="1">覆盖写</t>
+    <t id="L_INSERT" ver="1">插入</t>
+    <t id="L_SYNTAX" ver="1">语法</t>
+    <t id="TAB_HELP" ver="1">帮助</t>
+    <t id="TAB_VISUALIZATION" ver="1">可视化</t>
+    <t id="L_SHOW_COMPLETE_CODE" ver="1">显示全部代码</t>
+    <t id="L_SHOW_LAYER_RANGE" ver="1">显示指定的层</t>
+    <t id="L_SHOW_SINGLE_LAYER" ver="1">显示单层</t>
+    <t id="L_FIRST_LAYER" ver="1">开始层:</t>
+    <t id="L_LAST_LAYER" ver="1">结束层:</t>
+    <t id="L_REALLY_DELETE_PRINTER" ver="1">你真的希望删除 $1 的所有设置吗?</t>
+    <t id="L_SECURITY_QUESTION" ver="1">安全问题</t>
+    <t id="L_ADD_PRINTING_TIME" ver="1">增加补偿到打印时间</t>
+    <t id="L_BAUD_RATE" ver="1">通讯波特率:</t>
+    <t id="L_CACHE_SIZE_HINT" ver="1">从Arduino1开始，接受缓存长度由127减少为63比特！</t>
+    <t id="L_CHECK_EVERY_X" ver="1">每隔 $1 秒检查.</t>
+    <t id="L_CONNECTION_INFO" ver="1">打印机的设置参数对应于上面可选择的打印机. 已经列出的打印机可以直接选择. 如果打印机类型未列出,&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+可以直接输入新名称生成新的打印机配置. 新打印机的初始参数与最后选择的当前打印机相同.</t>
+    <t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">缺省挤出头温度:</t>
+    <t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">缺省加热床温度:</t>
+    <t id="L_DUMP_AREA_DEPTH" ver="1">不可打印区域（里边）:</t>
+    <t id="L_DUMP_AREA_FRONT" ver="1">非安全区域（前边）:</t>
+    <t id="L_DUMP_AREA_LEFT" ver="1">非安全区域（左边）::</t>
+    <t id="L_DUMP_AREA_WIDTH" ver="1">非安全区域（右边）:</t>
+    <t id="L_FILTER_INFO" ver="1">你可以在代码生成后运行筛选器，使它作用于G-Code。 在命令行参数中使用 #in 和 #out 来插入输入和输出文件名.</t>
+    <t id="L_FILTER_PATH_PARAM" ver="1">筛选处理器路径和命令行参数:</t>
+    <t id="L_PARITY" ver="1">通讯校验:</t>
+    <t id="L_PARK_POSITION" ver="1">停机位:</t>
+    <t id="L_PORT" ver="1">通讯端口:</t>
+    <t id="L_PRINT_AREA_DEPTH" ver="1">打印区域长度:</t>
+    <t id="L_PRINT_AREA_HEIGHT" ver="1">打印区域高度:</t>
+    <t id="L_PRINT_AREA_WIDTH" ver="1">打印区域宽度:</t>
+    <t id="L_PRINTER" ver="1">打印机:</t>
+    <t id="L_RECEIVE_CACHE_SIZE" ver="1">接收缓存大小:</t>
+    <t id="L_STOPBITS" ver="1">停止位:</t>
+    <t id="L_TRANSFER_PROTOCOL" ver="1">传输协议:</t>
+    <t id="L_TRAVEL_FEED_RATE" ver="1">挤出头平动速度:</t>
+    <t id="L_ZFEED_RATE" ver="1">Z-方向运动速度:</t>
+    <t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">任务中断结束后关闭挤出头</t>
+    <t id="L_DISABLE_MOTORS" ver="1">任务中断结束后关闭马达</t>
+    <t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">任务中断结束后关闭加热床</t>
+    <t id="L_GO_PARK_POSITION" ver="1">任务中断结束后回到停机位</t>
+    <t id="L_HAS_DUMP_AREA" ver="1">存在不可打印区域</t>
+    <t id="L_HOME_X_MAX" ver="1">X起始位在最大值方向</t>
+    <t id="L_HOME_Y_MAX" ver="1">Y起始位在最大值方向</t>
+    <t id="L_HOME_Z_MAX" ver="1">Z起始位在最大值方向</t>
+    <t id="L_PING_PONG_MODE" ver="1">使用Ping-Pong 通讯 (只有收到应答信号OK后才发送)</t>
+    <t id="L_RUN_FILTER_EVERY_SLICE" ver="1">每次切片后运行过滤处理</t>
+    <t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">检测挤出头 &amp;&amp; 加热床温度</t>
+    <t id="L_REMOVE_M105_REQUEST_LOG" ver="1">从记录中移除 M105 温度请求指令</t>
+    <t id="B_CANCEL" ver="1">取消</t>
+    <t id="B_APPLY" ver="1">应用</t>
+    <t id="B_OK" ver="1">确定</t>
+    <t id="B_DELETE_PRINTER_SETTINGS" ver="1">删除当前打印机设置</t>
+    <t id="TAB_CONNECTION" ver="1">连接</t>
+    <t id="TAB_PRINTER" ver="1">打印机</t>
+    <t id="TAB_PRINTER_SHAPE" ver="1">打印机形状</t>
+    <t id="TAB_ADVANCED" ver="1">高级</t>
+    <t id="W_PRINTER_SETTINGS" ver="1">打印机设置</t>
+    <t id="L_POST_SLICE_FILTER" ver="1">代码生成器生成代码筛选处理</t>
+    <t id="L_Z_MIN" ver="1">Z-最小</t>
+    <t id="W_PRINT_PAUSED" ver="1">暂停打印</t>
+    <t id="L_PAUSE_HINT" ver="1">提示: 你可以手动控制移动挤出头以便清理多余材料或者更换材料，结束暂停时，打印机会重设打印头的位置，自动移动到暂停前的位置.</t>
+    <t id="B_CONTINUE_PRINTING" ver="1">继续打印</t>
+    <t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Repieter-Host更新检查</t>
+    <t id="B_DOWNLOAD" ver="1">下载</t>
+    <t id="B_REMIND_ME_LATER" ver="1">以后再提醒我</t>
+    <t id="B_SKIP_VERSION" ver="1">跳过当前版本</t>
+    <t id="L_AVAILABLE_VERSION" ver="1">可用版本:</t>
+    <t id="L_INSTALLED_VERSION" ver="1">已安装版本:</t>
+    <t id="L_INFORMATION_ON_UPDATE" ver="1">更新信息</t>
+    <t id="L_NO_NEW_UPDATES" ver="1">没有更新版本，当前软件已是最新.</t>
+    <t id="L_UPDATE_STATUS" ver="1">更新状态</t>
+    <t id="W_SLICING_INFO" ver="1">代码生成信息</t>
+    <t id="L_ACTION:" ver="1">动作:</t>
+    <t id="L_DURATION:" ver="1">持续时间:</t>
+    <t id="L_SLICER:" ver="1">代码生成软件:</t>
+    <t id="L_START_JOB_AFTER_SLICING" ver="1">生成代码后开始打印</t>
+    <t id="W_ABOUT_REPETIER_HOST" ver="1">关于软件</t>
+    <t id="L_LICENCE_AND_LIBRARIES" ver="1">授权和库</t>
+    <t id="L_REPETIER_INFO" ver="1">本软件仅为控制 PIBot 3D 打印机开发制作。建议配套使用PI专用的固件，以实现软件所有功能。其他固件不予保证！</t>
+    <t id="W_COPY_MARKED_OBJECTS" ver="1">复制标记的物体</t>
+    <t id="L_NUMBER_OF_COPIES:" ver="1">拷贝数量:</t>
+    <t id="L_AUTO_POSITION_AFTER_COPY" ver="1">增加模型后自动放置</t>
+    <t id="L_PRINTING_LAYER_X_OF_Y" ver="1">正在打印第 $1层，总共 $2层 </t>
+    <t id="L_BUILDING_PRINT_JOB..." ver="1">处理打印任务中...</t>
+    <t id="L_PRINTING..." ver="1">正在打印...</t>
+    <t id="L_JOB_KILLED" ver="1">任务已终止</t>
+    <t id="L_PRINTJOB_FINISHED_AT" ver="1">任务在 $1结束</t>
+    <t id="L_PRINTING_TIME:" ver="1">打印时间:$1</t>
+    <t id="L_LINES_SEND:X" ver="1">发送行:$1</t>
+    <t id="L_FINISHED_IN" ver="1">估计结束 $1</t>
+    <t id="L_TIME_H:" ver="1">$1小时:</t>
+    <t id="L_TIME_M:" ver="1">$1分:</t>
+    <t id="L_TIME_S" ver="1">$1秒</t>
+    <t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">固件设置（EEPROM）</t>
+    <t id="W_GCODE_NOT_FOUND" ver="1">未找到生成的机器代码</t>
+    <t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">要求文件名和路径</t>
+    <t id="L_GCODE_NOT_FOUND_INFO" ver="1">无法找到生成的机器代码.&#xd;&#xd;&#xd;
+可能原因:&#xd;&#xd;&#xd;
+- 代码生成器出错未生成代码. 请检查记录输出.&#xd;&#xd;&#xd;
+- 代码生成器使用了错误的输出文件名.</t>
+    <t id="B_CLOSE" ver="1">关闭</t>
+    <t id="W_REPETIER_SETTINGS" ver="1">Repetier设置</t>
+    <t id="L_BEHAVIOUR" ver="1">行为</t>
+    <t id="L_FILES_AND_DIRECTORIES" ver="1">文件和路径</t>
+    <t id="L_GUI" ver="1">GUI</t>
+    <t id="L_INFO_WORKDIR" ver="1">如果允许调式记录，工作路径中将保存记录文件和临时文件.  
+程序关闭后会生成文件名为Repetier.log 的记录文件. 再次启动程序会覆盖旧的记录文件! 
+记录文件中包含有所有和打印机的通讯内容.</t>
+    <t id="L_LOG_SESSION" ver="1">日志记录部分</t>
+    <t id="REDUCE_TOOLBAR_SIZE" ver="1">减小工具条尺寸</t>
+    <t id="L_DISABLE_QUALITY_REDUCTION" ver="1">禁止降低质量</t>
+    <t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">工作路径目录必须已存在!</t>
+    <t id="L_WORKDIR:" ver="1">工作路径:</t>
+    <t id="B_BROWSE" ver="1">浏览...</t>
+    <t id="L_SELECT_WORKING_DIRECTORY" ver="1">选择工作路径</t>
+    <t id="L_PAST_60_MINUTES" ver="1">已过 60 分钟</t>
+    <t id="W_3D_VISUALIZATION_SETTINGS" ver="1">3D 可视化设置</t>
+    <t id="L_COLORS" ver="1">颜色</t>
+    <t id="L_EDITOR" ver="1">编辑器</t>
+    <t id="L_VISUALIZATION" ver="1">可视化:</t>
+    <t id="L_AMBIENT_COLOR" ver="1">环境光颜色:</t>
+    <t id="L_BACKGROUND" ver="1">背景:</t>
+    <t id="L_DIFFUSE_COLOR" ver="1">扩散光颜色:</t>
+    <t id="L_DRAW_METHOD" ver="1">绘制方法:</t>
+    <t id="L_EDGES" ver="1">边缘:</t>
+    <t id="L_EXTRUDER_X:" ver="1">挤出头 $1:</t>
+    <t id="L_FACES" ver="1">面:</t>
+    <t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">挤出材料的形状由层高，高宽比，材料直径，或者是由宽高比和Gcode中的对应E值 &#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+决定（5D). 如果层厚改变，新版本skeinforge支撑的后一种方式（5D)更准确, , .</t>
+    <t id="L_FILAMENT_VISUALIZATION" ver="1">材料可视化:</t>
+    <t id="L_HOT_FILAMENT" ver="1">热材料:</t>
+    <t id="L_HOT_FILAMENT_LENGTH" ver="1">热材料长度:</t>
+    <t id="L_LIGHT_X" ver="1">光照 $1</t>
+    <t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">物体超出打印范围:</t>
+    <t id="L_PRINTER_BASE" ver="1">打印机基座:</t>
+    <t id="L_SELECTED_FACES" ver="1">选择面:</t>
+    <t id="L_SELECTED_FILAMENT" ver="1">选择材料:</t>
+    <t id="L_SPECULAR_COLOR" ver="1">反射颜色:</t>
+    <t id="L_WIDTH_OVER_THICKNESS" ver="1">宽高比:</t>
+    <t id="L_X_DIRECTION" ver="1">X 方向:</t>
+    <t id="L_Y_DIRECTION" ver="1">Y 方向:</t>
+    <t id="L_Z_DIRECTION" ver="1">Z 方向:</t>
+    <t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">材料不可见</t>
+    <t id="L_ENABLE_LIGHT" ver="1">允许光照</t>
+    <t id="L_SHOW_EDGES" ver="1">显示边缘</t>
+    <t id="L_SHOW_FACES" ver="1">显示面</t>
+    <t id="L_SHOW_PRINTBED" ver="1">显示加热床</t>
+    <t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">物体不能打印,中止</t>
+    <t id="TAB_GENERAL" ver="1">基本配置</t>
+    <t id="TAB_FILAMENT" ver="1">材料</t>
+    <t id="TAB_MODEL" ver="1">模型</t>
+    <t id="TAB_LIGHTS" ver="1">光照</t>
+    <t id="L_LAYER_HEIGHT" ver="1">层高:</t>
+    <t id="L_FILAMENT_DIAMETER" ver="1">材料直径：</t>
+    <t id="L_DRAW_METHOD_AUTODETECT" ver="1">自动检测最优</t>
+    <t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (最快)</t>
+    <t id="L_DRAW_METHOD_ARRAYS" ver="1">Arrays (中)</t>
+    <t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Immediate (慢)</t>
+    <t id="W_JOB_STATUS" ver="1">任务状态</t>
+    <t id="L_ETA:" ver="1">完成剩余时间:</t>
+    <t id="L_FINISH_TIME:" ver="1">结束时间:</t>
+    <t id="L_LINES_SEND:" ver="1">已发送行:</t>
+    <t id="L_START_TIME:" ver="1">开始时间:</t>
+    <t id="L_STATUS:" ver="1">状态:</t>
+    <t id="L_TOTAL_LINES:" ver="1">总行数:</t>
+    <t id="L_NO_JOB_DEFINED" ver="1">未定义任务</t>
+    <t id="L_RUNNING..." ver="1">运行中 ...</t>
+    <t id="L_FINISHED" ver="1">结束</t>
+    <t id="L_ABORTED" ver="1">中止</t>
+    <t id="W_PRINTER_INFO" ver="1">打印机信息</t>
+    <t id="L_CONNECTION_INFORMATION" ver="1">连接信息</t>
+    <t id="L_PRINTER_DATA" ver="1">打印机数据</t>
+    <t id="L_BYTES_SEND:" ver="1">发送字节:</t>
+    <t id="L_ERRORS_RECEIVED:" ver="1">接收到错误:</t>
+    <t id="L_FIRMWARE:" ver="1">固件:</t>
+    <t id="L_FIRMWARE_URL:" ver="1">固件连接:</t>
+    <t id="L_MACHINE_TYPE:" ver="1">机器类型:</t>
+    <t id="L_NUMBER_EXTRUDER:" ver="1">挤出头个数:</t>
+    <t id="L_PROTOCOL:" ver="1">协议:</t>
+    <t id="L_NOT_VALID_83_FILENAME" ver="1">不是有效的 8.3 文件名。</t>
+    <t id="W_SD_CARD_UPLOAD" ver="1">数据载入SD卡</t>
+    <t id="L_UPLOADED_FILENAME:" ver="1">载入文件名:</t>
+    <t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">包含任务结束命令</t>
+    <t id="L_INCLUDE_START_END_CODE" ver="1">包含 "开始" 和 "结束" 代码</t>
+    <t id="L_UPLOAD_EXTERNAL_FILE" ver="1">SD卡载入外部文件</t>
+    <t id="L_UPLOAD_CURRENG_GCODE" ver="1">SD卡载入当前生成代码</t>
+    <t id="L_FILE:" ver="1">文件:</t>
+    <t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">为直接打印保存代码</t>
+    <t id="L_SAVE_DIRECT_INFO" ver="1">该保存命令将生成用于 SD 卡打印的代码文件.其中所有的注释行都被去除，并且自动添加了起止代码。如果只是保存当前代码，请使用直接保存</t>
+    <t id="L_SAVE_AS_BINARY" ver="1">存为二进制格式 (Repetier-Firmware 专用)</t>
+    <t id="B_SAVE" ver="1">保存</t>
+    <t id="W_SD_CARD_MANAGER" ver="1">SD 卡管理器</t>
+    <t id="L_FILENAME" ver="1">文件名</t>
+    <t id="L_SIZE" ver="1">大小</t>
+    <t id="L_UPLOAD_FILE" ver="1">载入文件</t>
+    <t id="L_DELETE_FILE" ver="1">删除文件</t>
+    <t id="L_RUN_CONTINUE_UPLOAD" ver="1">运行选择文件/继续打印 </t>
+    <t id="L_STOP_UPLOAD" ver="1">暂停/停止 SD 卡打印任务</t>
+    <t id="L_MOUNT_SD_CARD" ver="1">安装 SD 卡</t>
+    <t id="L_UNMOUNT_SD_CARD" ver="1">卸载 SD 卡</t>
+    <t id="L_PRINT_FINISHED" ver="1">打印已结束</t>
+    <t id="L_UPLOAD_FINISHED" ver="1">SD卡数据存储完成</t>
+    <t id="L_SD_PRINTING..." ver="1">SD 卡任务打印中 ...</t>
+    <t id="L_UPLOAD_FAILED" ver="1">SD卡数据载入失败</t>
+    <t id="L_FILE_DELETED" ver="1">删除成功</t>
+    <t id="L_DELETE_FAILED" ver="1">删除失败</t>
+    <t id="L_UPLOADING_FILE..." ver="1">SD卡数据存入中 ...</t>
+    <t id="L_FIRMWARE_NO_DELETE" ver="1">您的固件不执行文件删除或有未知的指令。</t>
+    <t id="L_PRINT_ABORTED" ver="1">打印已中止</t>
+    <t id="L_PRINT_PAUSED" ver="1">打印已暂停</t>
+    <t id="L_REMOVE_SD_CARD" ver="1">你可以移除 SD 卡.</t>
+    <t id="L_INFORMATION" ver="1">信息</t>
+    <t id="L_REALLY_DELETE_X" ver="1">确定删除 $1</t>
+    <t id="SOUND_CONFIGURATION" ver="1">声音配置</t>
+    <t id="L_SOUNDS" ver="1">声音</t>
+    <t id="L_ERROR_SOUND" ver="1">错误提示音</t>
+    <t id="L_PRINT_FINISHED_SOUND" ver="1">打印结束提示音</t>
+    <t id="L_PRINT_PAUSED_SOUND" ver="1">打印暂停结束音</t>
+    <t id="L_SOUND_COMMAND_SOUND" ver="1">声音 @sound 命令提示音</t>
+    <t id="L_FILE:X" ver="1">文件:$1</t>
+    <t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">选择播放的wav文件</t>
+    <t id="W_SLIC3R_SETUP" ver="1">Slic3r 设置</t>
+    <t id="L_SLIC3R_SETUP" ver="1">Slic3r 设置</t>
+    <t id="L_SLIC3R_BLANK_BUNDLE" ver="1">不填写则使用预绑定版本或系统版本.</t>
+    <t id="L_SLIC3R_CONFIG_DIR" ver="1">Slic3r 配置目录</t>
+    <t id="L_SLIC3R_EXECUTABLE" ver="1">Slic3r 可执行文件</t>
+    <t id="L_SLIC3R_INFO" ver="1">是使用这些设置, 你可以使用不同版本的 Slic3r. 预绑定的版本是0.9.0. 不填写则使用预绑定版本.</t>
+    <t id="L_SLIC3R_BLANK_CONFIG" ver="1">留空则软件使用默认路径.</t>
+    <t id="W_EEPROM_MARLIN" ver="1">固件设置(非易失存储)</t>
+    <t id="L_M_ACCELERATION" ver="1">加速度:</t>
+    <t id="L_M_ADVANCED_VARIABLES" ver="1">高级参数:</t>
+    <t id="L_M_HOMING_OFFSET" ver="1">零点偏移:</t>
+    <t id="L_M_MAX_ACCELERATION" ver="1">最大加速 [mm/s²]:</t>
+    <t id="L_M_MAX_FEEDRATE" ver="1">最大速度 [mm/s]:</t>
+    <t id="L_M_MAX_XY_JERK" ver="1"> X-Y 最大换向速度 [mm/s]</t>
+    <t id="L_M_MAX_Z_JERK" ver="1">Z 最大换向速度 [mm/s]</t>
+    <t id="L_M_MIN_FEEDRATE" ver="1">最小移动速度</t>
+    <t id="L_M_MIN_SEGMENT_TIME" ver="1">最小段时间 [ms]</t>
+    <t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">最小行程速度（不进料移动） [mm/s]</t>
+    <t id="L_M_PID_SETTINGS" ver="1">PID 设置:</t>
+    <t id="L_M_STEPS_PER_MM" ver="1">每毫米/步数:</t>
+    <t id="L_M_RETRACT_ACCELERATION" ver="1">反转加速度:</t>
+    <t id="B_M_LOAD" ver="1">重载配置</t>
+    <t id="B_M_RESTORE" ver="1">恢复缺省设定</t>
+    <t id="B_M_SAVE" ver="1">保存到非易失存储器</t>
+    <t id="L_M_CONFIRM_WRITE" ver="1">保存设置内容写入到非易失存储器，请确认?</t>
+    <t id="L_M_SETTINGS_STORED" ver="1">设置已保存</t>
+    <t id="L_M_SAVE_RETIEVED" ver="1">保存已恢复的数据到非易失存储器，请确认?</t>
+    <t id="L_M_FACTORY_RETRIEVED" ver="1">读取出厂设置</t>
+    <t id="L_SLICING_STL_FILE..." ver="1">STL 文件切片处理 ...</t>
+    <t id="L_SKEIN_STILL_RUNNING" ver="1">上一次代码生成尚未结束. 当前任务已取消.</t>
+    <t id="L_SKEIN_KILLED" ver="1">用户取消 $1 生成代码.</t>
+    <t id="W_SKEIN_SETTINGS" ver="1">Skeinforge/SFACT 设置</t>
+    <t id="L_SKEIN_APPLICARTION" ver="1">Skeinforge 应用插件:</t>
+    <t id="L_SKEIN_CRAFT" ver="1">Skeinforge craft:</t>
+    <t id="L_SKEIN_PROFDIR_INFO" ver="1">选择skeinforge 配置文件目录和对应子目录. 通常在 HOME/.skeinforge/profiles中. 一些特定的版本如SFACT 路径不同.</t>
+    <t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">配置文件目录:</t>
+    <t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+    <t id="L_SKEIN_PYPY_INFO" ver="1">如果你安装了PYPY, Skeinforge 代码生成速度会快3-4倍. 如果未安装 pypy , 这里请留空白使用缺省的python解释器</t>
+    <t id="L_SKEIN_PYTHON" ver="1">Python 解释器:</t>
+    <t id="L_SKEIN_WORKDIR_INFO" ver="1">该工作路径, 设置 SFACT 的配置文件目录!</t>
+    <t id="L_SKEIN_WORKING_DIRECTORY" ver="1">工作路径:</t>
+    <t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge 应用</t>
+    <t id="L_SKEIN_OPEN_PYTHON" ver="1">Python 解释器</t>
+    <t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge Craft 应用</t>
+    <t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python 解释器</t>
+    <t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">选择配置文件路径</t>
+    <t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">选择工作目录</t>
+    <t id="L_FEEDRATE:" ver="1">打印头移动速度倍率:</t>
+    <t id="L_FLOWRATE:" ver="1">挤出头挤出速度倍率:</t>
+    <t id="L_UPDATE_NO_CONNECTION" ver="1">无法连接到软件更新服务器!</t>
+    <t id="L_MOVE_CAMERA" ver="1">移动相机</t>
+    <t id="L_MOVE_OBJECT" ver="1">移动物体</t>
+    <t id="L_MOVE_VIEWPOINT" ver="1">平移</t>
+    <t id="L_RESET_VIEW" ver="1">重置窗口</t>
+    <t id="L_ROTATE" ver="1">旋转</t>
+    <t id="L_TOP_VIEW" ver="1">俯视图</t>
+    <t id="T_ZOOM_VIEW" ver="1">缩放</t>
+    <t id="T_CLEAR_OBJECTS" ver="1">清除</t>
+    <t id="L_DEBUG_OPTIONS" ver="2">调式选项</t>
+    <t id="L_X_MIN:" ver="3">X 最小</t>
+    <t id="L_X_MAX:" ver="3">X 最大</t>
+    <t id="L_Y_MIN:" ver="3">Y 最小</t>
+    <t id="L_Y_MAX:" ver="3">Y 最大</t>
+    <t id="L_BED_LEFT:" ver="3">加热床左:</t>
+    <t id="L_BED_FRONT:" ver="3">加热床前:</t>
+    <t id="L_SHAPE_INFO" ver="3">这些最小最大值定义了挤出头可以移动的范围. 坐标如果为负值表明挤出头超出了加热床的范围. 加热床的左/前坐标定义了打印开始时的加热床位置. 通过更改这里的最大/最小值如果固件支持可以移动挤出头到固件定义范围之外.</t>
+    <t id="L_SELECTION_BOX" ver="3">选择框:</t>
+    <t id="L_FILAMENT_NONE" ver="3">与挤出头1相同/不同</t>
+    <t id="L_REALLY_QUIT" ver="3">打印还在进行中. 确定要退出?</t>
+    <t id="M_DONATE" ver="3">捐赠或支持</t>
+    <t id="L_FAN" ver="4">风扇</t>
+    <t id="L_HOME_X:" ver="4">起始位 X:</t>
+    <t id="L_HOME_Y:" ver="4">初始位 Y:</t>
+    <t id="L_HOME_Z:" ver="4">初始位 Z:</t>
+    <t id="L_MIN" ver="4">最小</t>
+    <t id="L_MAX" ver="4">最大</t>
+    <t id="L_PAUSED_FIRMWARE" ver="4">打印机需要暂停</t>
+    <t id="L_CREATE_FOLDER" ver="4">创建新文件夹</t>
+    <t id="L_CREATE_FOLDER_INFO" ver="4">按照8.3格式输入新文件夹名:</t>
+    <t id="L_UPLOADING_TIME" ver="4">SD卡数据载入耗时: $1</t>
+    <t id="L_FILAMENT_POS" ver="4">材料: $1</t>
+    <t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">禁止轨迹可视化</t>
+    <t id="M_HIDE_TRAVEL" ver="4">隐藏轨迹</t>
+    <t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">允许轨迹可视化</t>
+    <t id="M_SHOW_TRAVEL" ver="4">显示轨迹</t>
+    <t id="L_TRAVEL_MOVES:" ver="4">移动轨迹:</t>
+    <t id="L_DISABLE_TRAVEL_MOVES_VIS" ver="4">禁止移动轨迹可视化</t>
+    <t id="L_NUMBER_OF_EXTRUDER:" ver="5">挤出头数目:</t>
+    <t id="L_NEW_FOLDER" ver="5">新建文件夹</t>
+    <t id="L_USE_PARALLEL_PROJECTION" ver="5">使用平行投影</t>
+    <t id="L_USE_RED_GREEN_SWITCH" ver="5">使用 红/绿 开关按钮 (需要重启软件)</t>
+    <t id="L_SLIC3R_NOT_FOUND" ver="6">没有找到 Slic3r。</t>
+    <t id="L_ANALYSING_STL" ver="6">分析STL文件中...</t>
+    <t id="L_SLICING_STL" ver="6">STL文件切片中...</t>
+    <t id="L_PYPY_NOT_FOUND" ver="6">Pypy 或者 Python 编译器没有找到。</t>
+    <t id="L_SKEINCRAFT_NOT_FOUND" ver="6">没有找到 Skeinforge craft。</t>
+    <t id="L_PYTHON_NOT_FOUND" ver="6">没有找到 Python 编译器。 </t>
+    <t id="L_SKEINFORGE_NOT_FOUND" ver="6">没有找到 Skeinforge。 </t>
+    <t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">没有找到 Skeinforge/SFACT 有效路径。 </t>
+    <t id="B_REFRESH_PORTS" ver="6">更新端口</t>
+    <t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">可打印高度</t>
+    <t id="L_ROS_PRINTABLE_RADIUS:" ver="6">可打印弧度</t>
+    <t id="L_CARTESIAN_PRINTER" ver="6">经典打印机</t>
+    <t id="L_CARTESIAN_PRINTER_DUMP" ver="6">具有不可打印区的经典打印机</t>
+    <t id="L_ROSTOCK_CIRCLE" ver="6">Rostock 打印机（圆形打印）</t>
+    <t id="L_CORRECT_NORMALS" ver="7">使用修正的法线（更好看，但需要更多的内存）</t>
+    <t id="L_WARNING" ver="8">警告</t>
+    <t id="L_HEATERS_ON_QUEST" ver="8">仍有打印头正在加热中，是否关闭他们？</t>
+    <t id="L_OBJECTS_OUTSIDE_SLICE_QUEST" ver="8">至少有一个物体在可打印区域之外。中止切片？</t>
+    <t id="L_CNC_ROUTER" ver="8">CNC雕刻机</t>
+    <t id="L_SLIC3R_VERSION" ver="8">Slic3r 版本号</t>
+    <t id="L_MODEL_ERRORS" ver="9">模型错误：</t>
+    <t id="L_REPAIR" ver="9">修复</t>
+    <t id="L_SPLIT" ver="9">切割</t>
+    <t id="L_YES" ver="9">是</t>
+    <t id="L_NO" ver="9">否</t>
+    <t id="L_MODEL_CHANGED_RELOAD" ver="9">加载的物体中有些已经改变。\r\n 是否重新加载物体？</t>
+    <t id="L_FILES_CHANGED" ver="9">文件已经改变</t>
+    <t id="L_INNER_FACES" ver="9">内表面：</t>
+    <t ver="9" id="L_BACKGROUND_TOP">背景上部：</t>
+    <t id="L_BACKGROUND_BOTTOM" ver="9">背景下部：</t>
+    <t id="L_PRINTER_FRAME" ver="9">打印机框架：</t>
+    <t id="L_ISOMETRIC_VIEW" ver="9">等比列视图</t>
+    <t id="L_BOTTOM_VIEW" ver="9">仰视</t>
+    <t id="L_LEFT_VIEW" ver="9">左侧视</t>
+    <t id="L_RIGHT_VIEW" ver="9">右侧视</t>
+    <t id="L_FRONT_VIEW" ver="9">正视图</t>
+    <t id="L_BACK_VIEW" ver="9">后视图</t>
+    <t id="M_VIEW" ver="9">视图</t>
+    <t id="M_SHOW_EDGES" ver="9">显示棱角</t>
+    <t id="M_SHOW_FACES" ver="9">显示面</t>
+    <t id="L_ANA_MODIFIED" ver="9">已修缮：</t>
+    <t id="L_ANA_MANIFOLD" ver="9">流形（可由平面弯折形成）：</t>
+    <t id="L_ANA_INTERSECTING_TRIANGLES" ver="9">相交三角形：</t>
+    <t id="L_ANA_NORMALS" ver="9"> 法向：</t>
+    <t id="L_ANA_LOOP_EDGES" ver="9">河套边：</t>
+    <t id="L_ANA_HIGHLY_CONNECTED" ver="9">紧密相连的边：</t>
+    <t id="L_ANA_VERTICES" ver="9">点：</t>
+    <t id="L_ANA_EDGES" ver="9">边缘：</t>
+    <t id="L_ANA_FACES" ver="9">面：</t>
+    <t id="L_ANA_SHELLS" ver="9">壳：</t>
+    <t id="L_ANA_ORIENTED" ver="9">定向的</t>
+    <t id="L_ANA_NOT_ORIENTED" ver="9">非定向的</t>
+    <t id="M_TOOLS" ver="9">工具</t>
+    <t id="M_BELT_CALCULATOR" ver="9">同步皮带传送计算器</t>
+    <t id="M_LEADSCREW_CALCULATOR" ver="9">丝杆传动参数计算器</t>
+    <t id="L_MOTOR_STEP_ANGLE" ver="9">步进电机步进角</t>
+    <t id="L_DRIVER_MICROSTEPPING" ver="9">驱动细分数</t>
+    <t id="L_BELT_PITCH" ver="9">同步带节距</t>
+    <t id="L_TOOTH_COUNT" ver="9">齿数</t>
+    <t id="B_CALCULATE" ver="9">计算</t>
+    <t id="L_STEPS_PER_MM" ver="9">步数/mm</t>
+    <t id="L_TOOTH_COUNT_MUST_INT" ver="9">齿数必须为整数</t>
+    <t id="L_LEADSCREW_PITCH" ver="9">丝杆牙距</t>
+    <t id="L_GEAR_RATIO" ver="9">齿轮齿数比</t>
+    <t id="L_SERIAL_CONNECTION" ver="9">串口连接</t>
+    <t id="L_VIRTUAL_CONNECTION" ver="9">虚拟打印机</t>
+    <t id="L_REPETIER_SERVER_CONNECTION" ver="9">连接服务</t>
+    <t id="L_CONNECTOR" ver="9">连接器</t>
+    <t id="L_DISABLED" ver="9">关闭</t>
+    <t id="L_DTR_LOW_HIGH" ver="9">数据传输 高->低</t>
+    <t id="L_DTR_LOW_HIGH_LOW" ver="9">数据传输 低->高->低</t>
+    <t id="L_DTR_TOGGLE" ver="9">数据传输开关</t>
+    <t id="L_RESET_ON_CONNECT" ver="9">连接时复位</t>
+    <t id="L_RESET_ON_EMERGENCY" ver="9">遇到紧急时复位</t>
+    <t id="L_SEND_EMERGENCY_CMD" ver="9">发送紧急命令</t>
+    <t id="L_SEND_EMERGENCY_CMD_DTR_TOGGLE" ver="9">发送紧急命令+ DTR 高->低</t>
+    <t id="L_SEND_EMERGENCY_CMD_RECONNECT" ver="9">发送紧急命令并重新连接</t>
+    <t id="L_FILE_ASSOCIATIONS" ver="9">文件关联</t>
+    <t id="L_ASSOCIATE_EXTENSIONS" ver="9">关联</t>
+    <t id="L_CONNECTION_FAILED" ver="9">连接失败由于以下错误：$1 。请确保您的打印机已连接，并且正确的启用和设置了端口。打开打印机设置？</t>
+    <t id="L_AUTOENABLE_PARALLEL_TOPVIEW" ver="9">在俯视图中启用并行模式</t>
+    <t id="L_RESET_DEFAULTS" ver="9">重置默认值</t>
+    <t id="L_REMOVED_DEGENERATED" ver="9">删除退化的三角形：</t>
+    <t id="L_REMOVED_ISOLATED" ver="9">删除孤立的三角形：</t>
+    <t id="L_REMOVED_DOUBLE" ver="9">删除重复的三角形</t>
+    <t id="L_STARTING_ANALYSER" ver="9">启动对象分析仪...</t>
+    <t id="L_ANALYSER_FINISHED" ver="9">分析完成。</t>
+    <t id="L_LOADING_3D_FAILED" ver="9">3维位文件 $1 加载失败。</t>
+    <t id="L_OBJECT_INFORMATIONS" ver="9">模型信息</t>
+    <t id="L_MINIMUM:" ver="9">最小值：</t>
+    <t id="L_MAXIMUM:" ver="9">最大值：</t>
+    <t id="L_SIZE:" ver="9">尺寸：</t>
+    <t id="L_VOLUME:" ver="9">体积：</t>
+    <t id="L_SURFACE:" ver="9">表面积：</t>
+    <t id="L_DIMENSIONS:" ver="9">大小：</t>
+    <t id="L_SPLIT_OBJECT" ver="9">切割物体</t>
+    <t id="L_FIX_NORMALS" ver="9">法线修复</t>
+    <t id="L_REPAIR" ver="9">修复</t>
+    <t id="M_FIT_PRINTER" ver="9">适合打印体积</t>
+    <t id="M_FIT_OBJECTS" ver="9">适合对象</t>
+    <t id="IMPORTING_1" ver="9">导入 $1</t>
+    <t id="L_LOADING..." ver="9">加载中...</t>
+    <t id="L_INTERSECTION_TESTS" ver="9">相交测试</t>
+    <t id="L_FIXING_NORMALS" ver="9">固定法线</t>
+    <t id="L_ANA_FIXED_COLLINEAR_TRIANGLES" ver="9">固定共线三角</t>
+    <t id="L_ANA_CORRECTED_NORMAL_ORIENTATIONS" ver="9">更正标准方向：</t>
+    <t id="L_OBJECT_IS_MANIFOLD" ver="9">物体是流形（可由平面弯折形成）。</t>
+    <t id="L_OBJECT_IS_NON_MANIFOLD" ver="9">对象非流形（可由平面弯折形成）。切片可能会产生错误的结果。请首先修复对象文件。</t>
+</translation>

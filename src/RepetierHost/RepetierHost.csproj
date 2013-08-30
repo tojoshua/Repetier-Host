@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B118044A-6AC1-407D-8CE9-A624810BEE0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RepetierHost</RootNamespace>
+    <AssemblyName>RepetierHost</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>4D8B5380D7CB00A0A95794AAA4F075AF1C54B30F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>RepetierHost_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>repetier-logo-trans32.ico</ApplicationIcon>
+    <StartupObject>RepetierHost.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>Repetier-Host</ProductName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MacOSX|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\MacOSX</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Commandlineparameters>-macosx</Commandlineparameters>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
+    <Reference Include="OpenTK.Compatibility, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="OpenTK.Compatibility">
+      <HintPath>bin\MacOSX\OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>bin\MacOSX\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connector\PrinterConnectorBase.cs" />
+    <Compile Include="connector\SerialConnectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="connector\SerialConnectionPanel.Designer.cs">
+      <DependentUpon>SerialConnectionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connector\SerialConnector.cs" />
+    <Compile Include="connector\VirtualPrinterConnector.cs" />
+    <Compile Include="connector\VirtualPrinterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="connector\VirtualPrinterPanel.Designer.cs">
+      <DependentUpon>VirtualPrinterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extensions\ExtensionManager.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\BasicConfiguration.cs" />
+    <Compile Include="model\BeltCalculator.cs" />
+    <Compile Include="model\Commands.cs" />
+    <Compile Include="model\Coordinate.cs" />
+    <Compile Include="model\Custom.cs" />
+    <Compile Include="model\EEPROMMarlinParameter.cs" />
+    <Compile Include="model\EEPROMParameter.cs" />
+    <Compile Include="model\GCode.cs" />
+    <Compile Include="model\GCodeAnalyzer.cs" />
+    <Compile Include="model\GCodeExecutor.cs" />
+    <Compile Include="model\GCodeGenerator.cs" />
+    <Compile Include="model\GCodeShort.cs" />
+    <Compile Include="model\GCodeVisual.cs" />
+    <Compile Include="model\Geom3D.cs" />
+    <Compile Include="model\geom\RHBoundingBox.cs" />
+    <Compile Include="model\geom\RHMatrix3.cs" />
+    <Compile Include="model\geom\RHVector3.cs" />
+    <Compile Include="model\geom\Submesh.cs" />
+    <Compile Include="model\geom\TestTopoTriangle.cs" />
+    <Compile Include="model\geom\TopoEdge.cs" />
+    <Compile Include="model\geom\TopoModel.cs" />
+    <Compile Include="model\geom\TopoPlane.cs" />
+    <Compile Include="model\geom\TopoTriangle.cs" />
+    <Compile Include="model\geom\TopoTriangleStorage.cs" />
+    <Compile Include="model\geom\TopoVertex.cs" />
+    <Compile Include="model\geom\TopoVertexStorage.cs" />
+    <Compile Include="model\IniManager.cs" />
+    <Compile Include="model\LogLine.cs" />
+    <Compile Include="model\ModelAnimation.cs" />
+    <Compile Include="model\PendingPrintJobs.cs" />
+    <Compile Include="model\PrinterConnection.cs" />
+    <Compile Include="model\PrinterModel.cs" />
+    <Compile Include="model\PrintingStateSnapshot.cs" />
+    <Compile Include="model\Printjob.cs" />
+    <Compile Include="model\ProtectedSerialPort.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\PulseAnimation.cs" />
+    <Compile Include="model\RectPacker.cs" />
+    <Compile Include="model\SkeinConfig.cs" />
+    <Compile Include="model\PrintModel.cs" />
+    <Compile Include="model\TemperatureHistory.cs" />
+    <Compile Include="model\ThreeDModel.cs" />
+    <Compile Include="model\ThreeDView.cs" />
+    <Compile Include="model\Translation.cs" />
+    <Compile Include="model\VirtualPrinter.cs" />
+    <Compile Include="view\PendingPrintJobsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PendingPrintJobsDialog.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="connector\SerialConnectionPanel.resx">
+      <DependentUpon>SerialConnectionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="connector\VirtualPrinterPanel.resx">
+      <DependentUpon>VirtualPrinterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PendingPrintJobsDialog.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\BeltCalculatorDialog.resx">
+      <DependentUpon>BeltCalculatorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\CopyObjectsDialog.resx">
+      <DependentUpon>CopyObjectsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EEPROMMarlin.resx">
+      <DependentUpon>EEPROMMarlin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\EEPROMRepetier.resx">
+      <DependentUpon>EEPROMRepetier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormPrinterSettings.resx">
+      <DependentUpon>FormPrinterSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\GCodeNotFound.resx">
+      <DependentUpon>GCodeNotFound.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\GlobalSettings.resx">
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\JobStatus.resx">
+      <DependentUpon>JobStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LeadScrewCalculatorDialog.resx">
+      <DependentUpon>LeadScrewCalculatorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LogBox.resx">
+      <DependentUpon>LogBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LogView.resx">
+      <DependentUpon>LogView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ObjectInformation.resx">
+      <DependentUpon>ObjectInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Preferences.resx">
+      <DependentUpon>Preferences.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PrinterInfo.resx">
+      <DependentUpon>PrinterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PrintPanel.resx">
+      <DependentUpon>PrintPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\RepetierEditor.resx">
+      <DependentUpon>RepetierEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SDCard.resx">
+      <DependentUpon>SDCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SDCardUpload.resx">
+      <DependentUpon>SDCardUpload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Skeinforge.resx">
+      <DependentUpon>Skeinforge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Slic3r.resx">
+      <DependentUpon>Slic3r.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Slic3rSetup.resx">
+      <DependentUpon>Slic3rSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SlicerPanel.resx">
+      <DependentUpon>SlicerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SlicingParameter.resx">
+      <DependentUpon>SlicingParameter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SoundConfig.resx">
+      <DependentUpon>SoundConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\STLComposer.resx">
+      <DependentUpon>STLComposer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StoreCode.resx">
+      <DependentUpon>StoreCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SwitchButton.resx">
+      <DependentUpon>SwitchButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TemperatureView.resx">
+      <DependentUpon>TemperatureView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TestGenerator.resx">
+      <DependentUpon>TestGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ThreeDControl.resx">
+      <DependentUpon>ThreeDControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ThreeDSettings.resx">
+      <DependentUpon>ThreeDSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\ColorSlider.resx">
+      <DependentUpon>ColorSlider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\EditInstanceName.resx">
+      <DependentUpon>EditInstanceName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\InfoProgressPanel.resx">
+      <DependentUpon>InfoProgressPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\PauseInfo.resx">
+      <DependentUpon>PauseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\RHUpdater.resx">
+      <DependentUpon>RHUpdater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\SlicingInfo.resx">
+      <DependentUpon>SlicingInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\SnapshotDialog.resx" />
+    <EmbeddedResource Include="view\utils\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\utils\StringInput.resx">
+      <DependentUpon>StringInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\RepetierHost.connector.SerialConnector.datasource" />
+    <None Include="Properties\DataSources\RepetierHost.connector.VirtualPrinterConnector.datasource" />
+    <None Include="Properties\DataSources\RepetierHost.view.RepetierEditor.datasource" />
+    <None Include="Properties\DataSources\RepetierHost.view.ThreeDSettings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RepetierHost_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="view\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\BeltCalculatorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\BeltCalculatorDialog.Designer.cs">
+      <DependentUpon>BeltCalculatorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\CopyObjectsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\CopyObjectsDialog.Designer.cs">
+      <DependentUpon>CopyObjectsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DoubleBufferPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view\EEPROMMarlin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EEPROMMarlin.designer.cs">
+      <DependentUpon>EEPROMMarlin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\EEPROMRepetier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\EEPROMRepetier.Designer.cs">
+      <DependentUpon>EEPROMRepetier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormPrinterSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormPrinterSettings.Designer.cs">
+      <DependentUpon>FormPrinterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\GCodeNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\GCodeNotFound.Designer.cs">
+      <DependentUpon>GCodeNotFound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\GlobalSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\GlobalSettings.Designer.cs">
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\JobStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\JobStatus.Designer.cs">
+      <DependentUpon>JobStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LeadScrewCalculatorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LeadScrewCalculatorDialog.Designer.cs">
+      <DependentUpon>LeadScrewCalculatorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LogBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\LogBox.Designer.cs">
+      <DependentUpon>LogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\LogView.Designer.cs">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ObjectInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ObjectInformation.Designer.cs">
+      <DependentUpon>ObjectInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Preferences.Designer.cs">
+      <DependentUpon>Preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PrinterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PrinterInfo.Designer.cs">
+      <DependentUpon>PrinterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PrintPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\PrintPanel.Designer.cs">
+      <DependentUpon>PrintPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\RepetierEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\RepetierEditor.Designer.cs">
+      <DependentUpon>RepetierEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SDCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SDCard.Designer.cs">
+      <DependentUpon>SDCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SDCardUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SDCardUpload.Designer.cs">
+      <DependentUpon>SDCardUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Skeinforge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Skeinforge.Designer.cs">
+      <DependentUpon>Skeinforge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Slic3r.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Slic3r.Designer.cs">
+      <DependentUpon>Slic3r.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Slic3rSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Slic3rSetup.Designer.cs">
+      <DependentUpon>Slic3rSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SlicerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\SlicerPanel.Designer.cs">
+      <DependentUpon>SlicerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SlicingParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SlicingParameter.Designer.cs">
+      <DependentUpon>SlicingParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SoundConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SoundConfig.Designer.cs">
+      <DependentUpon>SoundConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\STLComposer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\STLComposer.Designer.cs">
+      <DependentUpon>STLComposer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StoreCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StoreCode.Designer.cs">
+      <DependentUpon>StoreCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\SwitchButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\SwitchButton.Designer.cs">
+      <DependentUpon>SwitchButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TemperatureView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\TemperatureView.Designer.cs">
+      <DependentUpon>TemperatureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TestGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TestGenerator.Designer.cs">
+      <DependentUpon>TestGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ThreedCamera.cs" />
+    <Compile Include="view\ThreeDControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\ThreeDControl.Designer.cs">
+      <DependentUpon>ThreeDControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ThreeDSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ThreeDSettings.Designer.cs">
+      <DependentUpon>ThreeDSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\ArrowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view\utils\ArrowButton.Designer.cs">
+      <DependentUpon>ArrowButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\ColorSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view\utils\ColorSlider.Designer.cs">
+      <DependentUpon>ColorSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\CommandExecutioner.cs" />
+    <Compile Include="view\utils\EditInstanceName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\EditInstanceName.Designer.cs">
+      <DependentUpon>EditInstanceName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\InfoProgressPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view\utils\InfoProgressPanel.Designer.cs">
+      <DependentUpon>InfoProgressPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\PauseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\PauseInfo.Designer.cs">
+      <DependentUpon>PauseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\RegMemory.cs" />
+    <Compile Include="view\utils\RHOpenGL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\utils\RHUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\RHUpdater.Designer.cs">
+      <DependentUpon>RHUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\Slicer.cs" />
+    <Compile Include="view\utils\SlicingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\SlicingInfo.Designer.cs">
+      <DependentUpon>SlicingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\SnapshotDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\SnapshotDialog.Designer.cs" />
+    <Compile Include="view\utils\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\utils\StringInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\utils\StringInput.Designer.cs">
+      <DependentUpon>StringInput.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\switch_on.bmp" />
+    <Content Include="images\switch_off.bmp" />
+    <Content Include="repetier-logo-trans32.ico" />
+    <Content Include="repetier-logo32.ico" />
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\RepetierHost.model.PrinterModel.datasource" />
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

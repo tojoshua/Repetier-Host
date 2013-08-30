@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation revision="3" language="Español" languageInEnglish="Spanish" author="Mecano">
+<t id="M_FILE" ver="1">Archivo</t>
+<t id="M_CONFIG" ver="1">Configuración</t>
+<t id="M_SLICER" ver="1">Slicer</t>
+<t id="M_TEMPERATURE" ver="1">Temperatura</t>
+<t id="M_PRINTER" ver="1">Impresora</t>
+<t id="M_HELP" ver="1">Ayuda</t>
+<t id="M_LOAD_GCODE" ver="1">Abrir</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">Mostrar directorio de trabajo</t>
+<t id="M_LANGUAGE" ver="1">Lenguaje</t>
+<t id="M_PRINTER_SETTINGS" ver="1">Config. Impresora</t>
+<t id="M_EEPROM_SETTINGS" ver="1">Config. Firmware EEPROM</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">Configuración Visor 3D</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Ajustes Generales Repetier</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">Parámetro de Test de Slicing</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">Configuración de Sonido</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">Mostrar Temperaturas del Extrusor</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">Mostrar Temperaturas de la Plataforma</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">Mostrar Temperaturas Objetivo</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">Mostrar Temperaturas Medias</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">Mostrar Potencia Calefactora</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">Vista de Temperatura en Autoscroll</t>
+<t id="M_TIMEPERIOD" ver="1">Intervalo</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">Zoom</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">Construir Media Sobre ...</t>
+<t id="M_30_SECONDS" ver="1">30 Segundos</t>
+<t id="M_1_MINUTE" ver="1">1 Minuto</t>
+<t id="M_2_MINUTES" ver="1">2 Minutos</t>
+<t id="M_5_MINUTES" ver="1">5 Minutos</t>
+<t id="M_10_MINUTES" ver="1">10 Minutos</t>
+<t id="M_15_MINUTES" ver="1">15 Minutos</t>
+<t id="M_30_MINUTES" ver="1">30 Minutos</t>
+<t id="M_60_MINUTES" ver="1">60 Minutos</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">Monitorización Continua</t>
+<t id="M_DISABLE" ver="1">Desconectar</t>
+<t id="M_EXTRUDER_1" ver="1">Extrusor 1</t>
+<t id="M_EXTRUDER_2" ver="1">Extrusor 2</t>
+<t id="M_HEATED_BED" ver="1">Plataforma Calefactada</t>
+<t id="M_PRINTER_INFORMATION" ver="1">Información de la Impresora</t>
+<t id="M_JOB_STATUS" ver="1">Estado de la Impresión</t>
+<t id="M_SD_CARD_MANAGER" ver="1">Gestor de la SD</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">Gestión de la SD</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">Generador de Caso</t>
+<t id="M_SEND_SCRIPT_1" ver="1">Mandar Script 1</t>
+<t id="M_SEND_SCRIPT_2" ver="1">Mandar Script 2</t>
+<t id="M_SEND_SCRIPT_3" ver="1">Mandar Script 3</t>
+<t id="M_SEND_SCRIPT_4" ver="1">Mandar Script 4</t>
+<t id="M_SEND_SCRIPT_5" ver="1">Mandar Script 5</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Web Repetier-Host</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Descargas Repetier-Host</t>
+<t id="M_MANUAL" ver="1">Manual Repetier-Host</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Web de Slic3r</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Web de Skeinforge</t>
+<t id="M_REPRAP_WEBSITE" ver="1">Web de RepRap</t>
+<t id="M_REPRAP_FORUM" ver="1">Foro RepRap</t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse Newest Things</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverse Popular Things</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">Sobre Repetier-Host</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">Comprobar Actualizaciones</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">Desconectar Impresora</t>
+<t id="L_CONNECT_PRINTER" ver="1">Conectar Impresora</t>
+<t id="M_DISCONNECT" ver="1">Desconectar</t>
+<t id="M_CONNECT" ver="1">Conectar</t>
+<t id="M_QUIT" ver="1">Cerrar</t>
+<t id="TAB_3D_VIEW" ver="1">Vista 3D</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">Curva de Temperatura</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">Disposición de Objetos</t>
+<t id="TAB_SLICER" ver="1">Slicer</t>
+<t id="TAB_GCODE_EDITOR" ver="1">Editor G-Code</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">Control Manual</t>
+<t id="M_EMERGENCY_STOP" ver="1">Parada de Emergencia</t>
+<t id="M_LOAD" ver="1">Archivo</t>
+<t id="M_SAVE_JOB" ver="1">Guardar Trabajo</t>
+<t id="M_RUN_JOB" ver="1">Imprimir Trabajo</t>
+<t id="M_PAUSE_JOB" ver="1">Pausar Impresión</t>
+<t id="M_KILL_JOB" ver="1">Anular Impresión</t>
+<t id="M_SD_CARD" ver="1">Tarjeta SD</t>
+<t id="M_TOGGLE_LOG" ver="1">Ver Registro</t>
+<t id="M_SHOW_FILAMENT" ver="1">Mostrar Filamento</t>
+<t id="M_HIDE_FILAMENT" ver="1">Ocultar Filamento</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">Deshabilitar visualización de Filamento</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">Habilitar visualización de Filamento</t>
+<t id="L_LOAD_FILE" ver="1">Cargar archivo</t>
+<t id="L_IMPORT_G_CODE" ver="1">Importar G-Code</t>
+<t id="L_SAVE_G_CODE" ver="1">Guardar G-Code</t>
+<t id="L_ERROR" ver="1">Error</t>
+<t id="L_PAUSE_MSG" ver="1">Presiona OK para continuar.
+Puedes añadir pausas en tu código con
+@pause un texto como este</t>
+<t id="L_UPDATING..." ver="1">Actualizando ...</t>
+<t id="L_SLICE_WITH" ver="1">Slice con $1</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">Manda una parada de emergencia a la impresora. Puede ser que necesites resetear la impresora para continuar</t>
+<t id="L_TRANSLATION:" ver="1">Traslación</t>
+<t id="L_SCALE:" ver="1">Escalar</t>
+<t id="L_ROTATE:" ver="1">Rotación</t>
+<t id="L_STL_OBJECTS" ver="1">Objetos STL</t>
+<t id="B_SAVE_AS_STL" ver="1">Guardar como STL</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">Eliminar Objeto</t>
+<t id="B_ADD_STL_OBJECT" ver="1">Añadir Objeto</t>
+<t id="B_AUTOPOSITION" ver="1">Autoposicionamiento</t>
+<t id="B_DROP_OBJECT" ver="1">Soltar Objeto</t>
+<t id="B_COPY_OBJECTS" ver="1">Copiar Objeto(s)</t>
+<t id="B_CENTER_OBJECT" ver="1">Centrar Objeto</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">Bloquear Relación de Aspecto</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">Detener Slicing</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">Ajustes</t>
+<t id="B_SETUP_SLIC3R" ver="1">Ajustes</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">Configurar</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">Configurar</t>
+<t id="B_ACTIVE" ver="1">Activar</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">Ajustes Filamento:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">Ajustes Impresora:</t>
+<t id="L_PRINT_SETTINGS" ver="1">Ajustes Impresión:</t>
+<t id="L_PROFILE" ver="1">Perfil:</t>
+<t id="B_SEND" ver="1">Enviar</t>
+<t id="B_SIMULATE_OK" ver="1">OK</t>
+<t id="B_STOP_MOTOR" ver="1">Parar Motor</t>
+<t id="B_PARK" ver="1">Pos. Reposo</t>
+<t id="B_RETRACT" ver="1">Retraer</t>
+<t id="B_EXTRUDE" ver="1">Extruir</t>
+<t id="L_OUTPUT_PERCENT" ver="1">Salida $1%</t>
+<t id="B_POWER" ver="1">Alimentación</t>
+<t id="B_HEAT_EXTRUDER" ver="1">Calentar Extrusor</t>
+<t id="B_HEAT_PRINTBED" ver="1">Calentar Plataforma</t>
+<t id="B_FAN" ver="1">Ventilador</t>
+<t id="B_DEBUG_ERRORS" ver="1">Errores</t>
+<t id="B_DEBUG_ECHO" ver="1">Echo</t>
+<t id="B_DRY_RUN" ver="1">Dry Ejecutar</t>
+<t id="B_DEBUG_INFO" ver="1">Info</t>
+<t id="L_EXTRUDER" ver="1">Extrusor</t>
+<t id="L_PRINTBED" ver="1">Plataforma</t>
+<t id="L_SPEED_MULTIPLY" ver="1">Multiplicador de Velocidad</t>
+<t id="L_EXTRUDE_MM" ver="1">Extruye [mm]</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">Velocidad [mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">Retrae [mm]</t>
+<t id="L_TEMP" ver="1">Temp.</t>
+<t id="L_DISCONNECTED" ver="1">Desconectado</t>
+<t id="L_CONNECTED" ver="1">Conectado</t>
+<t id="L_HEATING_BED" ver="1">Calentando Cama</t>
+<t id="L_HEATING_EXTRUDER" ver="1">Calentando Extrusor</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">Impresión Anulada</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">Impresión Pausada</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">Impresión Terminada</t>
+<t id="L_UPLOADING..." ver="1">Cargando ...</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">Porcentaje realizado $1</t>
+<t id="L_IDLE" ver="1">Idle</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">$1 Esperando Comando</t>
+<t id="L_EXTRUDER:" ver="1">Extrusor:</t>
+<t id="L_BED:" ver="1">Cama:</t>
+<t id="L_OFF" ver="1">Off</t>
+<t id="L_NOT_A_NUMBER" ver="1">No un número</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">Requiere un número positivo</t>
+<t id="L_NOT_AN_INTEGER" ver="1">No un entero</t>
+<t id="L_RESET_OUTPUT" ver="1">Resetear salida. Despues de esperar, solo tengo $1</t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">Reciviendo solo mensajes de error. Comunicación detenida.</t>
+<t id="L_PRINTING..ETA" ver="1">Porcentaje imprimido $1</t>
+<t id="L_LAYER_X/Y" ver="1"> Capa $1/$2</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">Error enviando datos:</t>
+<t id="L_CONNECTION_ERROR" ver="1">Error de conexión</t>
+<t id="L_SERIAL_COM_ERROR" ver="1">Error puerto serie:</t>
+<t id="L_SHOW_IN_LOG" ver="1">Mostrar en registro:</t>
+<t id="B_ACK" ver="1">ACK</t>
+<t id="B_AUTO_SCROLL" ver="1">Auto Scroll</t>
+<t id="B_COMMANDS" ver="1">Comandos</t>
+<t id="B_LOG_ERRORS" ver="1">Errores</t>
+<t id="B_LOG_INFO" ver="1">Infos</t>
+<t id="B_LOG_WARNINGS" ver="1">Advertencias</t>
+<t id="B_COPY" ver="1">Copiar</t>
+<t id="B_CLEAR_LOG" ver="1">Limpiar Registro</t>
+<t id="L_COPY" ver="1">Copiar</t>
+<t id="L_CUT" ver="1">Cortar</t>
+<t id="L_NEW_TEXT" ver="1">Nuevo Texto</t>
+<t id="L_SAVE" ver="1">Guardar</t>
+<t id="L_PASTE" ver="1">Pegar</t>
+<t id="L_UNDO" ver="1">Deshacer</t>
+<t id="L_REDO" ver="1">Rehacer</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">Auto actualización de vista preliminar</t>
+<t id="L_START_CODE" ver="1">G-code inicial</t>
+<t id="L_END_CODE" ver="1">G-code final</t>
+<t id="L_RUN_ON_KILL" ver="1">Ejecutar en Anular</t>
+<t id="L_RUN_ON_PAUSE" ver="1">Ejecutar en Pausa</t>
+<t id="L_SCRIPT_X" ver="1">Script $1</t>
+<t id="L_LAYER_X" ver="1">Capa $1</t>
+<t id="L_EXTRUDER_X" ver="1">Extrusor $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">Sobrescribir</t>
+<t id="L_INSERT" ver="1">Insertar</t>
+<t id="L_SYNTAX" ver="1">Syntax</t>
+<t id="TAB_HELP" ver="1">Ayuda</t>
+<t id="TAB_VISUALIZATION" ver="1">Visualización</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">Mostrar Todo</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">Mostrar Rango de Capas</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">Mostrar una Capa</t>
+<t id="L_FIRST_LAYER" ver="1">Primera Capa:</t>
+<t id="L_LAST_LAYER" ver="1">Última Capa:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1">¿Seguro que quieres borrar todos los ajustes para $1?</t>
+<t id="L_SECURITY_QUESTION" ver="1">Pregunta de seguridad</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">Añadir tiempo de Impresión</t>
+<t id="L_BAUD_RATE" ver="1">Baudios:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">¡Desde Arduino 1 la caché de recepción se redujo de 127 a 63 bytes!</t>
+<t id="L_CHECK_EVERY_X" ver="1">Comprobar cada $1 segundos.</t>
+<t id="L_CONNECTION_INFO" ver="1">Los ajustes de impresora corresponden a la impresora seleccionada arriba. Estos se guardan 
+ pulsando OK o Aplicar. Para crear una nueva impresora, solo introduce un nuevo
+ nombre de impresora y pulsa Intro. La nueva impresora empezará con los últimos ajustes seleccionados.</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">Temperatura Extrusor por Defecto :</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">Temperatura Plataf. por Defecto:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">Profund. area de volcado:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">Y area de volcado:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">X area de volcado:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">Anchura area de volcado:</t>
+<t id="L_FILTER_INFO" ver="1">Puedes ejecutar un programa de filtrado despues de cada acción de slicing. El filtrado se ejecutará sobre el G-Code producido por el slicer.
+Usa #in y #out para insertar los archivos input y output como parámetro.</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">Ruta del Filtrado y Parametro:</t>
+<t id="L_PARITY" ver="1">Paridad:</t>
+<t id="L_PARK_POSITION" ver="1">Posic. de Reposo:</t>
+<t id="L_PORT" ver="1">Puerto:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">Profundidad area de impr.:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">Altura area de impresión:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">Anchura area de impresión:</t>
+<t id="L_PRINTER" ver="1">Impresora:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">Cache Recep.:</t>
+<t id="L_STOPBITS" ver="1">Bits de parada:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">Protocolo transfer.:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">Velocidad desplazamiento sin extruir:</t>
+<t id="L_ZFEED_RATE" ver="1">Velocidad de avance eje Z:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">Desconectar Extrusor despues de Impresión o Anular</t>
+<t id="L_DISABLE_MOTORS" ver="1">Desconectar Motores despues de Impresión o Anular</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">Desconectar Plataforma despues de Impresión o Anular</t>
+<t id="L_GO_PARK_POSITION" ver="1">Ir a posición de reposo después de Impresión o Anular</t>
+<t id="L_HAS_DUMP_AREA" ver="1">Existe Area de Volcado</t>
+<t id="L_HOME_X_MAX" ver="1">Final de carrera en X Max</t>
+<t id="L_HOME_Y_MAX" ver="1">Final de carrera en Y Max</t>
+<t id="L_HOME_Z_MAX" ver="1">Final de carrera en Z Max</t>
+<t id="L_PING_PONG_MODE" ver="1">Usar comunicación Ping-Pong (Enviar solo despues de ok)</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">Ejecutar Filter despues de cada Slice</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">Comprobar Temperatura de Extrusor y Plataforma</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">Elim llamadas M105 del Registro</t>
+<t id="B_CANCEL" ver="1">Cancelar</t>
+<t id="B_APPLY" ver="1">Aplicar</t>
+<t id="B_OK" ver="1">OK</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">Borrar estos ajustes de impresora</t>
+<t id="TAB_CONNECTION" ver="1">Conexion</t>
+<t id="TAB_PRINTER" ver="1">Impresora</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">Dimensiones Impres</t>
+<t id="TAB_ADVANCED" ver="1">Avanzado</t>
+<t id="W_PRINTER_SETTINGS" ver="1">Impresora Ajustes</t>
+<t id="L_POST_SLICE_FILTER" ver="1">Filtrado Post-Slice</t>
+<t id="L_Z_MIN" ver="1">Z-Min</t>
+<t id="W_PRINT_PAUSED" ver="1">Impresión Pausada</t>
+<t id="L_PAUSE_HINT" ver="1">Consejo: Puedes mover el extrusor y extruir filamento para cambiar el filamento o rellenar la boquilla si ha rezumado. El programa restaurará la posición donde estaba el extruder cuando se pausó la impresión.</t>
+<t id="B_CONTINUE_PRINTING" ver="1">Continuar Impresión</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Comprobar actualización de Repetier-Host </t>
+<t id="B_DOWNLOAD" ver="1">Descargar</t>
+<t id="B_REMIND_ME_LATER" ver="1">Recordarmelo luego</t>
+<t id="B_SKIP_VERSION" ver="1">Omitir esta Version</t>
+<t id="L_AVAILABLE_VERSION" ver="1">Version Disponible:</t>
+<t id="L_INSTALLED_VERSION" ver="1">Version Instalada:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">Information actualizandose</t>
+<t id="L_NO_NEW_UPDATES" ver="1">No hay nuevas actualizaciones disponibles.
+Estas usando la última versión.</t>
+<t id="L_UPDATE_STATUS" ver="1">Estado de la actualización</t>
+<t id="W_SLICING_INFO" ver="1">Slicing Info</t>
+<t id="L_ACTION:" ver="1">Acción:</t>
+<t id="L_DURATION:" ver="1">Duración:</t>
+<t id="L_SLICER:" ver="1">Slicer:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">Empezar Impresión despues de Slicing</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">Sobre Repetier-Host</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">Licencia y Librerias</t>
+<t id="L_REPETIER_INFO" ver="1">Este software ha sido desarrollado para trabajar con impresoras 3D basadas en RepRap. Está optimizado para el firmware Repetier, el cual soporta todas las características. Otros firmwares como Marlin, Teacup, Sprinter o 5D GCode funcionan con los ajustes adecuados.</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">Copiar Objetos Marcados </t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">Número de copias:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">Auto Posicionar después de añadir Objetos</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1">Imprimiendo capa $1 de $2</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">Construyendo impresión...</t>
+<t id="L_PRINTING..." ver="1">Imprimiendo...</t>
+<t id="L_JOB_KILLED" ver="1">Impresión Anulada</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">Impresión finalizada en $1</t>
+<t id="L_PRINTING_TIME:" ver="1">Tiempo de Impresión:$1</t>
+<t id="L_LINES_SEND:X" ver="1">líneas enviadas: $1</t>
+<t id="L_FINISHED_IN" ver="1">Terminado en $1</t>
+<t id="L_TIME_H:" ver="1">$1h:</t>
+<t id="L_TIME_M:" ver="1">$1m:</t>
+<t id="L_TIME_S" ver="1">$1s</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">Ajustes de Firmware EEPROM</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">No se encuentra el G-Code generado</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">Archivo y ruta esperados</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">No puedo encontrar el archivo G-code generado.
+
+Posibles razones:
+- El slicer tiene un error y no ha finalizado el slicing. Comprobar registro de salida.
+- El slicer guardó el archivo con un nombre inesperado.</t>
+<t id="B_CLOSE" ver="1">Cerrar</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Ajustes Repetier</t>
+<t id="L_BEHAVIOUR" ver="1">Comportamiento</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">Archivos y Directorios</t>
+<t id="L_GUI" ver="1">Interfaz Graf.</t>
+<t id="L_INFO_WORKDIR" ver="1">En el direcctorio de trabajo,se guardan el archivo de registro y los archivos temporales para el slicing. Si la opción de registro está activada, habrá un archivo repetier.log cuando el programa se cierre. ¡Si arrancas el programa se borrará
+el archivo de registro anterior! El archivo de registro contiene todas las comunicaciones con la impresora, incluso si está desactivada su visualización.
+Los cambios en el registro estarán activos despues del siguiente reinicio.</t>
+<t id="L_LOG_SESSION" ver="1">Registro de Sesion</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">Reduce tamaño de la barra de herramientas</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">Desconectar Reducción de Calidad</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">¡Se necesita un directorio de trabajo!</t>
+<t id="L_WORKDIR:" ver="1">Directorio de trabajo:</t>
+<t id="B_BROWSE" ver="1">Explorar...</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">Seleccionar directorio de trabajo</t>
+<t id="L_PAST_60_MINUTES" ver="1">Pasados 60 Minutos</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">Ajustes de Visualización 3D  </t>
+<t id="L_COLORS" ver="1">Colores</t>
+<t id="L_EDITOR" ver="1">Editor</t>
+<t id="L_VISUALIZATION" ver="1">Visualización:</t>
+<t id="L_AMBIENT_COLOR" ver="1">Color Ambiental:</t>
+<t id="L_BACKGROUND" ver="1">Fondo:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">Color Difuso:</t>
+<t id="L_DRAW_METHOD" ver="1">Metodo de dibujo:</t>
+<t id="L_EDGES" ver="1">Aristas:</t>
+<t id="L_EXTRUDER_X:" ver="1">Extrusor $1:</t>
+<t id="L_FACES" ver="1">Caras:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">La forma del filamento se computa por la altura de capa y la relación anchura/altura de capa o desde el diámetro del filamento, la rel. anchura fil./altura de capa y los valores E del G-Code.
+ La segunda versión ofrece mejores resultados, si la altura de capa cambia, lo cual puede suceder en las nuevas versiones de Skeinforge.</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">Visualización de Filamento:</t>
+<t id="L_HOT_FILAMENT" ver="1">Filamento caliente:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">Long. Filamento Caliente:</t>
+<t id="L_LIGHT_X" ver="1">Light $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">Objetos fuera de la Plataforma:</t>
+<t id="L_PRINTER_BASE" ver="1">Impresora Base:</t>
+<t id="L_SELECTED_FACES" ver="1">Caras Seleccionadas:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">Filamento Selec.:</t>
+<t id="L_SPECULAR_COLOR" ver="1">Color especular:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">Relación anchura/altura de capa:</t>
+<t id="L_X_DIRECTION" ver="1">Dirección X:</t>
+<t id="L_Y_DIRECTION" ver="1">Dirección Y:</t>
+<t id="L_Z_DIRECTION" ver="1">Dirección Z:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">Desactivar Visualización de Filamento </t>
+<t id="L_ENABLE_LIGHT" ver="1">Activar luz</t>
+<t id="L_SHOW_EDGES" ver="1">Mostrar Aristas</t>
+<t id="L_SHOW_FACES" ver="1">Mostrar Caras</t>
+<t id="L_SHOW_PRINTBED" ver="1">Mostrar Plataforma</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">Pulse si el Objeto no es imprimible</t>
+<t id="TAB_GENERAL" ver="1">General</t>
+<t id="TAB_FILAMENT" ver="1">Filamento</t>
+<t id="TAB_MODEL" ver="1">Modelo</t>
+<t id="TAB_LIGHTS" ver="1">Luces</t>
+<t id="L_LAYER_HEIGHT" ver="1">Altura de Capa:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">Diametro de Filamento:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">Autodetectar el mejor</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (El más rápido)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">Arrays (Medio)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Immediate (Lento)</t>
+<t id="W_JOB_STATUS" ver="1">Estado de la Impresión</t>
+<t id="L_ETA:" ver="1">Porcentaje:</t>
+<t id="L_FINISH_TIME:" ver="1">Hora de finalización:</t>
+<t id="L_LINES_SEND:" ver="1">Líneas enviadas:</t>
+<t id="L_START_TIME:" ver="1">Hora de comienzo:</t>
+<t id="L_STATUS:" ver="1">Estado:</t>
+<t id="L_TOTAL_LINES:" ver="1">Total de Lineas:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">Impresión no Definida</t>
+<t id="L_RUNNING..." ver="1">Ejecutando ...</t>
+<t id="L_FINISHED" ver="1">Terminado</t>
+<t id="L_ABORTED" ver="1">Abortado</t>
+<t id="W_PRINTER_INFO" ver="1">Información de la Impresora</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">Información de conexión</t>
+<t id="L_PRINTER_DATA" ver="1">Datos de la Impresora</t>
+<t id="L_BYTES_SEND:" ver="1">Bytes Enviados:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">Errores Recividos:</t>
+<t id="L_FIRMWARE:" ver="1">Firmware:</t>
+<t id="L_FIRMWARE_URL:" ver="1">Firmware URL:</t>
+<t id="L_MACHINE_TYPE:" ver="1">Tipo de máquina:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">Número de Extrusores:</t>
+<t id="L_PROTOCOL:" ver="1">Protocolo:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">No es un nombre de archivo 8.3 válido.</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">Archivo tarjeta SD</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">Archivo cargado:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">Incluir Comandos de Impresión Terminada </t>
+<t id="L_INCLUDE_START_END_CODE" ver="1">Incluir "Código de comienzo" y "Código final"</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">Cargar archivos externos</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">Cargar el G-code actual</t>
+<t id="L_FILE:" ver="1">Archivo:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">Guardar G-Code impresión directa</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">Esta forma de guardado sirve para generar un G-code que puede ser ejecutado desde la tarjeta SD. Por esa razón se puede añadir el código de inicio y final junto con los comandos de acabado regulares como se ejecutarían durante una impresión el ordenador. Sin embargo todos los comentarios y comandos del host se eliminan. Si solo quieres guardar el G-code en tu editor utiliza el botón de guardar del editor de G-code</t>
+<t id="L_SAVE_AS_BINARY" ver="1">Guardar en formato binario (para Repetier-Firmware)</t>
+<t id="B_SAVE" ver="1">Guardar</t>
+<t id="W_SD_CARD_MANAGER" ver="1">Gestor de tarjeta SD</t>
+<t id="L_FILENAME" ver="1">Nombre de archivo</t>
+<t id="L_SIZE" ver="1">Tamaño</t>
+<t id="L_UPLOAD_FILE" ver="1">Cargar Archivo</t>
+<t id="L_DELETE_FILE" ver="1">Borrar Archivo</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">Ejecutar Archivo Seleccionado  / Continuar Impresión Pausada</t>
+<t id="L_STOP_UPLOAD" ver="1">Pausa/Paro Impresión en marcha de la SD</t>
+<t id="L_MOUNT_SD_CARD" ver="1">Montar tarjeta SD</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">Desmontar tarjeta SD</t>
+<t id="L_PRINT_FINISHED" ver="1">Impresión Terminada</t>
+<t id="L_UPLOAD_FINISHED" ver="1">Cargar Terminado</t>
+<t id="L_SD_PRINTING..." ver="1">SD Imprimiendo ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">Cargar Fallido</t>
+<t id="L_FILE_DELETED" ver="1">Archivo Borrado</t>
+<t id="L_DELETE_FAILED" ver="1">Borrar fallido</t>
+<t id="L_UPLOADING_FILE..." ver="1">Cargando Archivo ...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">Tu firmware no implementa el borrado de archivo o tiene una implementación desconocida.</t>
+<t id="L_PRINT_ABORTED" ver="1">Impresión abortada</t>
+<t id="L_PRINT_PAUSED" ver="1">Impresión Pausada</t>
+<t id="L_REMOVE_SD_CARD" ver="1">Puedes extraer la tarjeta SD.</t>
+<t id="L_INFORMATION" ver="1">Información</t>
+<t id="L_REALLY_DELETE_X" ver="1">Really delete $1</t>
+<t id="SOUND_CONFIGURATION" ver="1">Configuración de Sonido</t>
+<t id="L_SOUNDS" ver="1">Sonidos</t>
+<t id="L_ERROR_SOUND" ver="1">Sonidos para Errores</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">Sonido para impresión terminada</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">Sonido para impresión Pausada</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">Sonido para comando @sound</t>
+<t id="L_FILE:X" ver="1">Archivo:$1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">Seleciona Archivo WAV  para reproducir</t>
+<t id="W_SLIC3R_SETUP" ver="1">Ajustes de Slic3r</t>
+<t id="L_SLIC3R_SETUP" ver="1">Ajustes de Slic3r</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="1">Dejar en blanco para usar la versión incluida.</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Directorio de configuración de Slic3r</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Ejecutable Slic3r</t>
+<t id="L_SLIC3R_INFO" ver="1">Con estos ajustes, podras usar diferentes versiones de Slic3r.Puedes conseguir nuevas versiones de http://www.slic3r.org La mínima versión requerida es la 0.9.0. Deja todos los campos en blanco para usar la versión incluida.</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">Deja en blanco para usar la dirección hallada.</t>
+<t id="W_EEPROM_MARLIN" ver="1">Ajustes del Marlin Firmware EEPROM </t>
+<t id="L_M_ACCELERATION" ver="1">Acceleración:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">Variables Avanzadas:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">Desfase de los finales de c.:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">Aceleración máxima [mm/s²]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">Velocidad máxima [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">Arranque máximo en X-Y [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">Arranque máximo en Z [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">Velocidad mínima [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">Mínimo tiempo de segmento [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">Mínima velocidad de desplazamiento sin extrusión [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">Ajustes del PID:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">Pasos por mm:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">Aceleración de retracción:</t>
+<t id="B_M_LOAD" ver="1">Recargar Config</t>
+<t id="B_M_RESTORE" ver="1">Restaurar ajustes de fábrica</t>
+<t id="B_M_SAVE" ver="1">Guardar a EEPROM</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">Ajustes guardados en la config en marcha.
+¿Escribir cambios en EEPROM?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">Ajustes almacenados</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">Guardar cambios recuperados a EEPROM?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">Ajustes de Fábrica Recuperados</t>
+<t id="L_SLICING_STL_FILE..." ver="1">Slicing Archivo STL...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">Último trabajo de Slicing aun en marcha. Slicing del nuevo trabajo ha sido cancelado.</t>
+<t id="L_SKEIN_KILLED" ver="1">$1 proceso de Slicing anulado a petición del usuario.</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Ajustes de Skeinforge/SFACT </t>
+<t id="L_SKEIN_APPLICARTION" ver="1">Applicación Skeinforge :</t>
+<t id="L_SKEIN_CRAFT" ver="1">Skeinforge craft:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">Seleciona la subcarpeta de perfiles en el directorio de configuración de skeinforge. Normalmente estará en HOME/.skeinforge/profiles. Para algunas versiones personalizadas como SFACT la ruta puede variar.</t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">Directorio de perfiles:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">Si pypy está instalado, Skeinforge hará el slicing 3-4 veces mas rapido. Si pypy no está instalado, déjalo en blanco y se usará el interprete de python en su lugar. Puedes conseguir la ultima versión de pypy en http://www.pypy.org/</t>
+<t id="L_SKEIN_PYTHON" ver="1">Interprete de Python:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">¡El directorio de trabajo determina donde guarda Sfact los perfiles!</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">Directorio de trabajo:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Aplicación Skeinforge</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Interprete de Python</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Aplicación Skeinforge Craft</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Interprete de Pypy Python</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">Seleccionar carpeta de perfiles</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">Seleccionar carpeta de trabajo</t>
+<t id="L_FEEDRATE:" ver="1">Feedrate:</t>
+<t id="L_FLOWRATE:" ver="1">Flowrate:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">¡No se puede conectar con el servidor de actualizaciones!</t>
+<t id="L_MOVE_CAMERA" ver="1">Mover Cámara</t>
+<t id="L_MOVE_OBJECT" ver="1">Mover Objeto</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">Mover Punto de Vista</t>
+<t id="L_RESET_VIEW" ver="1">Reiniciar Vista</t>
+<t id="L_ROTATE" ver="1">Rotar</t>
+<t id="L_TOP_VIEW" ver="1">Vista en Planta</t>
+<t id="T_ZOOM_VIEW" ver="1">Zoom</t>
+<t id="T_CLEAR_OBJECTS" ver="1">Limpiar</t>
+<t id="L_DEBUG_OPTIONS" ver="2">Opciones de depurado</t>
+<t id="L_X_MIN:" ver="3">X Min</t>
+<t id="L_X_MAX:" ver="3">X Max</t>
+<t id="L_Y_MIN:" ver="3">Y Min</t>
+<t id="L_Y_MAX:" ver="3">Y Max</t>
+<t id="L_BED_LEFT:" ver="3">Coord. X Plat:</t>
+<t id="L_BED_FRONT:" ver="3">Coord. Y Plat:</t>
+<t id="L_SHAPE_INFO" ver="3">Los valores mínimo y máximo definen el rango de cordenadas del extrusor. Estas coordenadas pueden ser negativas y salir de la plataforma. Coord X/Y de la plataforma define las coordenadas donde la plataforma comienza. Cambiando los valores min/max puedes mover el origen en el centro de la plataforma si el firmware lo soporta.</t>
+<t id="L_SELECTION_BOX" ver="3">Caja de selección:</t>
+<t id="L_FILAMENT_NONE" ver="3">Ninguno/El mismo como Extrusor 1</t>
+<t id="L_REALLY_QUIT" ver="3">Impresión no terminada. ¿Salir de todos modos?</t>
+<t id="M_DONATE" ver="3">Donar o Colaborar</t>
+<t id="L_CONFIRM_DELETE_JOB" ver="1">¿Está seguro que desea eliminar el trabajo de impresión $1?</t>
+<t id="L_PRINT_STATE_SAVED_SUCCESSFULLY" ver="10">El estado fue guardado satisfactoriamente</t>
+<t id="M_POSPONED_JOBS" ver="10">Trabajos pospuestos</t>
+<t id="M_RESUME_JOB" ver="10">Continuar</t>
+<t id="M_POSTPONE_JOB" ver="10">Posponer el trabajo</t>
+<t id="W_POSTPONED_PRINT_JOBS" ver="10">Trabajos de impresión postergados</t>
+<t id="M_POSTPONED_JOB_SELECT_JOB" ver="10">Continuar trabajo</t>
+<t id="M_POSTPONED_JOB_KILL_JOB" ver="10">Eliminar trabajo</t>
+<t id="M_POSTPONED_JOB_RENAME_JOB" ver="10">Renombrar trabajo</t>
+<t id="L_POSTPONED_JOB_NAME" ver="10">Nombre de trabajo</t>
+<t id="L_NAME_POSTPONED_JOB" ver="10">Por favor ingrese el nombre del trabajo</t>
+<t id="L_POSTPONED_JOB_DIALOG_DESCRIPTION" ver="10">El estado del trabajo será guardado una vez que se complete la capa actual. Puede además forzar el guardado del estado del trabajo actual, o continuar imprimiendo.</t>
+<t id="B_FORCE_SAVE_POSTPONED_JOB" ver="10">&amp;Forzar</t>
+<t id="B_RESUME_PRINTING_JOB" ver="10">&amp;Continuar</t>
+<t id="W_POSTPONED_JOB_DIALOG" ver="10">Continuar</t>
+<t id="M_TOGGLE_PRINTER_ID" ver="10">Alternar vista de Id de impresora</t>
+<t id="L_PRINTER_ID" ver="10">Id de impresora</t>
+<t id="L_SET_PRINTER_ID" ver="10">Por favor escriba un Id de impresora</t> 
+</translation>
+
