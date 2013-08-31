@@ -24,11 +24,8 @@ namespace RepetierHost.connector
         }
         public void Connect(SerialConnector con)
         {
-            if (con != null)
-                con.PropertyChanged -= bindingConnection_CurrentItemChanged;
             this.con = con;
-            //bindingConnection.DataSource = con;
-            con.PropertyChanged += bindingConnection_CurrentItemChanged;
+            bindingConnection.DataSource = con;
             bindingConnection_CurrentItemChanged(null, null);
         }
         public void Translate()
@@ -96,12 +93,8 @@ namespace RepetierHost.connector
         bool updating = false;
         private void bindingConnection_CurrentItemChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("serialpanel bindingConnection_CurrentItemChanged");
             updating = true;
-            textReceiveCacheSize.Text = con.ReceiveCacheSizeString;
-            comboPort.Text = con.Port;
             comboBaud.Text = con.BaudRate;
-            checkPingPong.Checked = con.PingPong;
             comboTransferProtocol.SelectedIndex = con.Protocol;
             comboResetOnConnect.SelectedIndex = con.ResetOnConnect;
             comboResetOnEmergency.SelectedIndex = con.ResetOnEmergency;
@@ -135,21 +128,6 @@ namespace RepetierHost.connector
         private void SerialConnectionPanel_Load(object sender, EventArgs e)
         {
             UpdatePorts();
-        }
-
-        private void textReceiveCacheSize_TextChanged(object sender, EventArgs e)
-        {
-            con.ReceiveCacheSizeString = textReceiveCacheSize.Text;
-        }
-
-        private void comboPort_TextChanged(object sender, EventArgs e)
-        {
-            con.Port = comboPort.Text;
-        }
-
-        private void checkPingPong_CheckedChanged(object sender, EventArgs e)
-        {
-            con.PingPong = checkPingPong.Checked;
         }
 
     }

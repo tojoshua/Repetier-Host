@@ -32,7 +32,7 @@ namespace RepetierHost.model.geom
     public class TopoModel
     {
         public const bool debugRepair = false;
-        public const double epsilon = 0.0001f;
+        public const float epsilon = 0.001f;
         public TopoVertexStorage vertices = new TopoVertexStorage();
         public TopoTriangleStorage triangles = new TopoTriangleStorage();
         public LinkedList<TopoEdge> edges = new LinkedList<TopoEdge>();
@@ -696,48 +696,6 @@ namespace RepetierHost.model.geom
                 RLog.info(Trans.T("L_ANA_HIGHLY_CONNECTED") + manyShardEdges);
             if (intersectingTriangles.Count > 0)
                 RLog.info(Trans.T("L_ANA_INTERSECTING_TRIANGLES") + intersectingTriangles.Count);
-            if (updatedNormals > 0)
-                RLog.info(Trans.T("L_ANA_CORRECTED_NORMAL_ORIENTATIONS") + updatedNormals);
-            statistics();
-            if (loopEdges + manyShardEdges == 0)
-            {
-                manifold = true;
-                RLog.info(Trans.T("L_OBJECT_IS_MANIFOLD"));
-            }
-            else
-            {
-                manifold = false;
-                RLog.info(Trans.T("L_OBJECT_IS_NON_MANIFOLD"));
-            }
-            UpdateVertexNumbers();
-            RLog.info(Trans.T("L_ANALYSER_FINISHED"));
-            if (false)
-            {
-                Debug.WriteLine("Intersecting triangles:");
-                foreach (TopoTriangle t in intersectingTriangles)
-                    Debug.WriteLine(t);
-                Debug.WriteLine("========");
-            }
-        }
-        public void AnalyseFast()
-        {
-            RLog.info(Trans.T("L_STARTING_ANALYSER"));
-            //RepairUnobtrusive();
-            //UpdateIntersectingTriangles();
-            CheckNormals();
-            manyShardEdges = 0;
-            loopEdges = 0;
-            foreach (TopoEdge edge in edges)
-            {
-                if (edge.connectedFaces < 2)
-                    loopEdges++;
-                else if (edge.connectedFaces > 2)
-                    manyShardEdges++;
-            }
-            if (loopEdges > 0)
-                RLog.info(Trans.T("L_ANA_LOOP_EDGES") + loopEdges);
-            if (manyShardEdges > 0)
-                RLog.info(Trans.T("L_ANA_HIGHLY_CONNECTED") + manyShardEdges);
             if (updatedNormals > 0)
                 RLog.info(Trans.T("L_ANA_CORRECTED_NORMAL_ORIENTATIONS") + updatedNormals);
             statistics();

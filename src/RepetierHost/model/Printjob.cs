@@ -132,6 +132,7 @@ namespace RepetierHost.model
                 gcode.Parse(line);
                 if (!gcode.comment)
                 {
+                    
                     jobList.AddLast(new GCodeCompressed(gcode));
                     totalLines++;
                 }
@@ -294,9 +295,5 @@ namespace RepetierHost.model
                 }
             }
         }
-        public LinkedList<GCodeCompressed> GetPendingJobCommands()
-        {
-            return new LinkedList<GCodeCompressed>(jobList);
-        } 
     }
 }

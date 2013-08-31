@@ -30,12 +30,6 @@ namespace RepetierHost.connector
     /// </summary>
     public abstract class PrinterConnectorBase
     {
-        public delegate void OnPauseChanged(bool paused);
-        /// <summary>
-        /// These delegate methods are called after pause state is changed.
-        /// </summary>
-        public OnPauseChanged eventPauseChanged;
- 
         abstract public void Activate();
         abstract public void Deactivate();
         abstract public bool Connect();

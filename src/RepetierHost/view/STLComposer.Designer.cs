@@ -41,7 +41,7 @@
             this.checkCutFaces = new System.Windows.Forms.CheckBox();
             this.panelAnalysis = new System.Windows.Forms.Panel();
             this.groupBoxObjectAnalysis = new System.Windows.Forms.GroupBox();
-            this.tableAnalysisData = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textModied = new System.Windows.Forms.Label();
             this.labelModified = new System.Windows.Forms.Label();
             this.textVertices = new System.Windows.Forms.Label();
@@ -62,8 +62,6 @@
             this.labelHighConnected = new System.Windows.Forms.Label();
             this.textNormals = new System.Windows.Forms.Label();
             this.labelNormals = new System.Windows.Forms.Label();
-            this.buttonToggleModified = new System.Windows.Forms.Button();
-            this.buttonAnalyse = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelTranslation = new System.Windows.Forms.Label();
             this.textTransX = new System.Windows.Forms.TextBox();
@@ -108,16 +106,14 @@
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.openFileSTL = new System.Windows.Forms.OpenFileDialog();
             this.saveSTL = new System.Windows.Forms.SaveFileDialog();
-            this.tableAnalysisButtons = new System.Windows.Forms.TableLayoutPanel();
             this.panelControls.SuspendLayout();
             this.panelCut.SuspendLayout();
             this.panelAnalysis.SuspendLayout();
             this.groupBoxObjectAnalysis.SuspendLayout();
-            this.tableAnalysisData.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            this.tableAnalysisButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControls
@@ -144,9 +140,9 @@
             this.panelCut.Controls.Add(this.cutPositionSlider);
             this.panelCut.Controls.Add(this.checkCutFaces);
             this.panelCut.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCut.Location = new System.Drawing.Point(0, 538);
+            this.panelCut.Location = new System.Drawing.Point(0, 481);
             this.panelCut.Name = "panelCut";
-            this.panelCut.Size = new System.Drawing.Size(343, 115);
+            this.panelCut.Size = new System.Drawing.Size(360, 115);
             this.panelCut.TabIndex = 24;
             // 
             // label5
@@ -190,7 +186,7 @@
             this.cutAzimuthSlider.Location = new System.Drawing.Point(83, 85);
             this.cutAzimuthSlider.Maximum = 3600;
             this.cutAzimuthSlider.Name = "cutAzimuthSlider";
-            this.cutAzimuthSlider.Size = new System.Drawing.Size(254, 20);
+            this.cutAzimuthSlider.Size = new System.Drawing.Size(271, 20);
             this.cutAzimuthSlider.SmallChange = ((uint)(1u));
             this.cutAzimuthSlider.TabIndex = 1;
             this.cutAzimuthSlider.Text = "colorSlider1";
@@ -213,7 +209,7 @@
             this.cutInclinationSlider.Location = new System.Drawing.Point(83, 57);
             this.cutInclinationSlider.Maximum = 1800;
             this.cutInclinationSlider.Name = "cutInclinationSlider";
-            this.cutInclinationSlider.Size = new System.Drawing.Size(254, 20);
+            this.cutInclinationSlider.Size = new System.Drawing.Size(271, 20);
             this.cutInclinationSlider.SmallChange = ((uint)(1u));
             this.cutInclinationSlider.TabIndex = 1;
             this.cutInclinationSlider.Text = "colorSlider1";
@@ -236,7 +232,7 @@
             this.cutPositionSlider.Location = new System.Drawing.Point(83, 29);
             this.cutPositionSlider.Maximum = 1000;
             this.cutPositionSlider.Name = "cutPositionSlider";
-            this.cutPositionSlider.Size = new System.Drawing.Size(254, 20);
+            this.cutPositionSlider.Size = new System.Drawing.Size(271, 20);
             this.cutPositionSlider.SmallChange = ((uint)(1u));
             this.cutPositionSlider.TabIndex = 1;
             this.cutPositionSlider.Text = "colorSlider1";
@@ -262,7 +258,7 @@
             this.panelAnalysis.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAnalysis.Location = new System.Drawing.Point(0, 260);
             this.panelAnalysis.Name = "panelAnalysis";
-            this.panelAnalysis.Size = new System.Drawing.Size(343, 278);
+            this.panelAnalysis.Size = new System.Drawing.Size(360, 221);
             this.panelAnalysis.TabIndex = 23;
             // 
             // groupBoxObjectAnalysis
@@ -270,56 +266,55 @@
             this.groupBoxObjectAnalysis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxObjectAnalysis.BackColor = System.Drawing.Color.White;
-            this.groupBoxObjectAnalysis.Controls.Add(this.tableAnalysisButtons);
-            this.groupBoxObjectAnalysis.Controls.Add(this.tableAnalysisData);
+            this.groupBoxObjectAnalysis.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxObjectAnalysis.Location = new System.Drawing.Point(3, 6);
             this.groupBoxObjectAnalysis.Name = "groupBoxObjectAnalysis";
-            this.groupBoxObjectAnalysis.Size = new System.Drawing.Size(337, 260);
+            this.groupBoxObjectAnalysis.Size = new System.Drawing.Size(354, 212);
             this.groupBoxObjectAnalysis.TabIndex = 0;
             this.groupBoxObjectAnalysis.TabStop = false;
             this.groupBoxObjectAnalysis.Text = "Object Analysis";
             // 
-            // tableAnalysisData
+            // tableLayoutPanel1
             // 
-            this.tableAnalysisData.ColumnCount = 2;
-            this.tableAnalysisData.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableAnalysisData.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableAnalysisData.Controls.Add(this.textModied, 0, 0);
-            this.tableAnalysisData.Controls.Add(this.labelModified, 1, 0);
-            this.tableAnalysisData.Controls.Add(this.textVertices, 0, 6);
-            this.tableAnalysisData.Controls.Add(this.labelVertices, 1, 6);
-            this.tableAnalysisData.Controls.Add(this.textEdges, 0, 7);
-            this.tableAnalysisData.Controls.Add(this.labelEdges, 1, 7);
-            this.tableAnalysisData.Controls.Add(this.textFaces, 0, 8);
-            this.tableAnalysisData.Controls.Add(this.labelFaces, 1, 8);
-            this.tableAnalysisData.Controls.Add(this.textLoopEdges, 0, 4);
-            this.tableAnalysisData.Controls.Add(this.labelLoopEdges, 1, 4);
-            this.tableAnalysisData.Controls.Add(this.textShells, 0, 9);
-            this.tableAnalysisData.Controls.Add(this.labelShells, 1, 9);
-            this.tableAnalysisData.Controls.Add(this.textIntersectingTriangles, 0, 2);
-            this.tableAnalysisData.Controls.Add(this.labelIntersectingTriangles, 1, 2);
-            this.tableAnalysisData.Controls.Add(this.textManifold, 0, 1);
-            this.tableAnalysisData.Controls.Add(this.labelManifold, 1, 1);
-            this.tableAnalysisData.Controls.Add(this.textHighlyConnected, 0, 5);
-            this.tableAnalysisData.Controls.Add(this.labelHighConnected, 1, 5);
-            this.tableAnalysisData.Controls.Add(this.textNormals, 0, 3);
-            this.tableAnalysisData.Controls.Add(this.labelNormals, 1, 3);
-            this.tableAnalysisData.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableAnalysisData.Location = new System.Drawing.Point(3, 64);
-            this.tableAnalysisData.Name = "tableAnalysisData";
-            this.tableAnalysisData.RowCount = 10;
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableAnalysisData.Size = new System.Drawing.Size(331, 193);
-            this.tableAnalysisData.TabIndex = 1;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.textModied, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelModified, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textVertices, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.labelVertices, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textEdges, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.labelEdges, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textFaces, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.labelFaces, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.textLoopEdges, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.labelLoopEdges, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textShells, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.labelShells, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.textIntersectingTriangles, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelIntersectingTriangles, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textManifold, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelManifold, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textHighlyConnected, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.labelHighConnected, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.textNormals, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelNormals, 1, 3);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(348, 193);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // textModied
             // 
@@ -334,7 +329,7 @@
             // labelModified
             // 
             this.labelModified.AutoSize = true;
-            this.labelModified.Location = new System.Drawing.Point(251, 0);
+            this.labelModified.Location = new System.Drawing.Point(264, 0);
             this.labelModified.Name = "labelModified";
             this.labelModified.Size = new System.Drawing.Size(35, 13);
             this.labelModified.TabIndex = 19;
@@ -353,7 +348,7 @@
             // labelVertices
             // 
             this.labelVertices.AutoSize = true;
-            this.labelVertices.Location = new System.Drawing.Point(251, 108);
+            this.labelVertices.Location = new System.Drawing.Point(264, 108);
             this.labelVertices.Name = "labelVertices";
             this.labelVertices.Size = new System.Drawing.Size(35, 13);
             this.labelVertices.TabIndex = 1;
@@ -371,7 +366,7 @@
             // labelEdges
             // 
             this.labelEdges.AutoSize = true;
-            this.labelEdges.Location = new System.Drawing.Point(251, 126);
+            this.labelEdges.Location = new System.Drawing.Point(264, 126);
             this.labelEdges.Name = "labelEdges";
             this.labelEdges.Size = new System.Drawing.Size(35, 13);
             this.labelEdges.TabIndex = 3;
@@ -389,7 +384,7 @@
             // labelFaces
             // 
             this.labelFaces.AutoSize = true;
-            this.labelFaces.Location = new System.Drawing.Point(251, 144);
+            this.labelFaces.Location = new System.Drawing.Point(264, 144);
             this.labelFaces.Name = "labelFaces";
             this.labelFaces.Size = new System.Drawing.Size(35, 13);
             this.labelFaces.TabIndex = 5;
@@ -407,7 +402,7 @@
             // labelLoopEdges
             // 
             this.labelLoopEdges.AutoSize = true;
-            this.labelLoopEdges.Location = new System.Drawing.Point(251, 72);
+            this.labelLoopEdges.Location = new System.Drawing.Point(264, 72);
             this.labelLoopEdges.Name = "labelLoopEdges";
             this.labelLoopEdges.Size = new System.Drawing.Size(35, 13);
             this.labelLoopEdges.TabIndex = 7;
@@ -425,7 +420,7 @@
             // labelShells
             // 
             this.labelShells.AutoSize = true;
-            this.labelShells.Location = new System.Drawing.Point(251, 162);
+            this.labelShells.Location = new System.Drawing.Point(264, 162);
             this.labelShells.Name = "labelShells";
             this.labelShells.Size = new System.Drawing.Size(41, 13);
             this.labelShells.TabIndex = 9;
@@ -443,7 +438,7 @@
             // labelIntersectingTriangles
             // 
             this.labelIntersectingTriangles.AutoSize = true;
-            this.labelIntersectingTriangles.Location = new System.Drawing.Point(251, 36);
+            this.labelIntersectingTriangles.Location = new System.Drawing.Point(264, 36);
             this.labelIntersectingTriangles.Name = "labelIntersectingTriangles";
             this.labelIntersectingTriangles.Size = new System.Drawing.Size(13, 13);
             this.labelIntersectingTriangles.TabIndex = 11;
@@ -461,7 +456,7 @@
             // labelManifold
             // 
             this.labelManifold.AutoSize = true;
-            this.labelManifold.Location = new System.Drawing.Point(251, 18);
+            this.labelManifold.Location = new System.Drawing.Point(264, 18);
             this.labelManifold.Name = "labelManifold";
             this.labelManifold.Size = new System.Drawing.Size(35, 13);
             this.labelManifold.TabIndex = 13;
@@ -479,7 +474,7 @@
             // labelHighConnected
             // 
             this.labelHighConnected.AutoSize = true;
-            this.labelHighConnected.Location = new System.Drawing.Point(251, 90);
+            this.labelHighConnected.Location = new System.Drawing.Point(264, 90);
             this.labelHighConnected.Name = "labelHighConnected";
             this.labelHighConnected.Size = new System.Drawing.Size(13, 13);
             this.labelHighConnected.TabIndex = 15;
@@ -497,39 +492,11 @@
             // labelNormals
             // 
             this.labelNormals.AutoSize = true;
-            this.labelNormals.Location = new System.Drawing.Point(251, 54);
+            this.labelNormals.Location = new System.Drawing.Point(264, 54);
             this.labelNormals.Name = "labelNormals";
             this.labelNormals.Size = new System.Drawing.Size(45, 13);
             this.labelNormals.TabIndex = 17;
             this.labelNormals.Text = "oriented";
-            // 
-            // buttonToggleModified
-            // 
-            this.buttonToggleModified.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonToggleModified.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonToggleModified.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonToggleModified.Location = new System.Drawing.Point(168, 3);
-            this.buttonToggleModified.Name = "buttonToggleModified";
-            this.buttonToggleModified.Size = new System.Drawing.Size(160, 23);
-            this.buttonToggleModified.TabIndex = 0;
-            this.buttonToggleModified.Text = "Original - Modified";
-            this.buttonToggleModified.UseVisualStyleBackColor = true;
-            this.buttonToggleModified.Click += new System.EventHandler(this.labelModified_Click);
-            // 
-            // buttonAnalyse
-            // 
-            this.buttonAnalyse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAnalyse.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonAnalyse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnalyse.Location = new System.Drawing.Point(3, 3);
-            this.buttonAnalyse.Name = "buttonAnalyse";
-            this.buttonAnalyse.Size = new System.Drawing.Size(159, 23);
-            this.buttonAnalyse.TabIndex = 0;
-            this.buttonAnalyse.Text = "Deep Analysis";
-            this.buttonAnalyse.UseVisualStyleBackColor = true;
-            this.buttonAnalyse.Click += new System.EventHandler(this.buttonAnalyse_Click);
             // 
             // panel1
             // 
@@ -558,7 +525,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 173);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 87);
+            this.panel1.Size = new System.Drawing.Size(360, 87);
             this.panel1.TabIndex = 22;
             // 
             // labelTranslation
@@ -789,7 +756,7 @@
             this.listObjects.Name = "listObjects";
             this.listObjects.OwnerDraw = true;
             this.listObjects.ShowGroups = false;
-            this.listObjects.Size = new System.Drawing.Size(343, 148);
+            this.listObjects.Size = new System.Drawing.Size(360, 148);
             this.listObjects.SmallImageList = this.imageList16;
             this.listObjects.TabIndex = 21;
             this.listObjects.UseCompatibleStateImageBehavior = false;
@@ -836,7 +803,7 @@
             this.toolStripInfo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(343, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(360, 25);
             this.toolStrip1.TabIndex = 19;
             this.toolStrip1.Text = "toolStripObjectEditor";
             // 
@@ -977,21 +944,6 @@
             this.saveSTL.Filter = "STL-Files|*.stl;*.STL|OBJ-Files|*.obj;*.OBJ";
             this.saveSTL.Title = "Save composition";
             // 
-            // tableAnalysisButtons
-            // 
-            this.tableAnalysisButtons.ColumnCount = 2;
-            this.tableAnalysisButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableAnalysisButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableAnalysisButtons.Controls.Add(this.buttonToggleModified, 1, 0);
-            this.tableAnalysisButtons.Controls.Add(this.buttonAnalyse, 0, 0);
-            this.tableAnalysisButtons.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableAnalysisButtons.Location = new System.Drawing.Point(3, 16);
-            this.tableAnalysisButtons.Name = "tableAnalysisButtons";
-            this.tableAnalysisButtons.RowCount = 1;
-            this.tableAnalysisButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableAnalysisButtons.Size = new System.Drawing.Size(331, 43);
-            this.tableAnalysisButtons.TabIndex = 1;
-            // 
             // STLComposer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1005,14 +957,13 @@
             this.panelCut.PerformLayout();
             this.panelAnalysis.ResumeLayout(false);
             this.groupBoxObjectAnalysis.ResumeLayout(false);
-            this.tableAnalysisData.ResumeLayout(false);
-            this.tableAnalysisData.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            this.tableAnalysisButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1063,7 +1014,7 @@
         private System.Windows.Forms.ToolStripButton toolRepair;
         private System.Windows.Forms.Panel panelAnalysis;
         private System.Windows.Forms.GroupBox groupBoxObjectAnalysis;
-        private System.Windows.Forms.TableLayoutPanel tableAnalysisData;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label textVertices;
         private System.Windows.Forms.Label labelVertices;
         private System.Windows.Forms.Label textEdges;
@@ -1095,8 +1046,5 @@
         public MB.Controls.ColorSlider cutInclinationSlider;
         private System.Windows.Forms.ToolStripButton toolStripInfo;
         public System.Windows.Forms.Panel panelControls;
-        private System.Windows.Forms.Button buttonToggleModified;
-        private System.Windows.Forms.Button buttonAnalyse;
-        private System.Windows.Forms.TableLayoutPanel tableAnalysisButtons;
     }
 }

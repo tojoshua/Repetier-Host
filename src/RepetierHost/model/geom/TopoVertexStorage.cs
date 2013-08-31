@@ -7,83 +7,6 @@ namespace RepetierHost.model.geom
 {
     public class TopoVertexStorage
     {
-        Dictionary<int, LinkedList<TopoVertex>> list = new Dictionary<int,LinkedList<TopoVertex>>();
-        int count = 0;
-        private int vertextHash(RHVector3 v)
-        {
-            int a = (int)(v.x*4.0);
-            int b = (int)v.y;
-            int c = (int)v.z;
-            return a ^ (b << 16) ^ (c << 8) ^ c ^ (b<<8);
-        }
-
-        public int Count
-        {
-            get { return count; }
-        }
-        public void Clear()
-        {
-            list.Clear();
-            count = 0;
-        }
-        public void ChangeCoordinates(TopoVertex vertex, RHVector3 newPos)
-        {
-            Remove(vertex);
-            vertex.pos = new RHVector3(newPos);
-            Add(vertex);
-        }
-        public void Add(TopoVertex vertex)
-        {
-            int hash = vertextHash(vertex.pos);
-            count++;
-            if (list.ContainsKey(hash))
-            {
-                list[hash].AddLast(vertex);
-            }
-            else
-            {
-                LinkedList<TopoVertex> vl = new LinkedList<TopoVertex>();
-                vl.AddFirst(vertex);
-                list[hash] = vl;
-            }
-        }
-
-        public TopoVertex SearchPoint(RHVector3 vertex)
-        {
-            int hash = vertextHash(vertex);
-            if (!list.ContainsKey(hash)) return null;
-            foreach (TopoVertex v in list[hash])
-            {
-                if (vertex.Distance(v.pos) < TopoModel.epsilon)
-                    return v;
-            }
-            return null;
-        }
-        public void Remove(TopoVertex vertex)
-        {
-            int hash = vertextHash(vertex.pos);
-            if (!list.ContainsKey(hash)) return;
-            foreach (TopoVertex v in list[hash])
-            {
-                if (v == vertex)
-                {
-                    count--;
-                    list[hash].Remove(vertex);
-                    return;
-                }
-            }
-        }
-        public System.Collections.IEnumerator GetEnumerator()
-        {
-            foreach(LinkedList<TopoVertex> vl in list.Values)
-            {
-                foreach (TopoVertex v in vl)
-                {
-                    yield return v;
-                }
-            }
-        }
-        /*
         public const int maxVerticesPerNode = 50;
         TopoVertexStorage left = null, right = null;
         TopoVertexStorageLeaf leaf = null;
@@ -91,7 +14,7 @@ namespace RepetierHost.model.geom
         private int count=0;
         double splitPosition;
 
-        private bool IsLeaf
+        public bool IsLeaf
         {
             get { return leaf != null; }
         }
@@ -126,7 +49,7 @@ namespace RepetierHost.model.geom
             }
             if (IsLeaf)
             {
-                if (leaf.vertices.Count < maxVerticesPerNode || level == 40)
+                if (leaf.vertices.Count < maxVerticesPerNode || level == 20)
                 {
                     leaf.Add(vertex);
                     return;
@@ -192,8 +115,8 @@ namespace RepetierHost.model.geom
                 foreach (TopoVertex v in leaf.vertices)
                     yield return v;
             }
-        }*/
-     /*   public HashSet<TopoVertex> SearchBox(RHBoundingBox box)
+        }
+        public HashSet<TopoVertex> SearchBox(RHBoundingBox box)
         {
             HashSet<TopoVertex> set = new HashSet<TopoVertex>();
             if(leaf!=null || left!=null)
@@ -211,7 +134,7 @@ namespace RepetierHost.model.geom
                 return;
             }
 
-        }*/
+        }
     }
 
     public class TopoVertexStorageLeaf

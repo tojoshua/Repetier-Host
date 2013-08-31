@@ -1417,6 +1417,82 @@ namespace RepetierHost.view
             cur.Redo();
         }
 
+        private void addFiberMotorRotation_Click(object sender, EventArgs e)
+        {
+            RLog.info("Start adding specific G-Code for rotation fiber motor");
+            RLog.info("Remove old code for rotation fiber motor, we gonna regenerate it completely");
+
+            bool contentChanged = true;
+            while (contentChanged) {
+                contentChanged = false;     
+                for (int number = 0; number < lines.Count; ++number) {
+                    if (lines[number].hasR) {
+                        contentChanged = true;     
+                        row = number;
+                        col = 0;
+                        selRow = number;
+                        selCol = lines[number].text.Length;
+                        DeleteSelection(true);
+                    }
+                }
+            }
+            const float defaultValue = -99999;
+
+            float previousX = defaultValue;
+            float previousY = defaultValue;
+
+            float maxDelta = 0;
+
+            string stringToInsert;
+            for (int number = 0; number < lines.Count; ++number)
+            {
+                RLog.info("processing string #" + number);
+                /// it is not G1 - ignore it
+                if (lines[number].compressedCommand != 1)
+                    continue;
+                /// set initial values;
+                if (previousX == defaultValue || previousY == defaultValue)
+                {
+                    if (lines[number].hasX)
+                        previousX = lines[number].getValueFor("X", defaultValue);
+                    if (lines[number].hasY)
+                        previousY = lines[number].getValueFor("Y", defaultValue);
+                    continue;
+                }
+                float currentX = lines[number].hasX ? lines[number].getValueFor("X", defaultValue) : previousX;
+                float currentY = lines[number].hasY ? lines[number].getValueFor("Y", defaultValue) : previousX;
+                float dx = currentX - previousX;
+                float dy = currentY - previousY;
+                /// the same koords, do nothing
+                if (dx == 0 && dy == 0)
+                    continue;
+                previousX = currentX;
+                previousY = currentY;
+
+                maxDelta = Math.Max(Math.Abs(dx), Math.Abs(dy));
+
+                float currentAngle = (float)Math.Atan2((double)dy, (double)dx);
+                int angleInDegrees = (int)(currentAngle / Math.PI * 180);
+                if (angleInDegrees < 0)
+                    angleInDegrees += 360;
+                stringToInsert = "G1 R" + angleInDegrees + "\n";
+                RLog.info(stringToInsert);
+                /// insert string
+                row = number;
+                col = 0;
+                selRow = number;
+                selCol = 0;
+                InsertString(stringToInsert);
+                ++number;
+            }
+            stringToInsert = "\nG1 R0\n";
+            row = lines.Count - 1;
+            col = lines.Last().text.Length;
+            selRow = lines.Count - 1;
+            selCol = lines.Last().text.Length;
+            InsertString(stringToInsert);
+        }
+
         private void toolSave_Click(object sender, EventArgs e)
         {
             if (cur.etype == 1)
@@ -1457,11 +1533,6 @@ namespace RepetierHost.view
             }
             else
             {
-                if (Main.main.lastFileLoadedName != null && Main.main.lastFileLoadedName.Length > 0)
-                {
-                    // Propose default name
-                    Main.main.saveJobDialog.FileName = Main.main.lastFileLoadedName + ".gcode";
-                }
                 if (Main.main.saveJobDialog.ShowDialog() == DialogResult.OK)
                 {
                     System.IO.File.WriteAllText(Main.main.saveJobDialog.FileName, Text, Encoding.Default);

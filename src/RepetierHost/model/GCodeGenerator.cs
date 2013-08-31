@@ -206,74 +206,7 @@ namespace RepetierHost.model
             NewLine();
             return Z;
         }
-        /// <summary>
-        /// Move to the given layer, not extruding.
-        /// </summary>
-        /// <param name="lay"></param>
-        /// <returns></returns>
-        /*public double GoToLayer(int lay)
-        {
-            layer = lay;
-            SetRetract(true);
-            if (layer == 1)
-                Z += FirstLayerHeight;
-            else
-                Z = layer * LayerHeight;
-            code.Append("G1 Z");
-            WriteDouble(Z);
-            WriteFeedrateExact(ZFeedRate);
-            NewLine();
-            return Z;
-        }
-        public void HomeXYAxis()
-        {
-            code.Append("G28 X0 Y0");
-            NewLine();
-        }
-         */
-        /// <summary>
-        /// Move to position with the given z. Set the layer as the one given
-        /// as parameter (as layers are an abstraction, we can't deduce the
-        /// number of layer just by the z value).
-        /// </summary>
-        /// <param name="z"></param>
-        /// <param name="lay"></param>
-        /// <returns></returns>
-        public double MoveZ(double z, int lay)
-        {
-            layer = lay;
-            SetRetract(true);
-            Z = z;
-            code.Append("G1 Z");
-            WriteDouble(Z);
-            WriteFeedrateExact(ZFeedRate);
-            NewLine();
-            return Z;
-        }
-        /// <summary>
-        /// Appends a G90 or G91 code depending on whether parameter absolute
-        /// is true or false.
-        /// </summary>
-        /// <param name="absolute"></param>
-        public void SetPositionMode(bool absolute)
-        {
-            if (absolute)
-            {
-                code.Append("G90");
-            }
-            else
-            {
-                code.Append("G91");
-            }
-            NewLine();
-        }
-        public void SetE(double e)
-        {
-            code.Append("G92 E" + e.ToString(GCode.format));
-            NewLine();
-            E = e;
-        } 
-         public void SetRetract(bool rt)
+        public void SetRetract(bool rt)
         {
             if (rt == IsRetract) return;
             if (RetractionDistance <= 0) return;

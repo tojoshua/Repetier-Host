@@ -92,12 +92,11 @@ namespace RepetierHost.connector
        // int ignoreXEqualResendsResend = 0;
         bool prequelFinished = false;
 
-       /* protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
+        protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
         {
-            Console.WriteLine("Fire Property changed " + PropertyChanged);
             if (PropertyChanged != null)
                 PropertyChanged(this, e);
-        }*/
+        }
         public SerialConnector()
         {
             con = Main.conn;
@@ -191,6 +190,7 @@ namespace RepetierHost.connector
             }
 
         }
+
         public override bool Connect()
         {
             resendError = 0;
@@ -572,10 +572,8 @@ namespace RepetierHost.connector
             {                
                 //serial.DtrEnable = !serial.DtrEnable;
                 serial.DtrEnable = true;
-                serial.RtsEnable = true;
                 Thread.Sleep(200);
                 serial.DtrEnable = false;
-                serial.RtsEnable = false;
             }
         }
         public override void ToggleETAMode()
@@ -586,17 +584,10 @@ namespace RepetierHost.connector
 
         public override void RunJob()
         {
-            bool isContinuedJob = false; // @continuedScript
-            List<GCodeShort> content = Main.main.editor.getContentArray(0);
-            if (content.Count == 0) return; // nothing to print
-            if(content[0].text.StartsWith("@continuedScript"))
-                isContinuedJob = true;
             job.BeginJob();
-            if(!isContinuedJob)
-                job.PushGCodeShortArray(Main.main.editor.getContentArray(1));
-            job.PushGCodeShortArray(content);
-            if (!isContinuedJob)
-                job.PushGCodeShortArray(Main.main.editor.getContentArray(2));
+            job.PushGCodeShortArray(Main.main.editor.getContentArray(1));
+            job.PushGCodeShortArray(Main.main.editor.getContentArray(0));
+            job.PushGCodeShortArray(Main.main.editor.getContentArray(2));
             job.EndJob();
             Main.main.Invoke(Main.main.UpdateJobButtons);
         }
@@ -620,10 +611,6 @@ namespace RepetierHost.connector
                 InjectManualCommand(code.text);
             }
             Main.main.Invoke(Main.main.UpdateJobButtons);
-            if (eventPauseChanged != null)
-            {
-                eventPauseChanged(true);
-            } 
         }
         public override void ContinueJob()
         {
@@ -639,10 +626,6 @@ namespace RepetierHost.connector
             InjectManualCommand("G1 F" + pauseF.ToString(GCode.format)); // Reset old speed
             paused = false;
             Main.main.Invoke(Main.main.UpdateJobButtons);
-            if (eventPauseChanged != null)
-            {
-                eventPauseChanged(false);
-            }
         }
         public override Printjob Job { get { return job; } }
 
@@ -660,24 +643,14 @@ namespace RepetierHost.connector
         {
             return Name;
         }
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
-        protected bool SetField<T>(ref T field, T value, string propertyName)
-        {
-            if (EqualityComparer<T>.Default.Equals(field, value)) return false;
-            field = value;
-            OnPropertyChanged(propertyName);
-            return true;
-        }
         public string Port
         {
             get { return port; }
             set
             {
-                SetField(ref port, value, "Port");
+                if (port == value) return;
+                port = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("Port"));
             }
         }
         public string BaudRate
@@ -685,7 +658,9 @@ namespace RepetierHost.connector
             get { return baudRate; }
             set
             {
-                SetField(ref baudRate, value, "BaudRate");
+                if (baudRate == value) return;
+                baudRate = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("BaudRate"));
             }
         }
         public int Protocol
@@ -693,7 +668,9 @@ namespace RepetierHost.connector
             get { return transferProtocol; }
             set
             {
-                SetField(ref transferProtocol, value, "Protocol");
+                if (transferProtocol == value) return;
+                transferProtocol = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("Protocol"));
             }
         }
         public string ReceiveCacheSizeString
@@ -703,7 +680,9 @@ namespace RepetierHost.connector
             {
                 int size;
                 int.TryParse(value, out size);
-                SetField(ref receiveCacheSize, size, "ReceiveCacheSizeString");
+                if (size == receiveCacheSize) return;
+                receiveCacheSize = size;
+                OnPropertyChanged(new PropertyChangedEventArgs("ReceivingCacheSizeString"));
             }
         }
         public int ResetOnConnect
@@ -711,7 +690,9 @@ namespace RepetierHost.connector
             get { return resetOnConnect; }
             set
             {
-                SetField(ref resetOnConnect, value, "ResetOnConnect");
+                if (resetOnConnect == value) return;
+                resetOnConnect = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("ResetOnConnect"));
             }
         }
         public int ResetOnEmergency
@@ -719,7 +700,9 @@ namespace RepetierHost.connector
             get { return resetOnEmergency; }
             set
             {
-                SetField(ref resetOnEmergency, value, "ResetOnEmergency");
+                if (resetOnEmergency == value) return;
+                resetOnEmergency = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("ResetOnEmergency"));
             }
         }
         public bool PingPong
@@ -727,7 +710,9 @@ namespace RepetierHost.connector
             get { return pingPong; }
             set
             {
-                SetField(ref pingPong, value, "PingPong");
+                if (pingPong == value) return;
+                pingPong = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("PingPong"));
             }
         }
 
@@ -972,7 +957,7 @@ namespace RepetierHost.connector
                                         gc.N = ++lastline;
                                         lineInc = true;
                                     }
-                                    cmd = (binaryVersion == 0 || gc.forceAscii ? enc.GetBytes(gc.getAscii(true, true)+"\r\n") : gc.getBinary(binaryVersion));
+                                    cmd = (binaryVersion == 0 || gc.forceAscii ? enc.GetBytes(gc.getAscii(true, true) + "\r\n") : gc.getBinary(binaryVersion));
                                     if (!pingPong && receivedCount() + cmd.Length > receiveCacheSize) { if (lineInc) --lastline; return false; } // printer cache full
                                     if (pingPong) readyForNextSend = false;
                                 }
@@ -983,7 +968,7 @@ namespace RepetierHost.connector
                             {
                                 lock (nackLines) { nackLines.AddLast(new NackData(cmd.Length, con.analyzer.estimatedCommandTime)); }
                                 serial.Write(cmd, 0, cmd.Length);
-                               // RLog.info("Send:" + gc.getAscii(true, true));
+                                // RLog.info("Send:" + gc.getAscii(true, true));
                                 bytesSend += cmd.Length;
                                 linesSend++;
                                 lastCommandSend = DateTime.Now.Ticks;
@@ -1008,6 +993,7 @@ namespace RepetierHost.connector
                             lock (history)
                             {
                                 gc = job.PeekData();
+
                                 if (gc.hostCommand)
                                 {
                                     hostCommand = gc;
@@ -1033,6 +1019,8 @@ namespace RepetierHost.connector
                             if (!gc.hostCommand)
                             {
                                 lock (nackLines) { nackLines.AddLast(new NackData(cmd.Length, con.analyzer.estimatedCommandTime)); }
+                                RLog.info("string command to send: " + gc.Text);
+
                                 serial.Write(cmd, 0, cmd.Length);
                                 bytesSend += cmd.Length;
                                 linesSend++;
@@ -1106,6 +1094,8 @@ namespace RepetierHost.connector
                                 read = read.Substring(pos + 1);
                                 if (response.Length > 0)
                                 {
+
+                                    RLog.info("the printer answered: " + response);
                                     AnalyzeResponse(response);
                                 }
                                 TrySendNextLine();
@@ -1146,6 +1136,7 @@ namespace RepetierHost.connector
                 read = read.Substring(pos + 1);
                 if (response.Length > 0)
                 {
+                    RLog.info("the printer answered: " + response);
                     AnalyzeResponse(response);
                 }
                 TrySendNextLine();

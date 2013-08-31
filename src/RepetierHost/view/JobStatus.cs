@@ -56,11 +56,6 @@ namespace RepetierHost.view
             lTotalLines.Text = Trans.T("L_TOTAL_LINES:");
             buttonClose.Text = Trans.T("B_CLOSE");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
         private void timer_Tick(object sender, EventArgs e)
         {
             Printjob j = Main.conn.connector.Job;

@@ -1,4 +1,4 @@
-/*
+﻿/*
    Copyright 2011 repetier repetierdev@gmail.com
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,8 +30,6 @@ using RepetierHost.model.geom;
 using Microsoft.Win32;
 using System.Threading;
 using System.Diagnostics;
-using RepetierHost.model;
-using RepetierHost.connector; 
 
 namespace RepetierHost
 {
@@ -80,8 +78,6 @@ namespace RepetierHost
         public Trans trans = null;
         public RepetierHost.view.RepetierEditor editor;
         public double gcodePrintingTime = 0;
-        public string lastFileLoadedName = null;
-
         public class JobUpdater
         {
             GCodeVisual visual = null;
@@ -236,7 +232,6 @@ namespace RepetierHost
             }
             slicerToolStripMenuItem.Visible = false;
             splitLog.Panel2Collapsed = !RegMemory.GetBool("logShow", true);
-            splitPrinterId.Panel1Collapsed = !RegMemory.GetBool("printerIdShow", false);
             conn.eventConnectionChange += OnPrinterConnectionChange;
             conn.eventPrinterAction += OnPrinterAction;
             conn.eventJobProgress += OnJobProgress;
@@ -379,7 +374,6 @@ namespace RepetierHost
             toolAction.Text = Trans.T("L_IDLE");
             toolConnection.Text = Trans.T("L_DISCONNECTED");
             updateTravelMoves();
-            printerIdLabel.Text = printerSettings.comboPrinter.Text;
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
             this.DragDrop += new DragEventHandler(Form1_DragDrop);
@@ -551,10 +545,6 @@ namespace RepetierHost
             leadscrewCalculatorToolStripMenuItem.Text = Trans.T("M_LEADSCREW_CALCULATOR");
             fitPrinterToolStripMenuItem.Text = Trans.T("M_FIT_PRINTER");
             fitObjectsToolStripMenuItem.Text = Trans.T("M_FIT_OBJECTS");
-            snapshotToolStripMenuItem.Text = Trans.T("M_POSPONED_JOBS");
-            loadStateToolStripMenuItem.Text = Trans.T("M_RESUME_JOB");
-            saveStateToolStripMenuItem.Text = Trans.T("M_POSTPONE_JOB");
-            togglePrinterIdToolStripMenuItem.Text = Trans.T("M_TOGGLE_PRINTER_ID");
             updateTravelMoves();
             updateShowFilament();
             foreach (ToolStripMenuItem item in languageToolStripMenuItem.DropDownItems)
@@ -680,7 +670,6 @@ namespace RepetierHost
             sendScript3ToolStripMenuItem.Enabled = connected;
             sendScript4ToolStripMenuItem.Enabled = connected;
             sendScript5ToolStripMenuItem.Enabled = connected;
-            saveStateToolStripMenuItem.Enabled = connected;
             if (connected)
             {
                 toolConnect.Image = imageList.Images[0];
@@ -785,7 +774,6 @@ namespace RepetierHost
             if (!File.Exists(file)) return;
             FileInfo f = new FileInfo(file);
             Title = f.Name;
-            lastFileLoadedName = Path.GetFileNameWithoutExtension(f.Name);
             fileHistory.Save(file);
             UpdateHistory();
             string fileLow = file.ToLower();
@@ -937,7 +925,6 @@ namespace RepetierHost
             RegMemory.SetInt("infoEditSplitterDistance", splitInfoEdit.SplitterDistance);
 
             RegMemory.SetBool("logShow", !splitLog.Panel2Collapsed);
-            RegMemory.SetBool("printerIdShow", !splitPrinterId.Panel1Collapsed);
 
             if (previewThread != null)
                 previewThread.Join();
@@ -1648,7 +1635,7 @@ namespace RepetierHost
             threeDSettings.ShowFaces = !threeDSettings.ShowFaces;
         }
 
-        public void tdSettings_CurrentChanged(object sender, EventArgs e)
+        private void tdSettings_CurrentChanged(object sender, EventArgs e)
         {
             showEdgesToolStripMenuItem.Checked = threeDSettings.ShowEdges;
             showFacesToolStripMenuItem.Checked = threeDSettings.ShowFaces;
@@ -1677,235 +1664,6 @@ namespace RepetierHost
             threedview.FitObjects();
         }
 
-        private void loadStateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //ValidatePreconditionsToLoadStateSnapshot(Main.conn);
-
-                PendingPrintJobsDialog dialog = new PendingPrintJobsDialog();
-                dialog.ShowDialog();
-
-                PendingPrintJob job = dialog.GetSelectedJob();
-                if (job == null)
-                {
-                    // User cancelled
-                    return;
-                }
-                PrintingStateSnapshot state = job.GetSnapshot(); //LoadStateFile();
-                lastFileLoadedName = job.Name;
-                this.Title = job.Name;
-
-                GCodeExecutor executor = new PrinterConnectionGCodeExecutor(conn, false);
-                state.RestoreState(executor);
-                Main.main.Invoke(Main.main.UpdateJobButtons);
-            }
-            catch (IOException ex)
-            {
-                MessageBox.Show(ex.ToString(), Trans.T("L_ERROR"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                MessageBox.Show(ex.ToString(), Trans.T("L_ERROR"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private OnPosChange SaveStateOnNewLayerDelegate;
-        private PrinterConnectorBase.OnPauseChanged SaveStateOnPauseDelegate;
-        private SnapshotDialog snapshotDialog;
-        // NOTE: Used an array for the lock object because strings could be
-        // immutable.
-        private string[] lockObject = new string[0];
-        private string snapshotNameOnNextSaveState;
-        private void saveStateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!ValidatePreconditionsToSaveStateSnapshot(Main.conn))
-            {
-                // conditions not met
-                return;
-            }
-
-            string snapshotName = ReadSnapshotName();
-            if (snapshotName == null)
-            {
-                // User cancelled
-                return;
-            }
-
-            double lastZ = Main.conn.analyzer.z;
-            lock (lockObject)
-            {
-                // We save the state when the first of these three events happen:
-                // - Print job is paused (if it's paused at the moment the user
-                // tries to take the snapshot, then it's taken at that moment)
-                // - A new layer is reached.
-                // - The user forces the snapshot from the snapshot dialog.
-
-                SaveStateOnNewLayerDelegate = new OnPosChange(delegate(GCode gc, float x, float y, float z)
-                {
-                    if (z != lastZ)
-                    {
-                        // New Layer, ready to save state.
-                        OnReadyToSaveStateCallback();
-                    }
-                });
-
-                SaveStateOnPauseDelegate = new PrinterConnectorBase.OnPauseChanged(delegate(bool paused)
-                {
-                    if (paused)
-                    {
-                        OnReadyToSaveStateCallback();
-                    }
-                });
-
-                snapshotNameOnNextSaveState = snapshotName;
-                Main.conn.analyzer.eventPosChanged += SaveStateOnNewLayerDelegate;
-                Main.conn.connector.eventPauseChanged += SaveStateOnPauseDelegate;
-                if (snapshotDialog == null)
-                {
-                    // FIXME this can lead to a race condition
-                    snapshotDialog = new SnapshotDialog();
-                }
-
-                if (Main.conn.connector.IsPaused)
-                {
-                    // In this case we mustn't wait until the new layer is
-                    // reached, but instead we must take the snapshot now.
-                    OnReadyToSaveStateCallback();
-                }
-            }
-            snapshotDialog.Show();
-        }
-
-
-
-        private bool ValidatePreconditionsToSaveStateSnapshot(PrinterConnection conn)
-        {
-            return conn.connector.IsJobRunning();
-        }
-
-        internal void CancelSaveState()
-        {
-            lock (lockObject)
-            {
-                if (SaveStateOnNewLayerDelegate != null)
-                {
-                    Main.conn.analyzer.eventPosChanged -= SaveStateOnNewLayerDelegate;
-                    Main.conn.connector.eventPauseChanged -= SaveStateOnPauseDelegate;
-                    SaveStateOnNewLayerDelegate = null;
-                    SaveStateOnPauseDelegate = null;
-                    if (snapshotDialog != null)
-                    {
-                        // FIXME this can lead to a race condition
-                        snapshotDialog.Close();
-                        snapshotDialog = null;
-                    }
-                }
-            }
-        }
-
-        public void OnReadyToSaveStateCallback()
-        {
-            string snapshotName;
-            lock (lockObject)
-            {
-                if (SaveStateOnNewLayerDelegate == null)
-                {
-                    // Already cancelled.
-                    return;
-                }
-
-                // keep snapshot name
-                snapshotName = snapshotNameOnNextSaveState;
-
-                // We want the event to execute only once, so, we must remove it
-                // after the condition was met.
-                Main.conn.analyzer.eventPosChanged -= SaveStateOnNewLayerDelegate;
-                Main.conn.connector.eventPauseChanged -= SaveStateOnPauseDelegate;
-                SaveStateOnNewLayerDelegate = null;
-                SaveStateOnPauseDelegate = null;
-                snapshotNameOnNextSaveState = null;
-                if (snapshotDialog != null)
-                {
-                    // FIXME this can lead to a race condition
-                    snapshotDialog.Close();
-                    snapshotDialog = null;
-                }
-            }
-            // Capture state, so that any movement we do later is not affected.
-            PrintingStateSnapshot state = SnapshotFactory.TakeSnapshot(Main.conn);
-
-            // Kill job. This will move the extruder to prevent melting the
-            // object.
-
-            conn.connector.KillJob();
-            try
-            {
-                SaveStateFile(state, snapshotName);
-                MessageBox.Show(Trans.T("L_PRINT_STATE_SAVED_SUCCESSFULLY"));
-            }
-
-            catch (IOException ex)
-            {
-                MessageBox.Show(ex.ToString(), Trans.T("L_ERROR"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            catch (UnauthorizedAccessException ex)
-            {
-                MessageBox.Show(ex.ToString(), Trans.T("L_ERROR"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-        private void SaveStateFile(PrintingStateSnapshot state, string snapshotName)
-        {
-            // Check if there's already a file with that name. The file would be overwritten.
-            //bool fileExists = (PendingPrintJobs.GetPendingJobWithName(snapshotName) != null);
-            PendingPrintJobs.Add(state, snapshotName);
-        }
-
-        /// <summary>
-        /// Show the user a dialog requesting a snapshot name.
-        /// If the name is iinvalid, ask him again until he sets a right name.
-        /// If the user cancels, returns null.
-        /// </summary>
-        /// <returns></returns>
-        private static string ReadSnapshotName()
-        {
-            // Propose as snapshot name, one that contains a timestamp.
-            string snapshotName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-            do
-            {
-                snapshotName = StringInput.GetString(Trans.T("L_POSTPONED_JOB_NAME"), Trans.T("L_NAME_POSTPONED_JOB"), snapshotName, true);
-                if (snapshotName == null)
-                {
-                    // User cancelled.
-                    return null;
-                }
-            } while (PendingPrintJob.IsInvalidSnapshotName(snapshotName));
-            return snapshotName;
-        }
-
-        private void printerIdLabel_DoubleClick(object sender, EventArgs e)
-        {
-            EditInstanceName.Execute();
-            /*
-            string printerId = StringInput.GetString(Trans.T("L_PRINTER_ID"), Trans.T("L_SET_PRINTER_ID"), printerIdLabel.Text, true);
-            if (printerId != null)
-            {
-                printerIdLabel.Text = printerId;
-                ColorDialog picker = new ColorDialog();
-                picker.Color = printerIdLabel.BackColor;
-                if (picker.ShowDialog() == DialogResult.OK)
-                {
-                    printerIdLabel.BackColor = picker.Color;
-                }
-            }*/
-        }
-        private void togglePrinterIdToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            splitPrinterId.Panel1Collapsed = !splitPrinterId.Panel1Collapsed;
-        }
         private void extraUrl1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openLink(Custom.GetString("extraLink1URL", ""));
@@ -1935,5 +1693,7 @@ namespace RepetierHost
         {
             threeDSettings.ShowCompass = !threeDSettings.ShowCompass;
         }
+
+
     }
 }

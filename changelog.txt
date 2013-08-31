@@ -1,9 +1,3 @@
-Version 0.91
-  Added compass to 3d view.
-  Faster object import - analysis only on request.
-  Fixed several small bugs, many mono/linux related.
-	Name repetier instance in case you started it several times.
-	
 Version 0.90C 07-07-2013
   Faster connect with reset
   Fixed crash when stl loaded is modified later.

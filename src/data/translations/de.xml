@@ -200,7 +200,7 @@ Du kannst Pausen in deinem Code einfügen mit:
 <t id="L_SECURITY_QUESTION" ver="1">Sicherheitsfrage</t>
 <t id="L_ADD_PRINTING_TIME" ver="1">Addiere zur Druckzeit</t>
 <t id="L_BAUD_RATE" ver="1">Baudrate:</t>
-<t id="L_CACHE_SIZE_HINT" ver="1">Seit Arduino 1.0 wurde der Cache von 127 auf 63 Byte reduziert!</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">Seit Arduino 1.0 wurde der Cache con 127 auf 63 Byte reduziert!</t>
 <t id="L_CHECK_EVERY_X" ver="1">Überprüfe alle $1 Sekunden.</t>
 <t id="L_CONNECTION_INFO" ver="1">Die Druckereinstellungen gehören immer zu dem oben gewählten Drucker. Sie werden bei jedem "OK" und "Übernehmen"-klick gespeichert. Um einen neuen Drucker anzulegen müssen sie nur oben einen neuen Namen eingeben und auf "Übernehmen" klicken. Der neue Drucker fängt mit den letzten Druckereinstellungen an.</t>
 <t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">Default Extruder Temperatur:</t>
@@ -606,28 +606,5 @@ Mögliche Gründe:
 <t id="L_OBJECT_IS_MANIFOLD" ver="9">Objekt ist mannigfaltig.</t>
 <t id="L_OBJECT_IS_NON_MANIFOLD" ver="9">Objekt ist nicht mannigfaltig. Slicen kann falsche Ergebnisse erzeugen. Bitte reparieren Sie das Objekt zuerst.</t>
 <t id="L_SHOW_COMPASS" ver="9">Zeige Kompass</t>
-<t id="L_CONFIRM_DELETE_JOB" ver="10">Are you sure you want to delete job $1?</t>
-<t id="L_PRINT_STATE_SAVED_SUCCESSFULLY" ver="10">State was saved successfully</t>
-<t id="M_POSPONED_JOBS" ver="10">Verschobene Jobs</t>
-<t id="M_RESUME_JOB" ver="10">Fortsetzen</t>
-<t id="M_POSTPONE_JOB" ver="10">Aktuellen Druckjob verschieben</t>
-<t id="W_POSTPONED_PRINT_JOBS" ver="10">Verschobene Druckaufträge</t>
-<t id="M_POSTPONED_JOB_SELECT_JOB" ver="10">Job fortsetzen</t>
-<t id="M_POSTPONED_JOB_KILL_JOB" ver="10">Job löschen</t>
-<t id="M_POSTPONED_JOB_RENAME_JOB" ver="10">Job umbenennen</t>
-<t id="L_POSTPONED_JOB_NAME" ver="10">Jobname</t>
-<t id="L_NAME_POSTPONED_JOB" ver="10">Bitte Job benennen</t>
-<t id="L_POSTPONED_JOB_DIALOG_DESCRIPTION" ver="10">Der Druckstatus wird gespeichert, sobald der aktuelle Layer fertig ist. Sie können das speichern auch erzwingen oder mit dem Druck fortfahren.</t>
-<t id="B_FORCE_SAVE_POSTPONED_JOB" ver="10">&amp;Abbruch erzwingen</t>
-<t id="B_RESUME_PRINTING_JOB" ver="10">&amp;Fortsetzen</t>
-<t id="W_POSTPONED_JOB_DIALOG" ver="10">Druckjob verschieben</t>
-<t id="M_TOGGLE_PRINTER_ID" ver="10">Wechsle Drucker ID Ansicht</t>
-<t id="L_PRINTER_ID" ver="10">Drucker ID</t>
-<t id="L_SET_PRINTER_ID" ver="10">Bitte Drucker-ID eingeben</t>
-<t id="L_BGCOLOR:" ver="10">Hintergrundfarbe:</t>
-<t id="L_EDIT_INSTANCE_NAME" ver="10">Bearbeite Drucker-ID</t>
-<t id="L_ANAYLSING" ver="10">Analysiere</t>
-<t id="L_NOT_TESTED" ver="10">Nicht geprüft</t>
-<t id="L_CONNECTOR:" ver="10">Verbindungsart:</t>
 </translation>
 

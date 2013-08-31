@@ -117,21 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABzklEQVQ4T72SS0tbQRTHRyG7
-        igsFXeqqhW5KpZsKfgO9WSQx7/e7uXksxE0RiqJ2IW5aS9tF10XwC7QUxI/QTR5koaviheTGmkTbJONv
-        pHWTK1IKLv7cc8/8z2/mnBkhpfwv3QT9fl/U63VRLpdFpVJRmq7VavNogXhW5dQa/6LX6w0DOp2OiMfj
-        QtM04XA4ZoLB4I9QKGSgU9RyOp3P7Xa7IC9arZYlYDSVSj3GuOj3+98C63m93h20HYvFTAr3XS6XFg6H
-        nzYaDdsQwDTNKV3Xf2UyGZnP52WpVJKFQuFaf+NcLiej0aisVqtPhgDtdtuWTqeX3G73C07wMhAIbLLr
-        thLxFlrzeDx6JBJxGYbxYAjQ7XYFLYxi2sX8Bsi6z+d7hTaIlfZo5z2A8dtmoACTGCS7fmYGBsf9zgC/
-        JpNJCeADs5CsP2o2m7cCJhjSJTstYfxG8R6FOoXHtDZH7jd6eBfgAsAyxkMAHwGsADgBsHBvANWChlG1
-        8A5A4U8Lz+4EJBKJCQY4APAaYxnAFwCfAJgAVoFLctZDVNfIY7EBOeAhdYh/onPidrFYPOPb5YRH2Wx2
-        zPIaldQC9BFe5bSVWLMpz2AwsAb8u6S4Al5xXKfsxdkLAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="labelShapeInfo.Text" xml:space="preserve">
     <value>The min and max values define the possible range of extruder coordinates. These coordinates
 can be negative and outside the print bed. Bed left/front define the coordinates where the
@@ -141,6 +126,7 @@ center of the print bed, if supported by firmware.</value>
   <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEACACoCAAAFgAAACgAAAAgAAAAQAAAAAEACAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAA
@@ -181,6 +167,20 @@ center of the print bed, if supported by firmware.</value>
         IiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
+  <data name="buttonDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABzklEQVQ4T72SS0tbQRTHRyG7
+        igsFXeqqhW5KpZsKfgO9WSQx7/e7uXksxE0RiqJ2IW5aS9tF10XwC7QUxI/QTR5koaviheTGmkTbJONv
+        pHWTK1IKLv7cc8/8z2/mnBkhpfwv3QT9fl/U63VRLpdFpVJRmq7VavNogXhW5dQa/6LX6w0DOp2OiMfj
+        QtM04XA4ZoLB4I9QKGSgU9RyOp3P7Xa7IC9arZYlYDSVSj3GuOj3+98C63m93h20HYvFTAr3XS6XFg6H
+        nzYaDdsQwDTNKV3Xf2UyGZnP52WpVJKFQuFaf+NcLiej0aisVqtPhgDtdtuWTqeX3G73C07wMhAIbLLr
+        thLxFlrzeDx6JBJxGYbxYAjQ7XYFLYxi2sX8Bsi6z+d7hTaIlfZo5z2A8dtmoACTGCS7fmYGBsf9zgC/
+        JpNJCeADs5CsP2o2m7cCJhjSJTstYfxG8R6FOoXHtDZH7jd6eBfgAsAyxkMAHwGsADgBsHBvANWChlG1
+        8A5A4U8Lz+4EJBKJCQY4APAaYxnAFwCfAJgAVoFLctZDVNfIY7EBOeAhdYh/onPidrFYPOPb5YRH2Wx2
+        zPIaldQC9BFe5bSVWLMpz2AwsAb8u6S4Al5xXKfsxdkLAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="bindingConnectors.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

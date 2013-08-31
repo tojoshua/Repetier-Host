@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<translation revision="9" language="Latviešu" languageInEnglish="Latvian" author="www.ajmotion.lv">
+<translation revision="5" language="Latviešu" languageInEnglish="Latvian" author="www.ajmotion.lv">
 <t id="M_FILE" ver="1">Datnes</t>
 <t id="M_CONFIG" ver="1">Konfigurēt</t>
 <t id="M_SLICER" ver="1">Griezējs</t>
@@ -87,7 +87,6 @@
 <t id="L_ERROR" ver="1">Kļūda</t>
 <t id="L_PAUSE_MSG" ver="1">Spiedi OK lai turpinātu.
 Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
-
 <t id="L_DISCONNECTED" ver="1">Atvienots</t>
 <t id="L_UPDATING..." ver="1">Atjaunina ...</t>
 <t id="L_SLICE_WITH" ver="1">Griezt ar $1</t>
@@ -202,9 +201,6 @@ Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
 <t id="L_CACHE_SIZE_HINT" ver="1">No Arduino 1 saņemtā kešatmiņa tika samazināta no 127 uz 63 baitiem!</t>
 <t id="L_CHECK_EVERY_X" ver="1">Pārbauda katras $1 sekundes.</t>
 <t id="L_CONNECTION_INFO" ver="1">Printera iestatījumi vienmēr sakrīt ar izvēlēto printeri, kurš redzams izvēlnē. Iestatījumi tiek saglabāti spiežot pogu OK vai pielietot. Lai pievienotu jaunu printeri, vienkārši ierakstiet jauno printera vardu un spiediet pielietot. Jaunais printeris tiks uzstādīts ar pēdējiem iestatījumiem, kuri bija izveidoti.</t>
-
-
-
 <t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">Printera galvas temperatūra:</t>
 <t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">Printēšanas virsmas temperatūra:</t>
 <t id="L_DUMP_AREA_DEPTH" ver="1">Virsmas dziļums:</t>
@@ -212,7 +208,6 @@ Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
 <t id="L_DUMP_AREA_LEFT" ver="1">Virsmas kreisā puse:</t>
 <t id="L_DUMP_AREA_WIDTH" ver="1">Virsmas platums:</t>
 <t id="L_FILTER_INFO" ver="1">Jūs varat palaist filtru programmu pēc katras objekta griezšanas. Filtri tiks ielikti G-Kodā pēc objekta griezšanas. Izmanto #in un #out, lai ieliktu ievades un izvades datņu nosaukumus kā parametrus.</t>
-
 <t id="L_FILTER_PATH_PARAM" ver="1">Novirzītais ceļš un parametri:</t>
 <t id="L_PARITY" ver="1">Paritāte:</t>
 <t id="L_PARK_POSITION" ver="1">Novietojuma pozīcija:</t>
@@ -247,7 +242,7 @@ Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
 <t id="TAB_PRINTER_SHAPE" ver="1">Izmēri</t>
 <t id="TAB_ADVANCED" ver="1">Uzlabojumi</t>
 <t id="W_PRINTER_SETTINGS" ver="1">Printera uzstādījumi</t>
-<t id="L_POST_SLICE_FILTER" ver="1">Pievienot griešanas filtru</t>
+<t id="L_POST_SLICE_FILTER" ver="1">Pievienot griezšanas filtru</t>
 <t id="L_Z_MIN" ver="1">Z-Min</t>
 <t id="W_PRINT_PAUSED" ver="1">Printēšana iepauzēta</t>
 <t id="L_PAUSE_HINT" ver="1">Piezīme: Jums ir atļauts pārvietot galvu jebkurā virzienā, mainīt auklu, izspiest auklu vai iztīrīt sprauslu, ja radusies aizsprostošanās. Programmatūra atjaunos galvas novietojumu iepriekš iepauzētajā vietā.</t>
@@ -260,13 +255,12 @@ Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
 <t id="L_INSTALLED_VERSION" ver="1">Uzstādītā versija:</t>
 <t id="L_INFORMATION_ON_UPDATE" ver="1">Informācija par atjauninājumu</t>
 <t id="L_NO_NEW_UPDATES" ver="1">Nav jaunu atjauninājumu. Jūs izmantojat pēdējo versiju.</t>
-
 <t id="L_UPDATE_STATUS" ver="1">Atjauninājuma statuss</t>
-<t id="W_SLICING_INFO" ver="1">Griešanas informācija</t>
+<t id="W_SLICING_INFO" ver="1">Griezšanas informācija</t>
 <t id="L_ACTION:" ver="1">Darbība:</t>
 <t id="L_DURATION:" ver="1">Laiks:</t>
 <t id="L_SLICER:" ver="1">Griezējs:</t>
-<t id="L_START_JOB_AFTER_SLICING" ver="1">Sākt darbu pēc griešanas</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">Sākt darbu pēc griezšanas</t>
 <t id="W_ABOUT_REPETIER_HOST" ver="1">Par Repetier-Host</t>
 <t id="L_LICENCE_AND_LIBRARIES" ver="1">Licences un bibliotēkas</t>
 <t id="L_REPETIER_INFO" ver="1">Šī programmatūra ir izstrādāta, lai kontrolētu RepRap un līdzīgus 3D printerus. Vislabāk lietot Repetier-Firmware, kurš atbalsta visas programmatūras iespējas. Citu printeru Firmware, piemēram, Marlin, Teacup, Sprinter vai 5D GCode jāpapildina ar pareiziem iestatījumiem.</t>
@@ -291,16 +285,12 @@ Jūs varat pievienot pauzes savam G-Kodam ar tekstu @pause</t>
 Iespējamie risinājumi:
 - kļūda griezšanas procesā, jo netika pabeigta griezšana. Pārbaudiet žurnāla ierakstus.
 - griezējs saglabāja datni ar nepareizu nosaukumu.</t>
-
 <t id="B_CLOSE" ver="1">Aizvērt</t>
 <t id="W_REPETIER_SETTINGS" ver="1">Repetier-Host uzstādījumi</t>
 <t id="L_BEHAVIOUR" ver="1">Uzvedība</t>
 <t id="L_FILES_AND_DIRECTORIES" ver="1">Datnes un katalogi</t>
 <t id="L_GUI" ver="1">GUI</t>
 <t id="L_INFO_WORKDIR" ver="1">Žurnāla datnes un pagaidu datnes priekš griezšanas tiek saglabātas darba katalogā. Ja ieraksti ir iespējoti, tie ir atrodami datnē repetier.log pēc programmatūras aizvēršanas. Palaižot programmatūru vecā ierakstu datne tiek izdzēsta! Žurnāla datne satur visus ierakstus, ko veicis printeris, ja vien ir iespējots žurnāla logā. Ierakstu izmaiņas ir aktivizētas pēc nākamās programmatūras palaišanas.</t>
-
-
-
 <t id="L_LOG_SESSION" ver="1">Žurnāla sesija</t>
 <t id="REDUCE_TOOLBAR_SIZE" ver="1">Samazināt rīkjoslas izmērus</t>
 <t id="L_DISABLE_QUALITY_REDUCTION" ver="1">Atspējot kvalitātes samazināšanu</t>
@@ -317,12 +307,10 @@ Iespējamie risinājumi:
 <t id="L_BACKGROUND" ver="1">Fons:</t>
 <t id="L_DIFFUSE_COLOR" ver="1">Izkliedes krāsa:</t>
 <t id="L_DRAW_METHOD" ver="1">Zīmēšanas metode:</t>
-<t id="L_EDGES" ver="1">Malas:</t>
+<t id="L_EDGES" ver="1">Karkas:</t>
 <t id="L_EXTRUDER_X:" ver="1">Galva $1:</t>
 <t id="L_FACES" ver="1">Virsmas:</t>
 <t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">Auklas ģeometrija ir izskaitļota iepriekš, no slāņa augstuma un slāņa platuma, vai no auklas diametra un E vērtībām, kuras dotas G-Kodā. Otra metode dod labākus rezultātus, ja slāņa augstums mainās, kurš var būt jaunākajā Skeinforge versijā.</t>
-
-
 <t id="L_FILAMENT_VISUALIZATION" ver="1">Auklas vizualizācija:</t>
 <t id="L_HOT_FILAMENT" ver="1">Karsta aukla:</t>
 <t id="L_HOT_FILAMENT_LENGTH" ver="1">Karstas auklas garums:</t>
@@ -434,13 +422,12 @@ Iespējamie risinājumi:
 <t id="L_M_MIN_SEGMENT_TIME" ver="1">Min segmentu laiks [ms]</t>
 <t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">Min pārbrauciena ātrums [mm/s]</t>
 <t id="L_M_PID_SETTINGS" ver="1">PID uzstādījumi:</t>
-<t id="L_M_STEPS_PER_MM" ver="1">Soļi pie katra mm:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">Soļi uz mm:</t>
 <t id="L_M_RETRACT_ACCELERATION" ver="1">Ievilkšanas paātrinājums:</t>
 <t id="B_M_LOAD" ver="1">Pārlādēt konfigurāciju</t>
 <t id="B_M_RESTORE" ver="1">Atjaunot rūpnieciskos uzstādījumus</t>
 <t id="B_M_SAVE" ver="1">Saglabāt EEPROM</t>
 <t id="L_M_CONFIRM_WRITE" ver="1">Uzstādījumi saglabāti palaistajā konfigurācijā. Vai rakstīt izmaiņas EEPROM?</t>
-
 <t id="L_M_SETTINGS_STORED" ver="1">Uzstādījumi saglabāti</t>
 <t id="L_M_SAVE_RETIEVED" ver="1">Saglabāt iegūtās izmaiņas EEPROM?</t>
 <t id="L_M_FACTORY_RETRIEVED" ver="1">Iegūt rūpnieciskos uzstādījumus</t>
@@ -507,113 +494,5 @@ Iespējamie risinājumi:
 <t id="L_NEW_FOLDER" ver="5">Jauna mape</t>
 <t id="L_USE_PARALLEL_PROJECTION" ver="5">Paralēlā projekcija</t>
 <t id="L_USE_RED_GREEN_SWITCH" ver="5">Izmantot sarkanas/zaļas pogas (nepieciešama pārstartēšana)</t>
-<t id="L_SLIC3R_NOT_FOUND" ver="6">Slic3r nav atrasts.</t>
-<t id="L_ANALYSING_STL" ver="6">Analizē STL datni ...</t>
-<t id="L_SLICING_STL" ver="6">Griež STL datni ...</t>
-<t id="L_PYPY_NOT_FOUND" ver="6">Pypy vai Python interpretētājs nav atrasts.</t>
-<t id="L_SKEINCRAFT_NOT_FOUND" ver="6">Skeinforge darbs nav atrasts.</t>
-<t id="L_PYTHON_NOT_FOUND" ver="6">Python interpretētājs nav atrasts.</t>
-<t id="L_SKEINFORGE_NOT_FOUND" ver="6">Skeinforge nav atrasts.</t>
-<t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">Skeinforge/SFACT profilu direktorija nav atrasta.</t>
-<t id="B_REFRESH_PORTS" ver="6">Atjaunot pieslēgumus</t>
-<t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">Printējamais augstums:</t>
-<t id="L_ROS_PRINTABLE_RADIUS:" ver="6">Printējamais rādius:</t>
-<t id="L_CARTESIAN_PRINTER" ver="6">Klasiskais printeris</t>
-<t id="L_CARTESIAN_PRINTER_DUMP" ver="6">Klasiskais printeris (ar nelietojamu laukumu)</t>
-<t id="L_ROSTOCK_CIRCLE" ver="6">Delta robota printeris (apaļu printēšanas virsmu)</t>
-<t id="L_CORRECT_NORMALS" ver="7">Izmantot pareizas normāles (izskatās labāk, bet nepieciešams vairāk atmiņas)</t>
-<t id="L_WARNING" ver="8">Brīdinājums</t>
-<t id="L_HEATERS_ON_QUEST" ver="8">Kādi sildītāji vēl jo projām ir ieslēgti. Vai izsēgt tos?</t>
-<t id="L_OBJECTS_OUTSIDE_SLICE_QUEST" ver="8">Kāds no objektiem ir ārā no printēšanas laukuma. Pārtraukt griešanu?</t>
-<t id="L_CNC_ROUTER" ver="8">CNC maršrutētājs</t>
-<t id="L_SLIC3R_VERSION" ver="8">Slic3r versija</t>
-<t id="L_MODEL_ERRORS" ver="9">Objekta kļūdas:</t>
-<t id="L_REPAIR" ver="9">Salabot</t>
-<t id="L_SPLIT" ver="9">Sadalīt</t>
-<t id="L_YES" ver="9">Jā</t>
-<t id="L_NO" ver="9">Nē</t>
-<t id="L_MODEL_CHANGED_RELOAD" ver="9">Vienas vai vairākas objektu datnes ir izmainītas. Pārlādēt objektus?</t>
-<t id="L_FILES_CHANGED" ver="9">Datnes izmainītas</t>
-<t id="L_INNER_FACES" ver="9">Iekšējās virsmas:</t>
-<t id="L_BACKGROUND_TOP" ver="9">Fons augšā:</t>
-<t id="L_BACKGROUND_BOTTOM" ver="9">Fons apakšā:</t>
-<t id="L_PRINTER_FRAME" ver="9">Printera rāmis:</t>
-<t id="L_ISOMETRIC_VIEW" ver="9">Izometriskais skats</t>
-<t id="L_BOTTOM_VIEW" ver="9">Apakšējais skats</t>
-<t id="L_LEFT_VIEW" ver="9">Kreisais skats</t>
-<t id="L_RIGHT_VIEW" ver="9">Labais skats</t>
-<t id="L_FRONT_VIEW" ver="9">Priekšējais skats</t>
-<t id="L_BACK_VIEW" ver="9">Aizmugures skats</t>
-<t id="M_VIEW" ver="9">Skats</t>
-<t id="M_SHOW_EDGES" ver="9">Rādīt šķautnes</t>
-<t id="M_SHOW_FACES" ver="9">Rādīt virsmas</t>
-<t id="L_ANA_MODIFIED" ver="9">Pārveidoti:</t>
-<t id="L_ANA_MANIFOLD" ver="9">Noslēgti:</t>
-<t id="L_ANA_INTERSECTING_TRIANGLES" ver="9">Trīsstūru krustpunkti:</t>
-<t id="L_ANA_NORMALS" ver="9">Normāles:</t>
-<t id="L_ANA_LOOP_EDGES" ver="9">Izliekums šķautnēs:</t>
-<t id="L_ANA_HIGHLY_CONNECTED" ver="9">Labi savienotas šķautnes:</t>
-<t id="L_ANA_VERTICES" ver="9">Punkti:</t>
-<t id="L_ANA_EDGES" ver="9">Šķautnes:</t>
-<t id="L_ANA_FACES" ver="9">Virsmas:</t>
-<t id="L_ANA_SHELLS" ver="9">Čaulas:</t>
-<t id="L_ANA_ORIENTED" ver="9">Orientēts</t>
-<t id="L_ANA_NOT_ORIENTED" ver="9">Neorientēts</t>
-<t id="M_TOOLS" ver="9">Rīki</t>
-<t id="M_BELT_CALCULATOR" ver="9">Siksnas kalkulators</t>
-<t id="M_LEADSCREW_CALCULATOR" ver="9">Vītņstieņa kalkulators</t>
-<t id="L_MOTOR_STEP_ANGLE" ver="9">Motora soļu leņķis</t>
-<t id="L_DRIVER_MICROSTEPPING" ver="9">Vadītāja mikrosoļi</t>
-<t id="L_BELT_PITCH" ver="9">Siksnas solis</t>
-<t id="L_TOOTH_COUNT" ver="9">Zobu skaits</t>
-<t id="B_CALCULATE" ver="9">Kalkulēt</t>
-<t id="L_STEPS_PER_MM" ver="9">Vērtība priekš soļiem uz katru mm</t>
-<t id="L_TOOTH_COUNT_MUST_INT" ver="9">Zobu skaits pārāk liels!</t>
-<t id="L_LEADSCREW_PITCH" ver="9">Vītņstieņa solis</t>
-<t id="L_GEAR_RATIO" ver="9">Zobratu attiecība</t>
-<t id="L_SERIAL_CONNECTION" ver="9">Seriālais pieslēgums</t>
-<t id="L_VIRTUAL_CONNECTION" ver="9">Virtuālais printeris</t>
-<t id="L_REPETIER_SERVER_CONNECTION" ver="9">Repetier-Serveris</t>
-<t id="L_CONNECTOR" ver="9">Savienotājs</t>
-<t id="L_DISABLED" ver="9">Atslēgts</t>
-<t id="L_DTR_LOW_HIGH" ver="9">DTR augsts->zems</t>
-<t id="L_DTR_LOW_HIGH_LOW" ver="9">DTR zems->augsts->zems</t>
-<t id="L_DTR_TOGGLE" ver="9">DTR pārslēgt</t>
-<t id="L_RESET_ON_CONNECT" ver="9">Atjaunot pie pieslēgšanās</t>
-<t id="L_RESET_ON_EMERGENCY" ver="9">Atjaunot pie avārijas</t>
-<t id="L_SEND_EMERGENCY_CMD" ver="9">Sūtīt avārijas komandu</t>
-<t id="L_SEND_EMERGENCY_CMD_DTR_TOGGLE" ver="9">Sūtīt avārijas komandu + DTR augsts->zems</t>
-<t id="L_SEND_EMERGENCY_CMD_RECONNECT" ver="9">Sūtīt avārijas komandu un atjaunot pieslēgumu</t>
-<t id="L_FILE_ASSOCIATIONS" ver="9">Datņu asociācijas</t>
-<t id="L_ASSOCIATE_EXTENSIONS" ver="9">Asociācijas paplašinājumi</t>
-<t id="L_CONNECTION_FAILED" ver="9">Pieslēgums neizdevās ar šādu kļūdu: $1. Vai esat pārliecināts, ka jūsu printeris ir pieslēgts, apstiprināts un pieslēguma dati ir ievadīti pareizi. Atver printera iestatījumus?</t>
-<t id="L_AUTOENABLE_PARALLEL_TOPVIEW" ver="9">Iespējot paralēlo novietojumu augšējā skatā</t>
-<t id="L_RESET_DEFAULTS" ver="9">Atjaunot noklusējumus</t>
-<t id="L_REMOVED_DEGENERATED" ver="9">Izņemt deģenerētus trīsstūrus:</t>
-<t id="L_REMOVED_ISOLATED" ver="9">Izņemt izolētus trīsstūrus:</t>
-<t id="L_REMOVED_DOUBLE" ver="9">Izņemt dublētus trīsstūrus:</t>
-<t id="L_STARTING_ANALYSER" ver="9">Sākt objekta analizēšanu ...</t>
-<t id="L_ANALYSER_FINISHED" ver="9">Analizēšana pabeigta.</t>
-<t id="L_LOADING_3D_FAILED" ver="9">3D datnes ielāde $1 neizdevās.</t>
-<t id="L_OBJECT_INFORMATIONS" ver="9">Objekta informācija</t>
-<t id="L_MINIMUM:" ver="9">Minimums:</t>
-<t id="L_MAXIMUM:" ver="9">Maksimums:</t>
-<t id="L_SIZE:" ver="9">Lielums:</t>
-<t id="L_VOLUME:" ver="9">Tilpums:</t>
-<t id="L_SURFACE:" ver="9">Virsma:</t>
-<t id="L_DIMENSIONS:" ver="9">Izmēri:</t>
-<t id="L_SPLIT_OBJECT" ver="9">Sadalīt objektu</t>
-<t id="L_FIX_NORMALS" ver="9">Salabot normāles</t>
-<t id="M_FIT_PRINTER" ver="9">Derīgs printeris</t>
-<t id="M_FIT_OBJECTS" ver="9">Derīgs objekts</t>
-<t id="IMPORTING_1" ver="9">Importē $1</t>
-<t id="L_LOADING..." ver="9">Ielādē ...</t>
-<t id="L_INTERSECTION_TESTS" ver="9">Krustpunktu testi</t>
-<t id="L_FIXING_NORMALS" ver="9">Salabotās normāles</t>
-<t id="L_ANA_FIXED_COLLINEAR_TRIANGLES" ver="9">Salaboti kolineārie trīsstūri:</t>
-<t id="L_ANA_CORRECTED_NORMAL_ORIENTATIONS" ver="9">Labotās normāļu orientācijas:</t>
-<t id="L_OBJECT_IS_MANIFOLD" ver="9">Objekts ir noslēgts.</t>
-<t id="L_OBJECT_IS_NON_MANIFOLD" ver="9">Objekts nav noslēgts. Griežot var veidot nepareizu rezultātu. Lūdzu pirmkārt salabojiet objekta datni.</t>
-<t id="L_" ver="9"></t>
 </translation>
 

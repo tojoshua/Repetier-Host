@@ -60,11 +60,6 @@ namespace RepetierHost.view
             buttonCancel.Text = Trans.T("B_CANCEL");
             buttonOK.Text = Trans.T("B_OK");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        }
         private void buttonOK_Click(object sender, EventArgs e)
         {
             exit = true;

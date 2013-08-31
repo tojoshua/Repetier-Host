@@ -54,11 +54,7 @@ namespace RepetierHost.view
         {
             Main.main.openLink("https://github.com/repetier/Repetier-Host");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
+
         private void About_FormClosing(object sender, FormClosingEventArgs e)
         {
             RegMemory.StoreWindowPos("aboutWindow", this, false, false);

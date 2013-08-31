@@ -8,7 +8,7 @@ namespace RepetierHost.model
 {
     public class GCodeShort
     {
-        public float x, y, z, e,f,emax;
+        public float x, y, z, e, f, r, emax;
         // Bit 0-19 : Layer 
         // Bit 20-23 : Tool
         // Bit 24-29 : Compressed command
@@ -18,7 +18,7 @@ namespace RepetierHost.model
         {
             text = cmd;
             flags = 1048575 + (0 << 24);
-            x = y = z = e = f = -99999;
+            x = y = z = e = f = r = -99999;
             emax = -1;
             parse();
         }
@@ -72,6 +72,7 @@ namespace RepetierHost.model
         public bool hasZ { get { return z != -99999; } }
         public bool hasE { get { return e != -99999; } }
         public bool hasF { get { return f != -99999; } }
+        public bool hasR { get { return r != -99999; } }
         public float getValueFor(string key, float def)
         {
             int p = text.IndexOf(key);
@@ -143,6 +144,9 @@ namespace RepetierHost.model
                     break;
                 case 'F':
                     f = (float)d;
+                    break;
+                case 'R':
+                    r = (float)d;
                     break;
             }
             return false;

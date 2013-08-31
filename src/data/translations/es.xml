@@ -483,23 +483,5 @@ Los cambios en el registro estarán activos despues del siguiente reinicio.</t>
 <t id="L_FILAMENT_NONE" ver="3">Ninguno/El mismo como Extrusor 1</t>
 <t id="L_REALLY_QUIT" ver="3">Impresión no terminada. ¿Salir de todos modos?</t>
 <t id="M_DONATE" ver="3">Donar o Colaborar</t>
-<t id="L_CONFIRM_DELETE_JOB" ver="1">¿Está seguro que desea eliminar el trabajo de impresión $1?</t>
-<t id="L_PRINT_STATE_SAVED_SUCCESSFULLY" ver="10">El estado fue guardado satisfactoriamente</t>
-<t id="M_POSPONED_JOBS" ver="10">Trabajos pospuestos</t>
-<t id="M_RESUME_JOB" ver="10">Continuar</t>
-<t id="M_POSTPONE_JOB" ver="10">Posponer el trabajo</t>
-<t id="W_POSTPONED_PRINT_JOBS" ver="10">Trabajos de impresión postergados</t>
-<t id="M_POSTPONED_JOB_SELECT_JOB" ver="10">Continuar trabajo</t>
-<t id="M_POSTPONED_JOB_KILL_JOB" ver="10">Eliminar trabajo</t>
-<t id="M_POSTPONED_JOB_RENAME_JOB" ver="10">Renombrar trabajo</t>
-<t id="L_POSTPONED_JOB_NAME" ver="10">Nombre de trabajo</t>
-<t id="L_NAME_POSTPONED_JOB" ver="10">Por favor ingrese el nombre del trabajo</t>
-<t id="L_POSTPONED_JOB_DIALOG_DESCRIPTION" ver="10">El estado del trabajo será guardado una vez que se complete la capa actual. Puede además forzar el guardado del estado del trabajo actual, o continuar imprimiendo.</t>
-<t id="B_FORCE_SAVE_POSTPONED_JOB" ver="10">&amp;Forzar</t>
-<t id="B_RESUME_PRINTING_JOB" ver="10">&amp;Continuar</t>
-<t id="W_POSTPONED_JOB_DIALOG" ver="10">Continuar</t>
-<t id="M_TOGGLE_PRINTER_ID" ver="10">Alternar vista de Id de impresora</t>
-<t id="L_PRINTER_ID" ver="10">Id de impresora</t>
-<t id="L_SET_PRINTER_ID" ver="10">Por favor escriba un Id de impresora</t> 
 </translation>
 

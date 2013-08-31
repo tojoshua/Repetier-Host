@@ -59,11 +59,6 @@ namespace RepetierHost.view
             labProtocol.Text = Trans.T("L_PROTOCOL:");
             buttonClose.Text = Trans.T("B_CLOSE");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
         /// <summary>
         /// Update the informations every second.
         /// </summary>

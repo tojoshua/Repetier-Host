@@ -46,3 +46,5 @@ setup-config-felixprinters.iss
 setup-config-leapfrog.iss
 
 *.db
+
+src/RepetierHost/RepetierHost.v11.suo

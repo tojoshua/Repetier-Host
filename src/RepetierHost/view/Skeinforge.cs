@@ -79,11 +79,6 @@ namespace RepetierHost.view
             buttonBrowseWorkingDirectory.Text = Trans.T("B_BROWSE");
             
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        }
         public string wrapQuotes(string text)
         {
             if (text.StartsWith("\"") && text.EndsWith("\"")) return text;

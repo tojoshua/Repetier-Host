@@ -154,11 +154,6 @@ namespace RepetierHost.view
             toolUnmount.ToolTipText = Trans.T("L_UNMOUNT_SD_CARD");
             toolNewFolder.ToolTipText = Trans.T("L_NEW_FOLDER");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
         public void RefreshFilenames()
         {
             updateFilenames = false;

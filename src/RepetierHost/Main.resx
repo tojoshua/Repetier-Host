@@ -565,7 +565,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADq
-        WwAAAk1TRnQBSQFMAgEBCAEAATABBwEwAQcBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
+        WwAAAk1TRnQBSQFMAgEBCAEAARABBwEQAQcBIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
         AwABYAMAAQEBAAEgBgABwP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wBTAAT/A+oB/wPdAf8D1wH/A9cB/wPXAf8D1wH/A9cB/wPX
@@ -969,24 +969,6 @@
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>997, 17</value>
   </metadata>
-  <data name="buttonChangeId.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACkklEQVRYR8WWOatTQRiGJ2Ah
-        18L2XrnY2ekf0Ea8XSAL2fcVsu8kfyJkRYymvnb+BUWxy1KYQpCAhoBgkQRCYook4Ph9h4yckYPmLOQW
-        TzFf5pznnTmTmSGU0htFsnhKJIunRLK43+9Jt9sl1WqV1Go1xdTrdVer1XrTaDTy+K52u01WqxXn4hqM
-        7XZLIpEI0ev1xGg0KsJsNifdbjeNRqPU6/VSqLXsdjuZzWaci2swMEAqlSJWq5U4nU7ZuFwuSzgcprlc
-        jpbLZVooFCi2Q6FQbT6f68QuTsxQGwC49Pl8HxOJBC2VSrRSqdB8Po8B6GQyeSh2cWKG0gAw8gzw7NC+
-        C1P/IR6PCyFwNmAWfk2n0wdiFydmKAkA37sA6wZH+RPajw/1PyFw9MFgMLFYLDgX12DIDcDkIJgA34EF
-        1MUh3jkcjqLf7yewBjgX12DICcDkgUDgM0jug+wtfnsY8QI+x5NDPx3+A6CPtgH+kl96PJ7rWCxGi8Ui
-        TafTFEa8hH4X2FfzAP+S44rH36BPGfrewv6aBjhGDtNfED+jWQAlckSTACjHHQ1e9Ank946VI6oDMDks
-        LJSfy5EjqgJIyF/LkSOKAlgsFk3kiKIANptNEzkiK8ButyPZbDYBD+CC+wLyCzVyRFaA9Xp9lslkfuAh
-        gvs7bK/v1cgRWQEGg8EVnOeCEGZC2FbxSFUqR2QF6HQ6L2Dkwm2GoUaOHB1gs9nchumfsFHjRSKZTApX
-        KqVy5OgA/X7/KYgoHql4oYSHvsICfAkvYTcdRRwbQNdsNl+B+BuEeA432SuTyXQGELUYDAYhyP9uxbrx
-        ePxouVzeGY1GpNfr4YxoAr5rOBwKe4zYyTVuAsniKZEsnhLJ4umg5DfciYFqnIrhOgAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
   <metadata name="tdSettings.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1077, 17</value>
   </metadata>

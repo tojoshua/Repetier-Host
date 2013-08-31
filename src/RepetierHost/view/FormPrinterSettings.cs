@@ -54,26 +54,26 @@ namespace RepetierHost.view
         public float rostockHeight;
         public float rostockRadius;
         public float cncZTop;
-        private List<PrinterConnectorBase> connectors = new List<PrinterConnectorBase>();
+        public List<PrinterConnectorBase> connectors = new List<PrinterConnectorBase>();
         int xhomeMode = 0, yhomeMode = 0, zhomemode = 0;
         UserControl connectorPanel = null;
 
         public FormPrinterSettings()
         {
             ps = this;
+            connectors.Add(new SerialConnector());
+            connectors.Add(new VirtualPrinterConnector());
             InitializeComponent();
-            addConnector(new SerialConnector());
-            addConnector(new VirtualPrinterConnector());
             RegMemory.RestoreWindowPos("printerSettingsWindow", this);
             repetierKey = Custom.BaseKey; // Registry.CurrentUser.CreateSubKey("SOFTWARE\\Repetier");
             printerKey = repetierKey.CreateSubKey("printer");
             con = Main.conn;
             conToForm();
             comboPrinter.Items.Clear();
-            /*bindingConnectors.DataSource = connectors;
+            bindingConnectors.DataSource = connectors;
             comboConnector.DataSource = bindingConnectors.DataSource;
             comboConnector.DisplayMember = "Name";
-            comboConnector.ValueMember = "Id";*/
+            comboConnector.ValueMember = "Id";
             foreach (string s in printerKey.GetSubKeyNames())
                 comboPrinter.Items.Add(s);
             con.printerName = (string)repetierKey.GetValue("currentPrinter", "default");
@@ -161,18 +161,8 @@ namespace RepetierHost.view
             comboBoxPrinterType.Items[1] = Trans.T("L_CARTESIAN_PRINTER_DUMP");
             comboBoxPrinterType.Items[2] = Trans.T("L_ROSTOCK_CIRCLE");
             comboBoxPrinterType.Items[3] = Trans.T("L_CNC_ROUTER");
-            labelConnector.Text = Trans.T("L_CONNECTOR:");
+
         }
-        public void addConnector(PrinterConnectorBase con)
-        {
-            connectors.Add(con);
-            comboConnector.Items.Add(con.Name);
-        }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
         public void save(string printername)
         {
             if (printername.Length == 0) return;
@@ -226,10 +216,8 @@ namespace RepetierHost.view
             comboPrinter.Text = printername;
             RegistryKey p = printerKey.CreateSubKey(printername);
             currentPrinterKey = p;
-            Console.WriteLine("load " + printername);
             string id = (string)p.GetValue("connector","SerialConnector");
             int idx = 0;
-            Console.WriteLine("id " + id);
             foreach (PrinterConnectorBase b in connectors)
             {
                 if (b.Id == id) break;
@@ -371,8 +359,7 @@ namespace RepetierHost.view
             {
                 try
                 {
-                    if(!(con.analyzer.activeExtruder.temperature>0))
-                        Main.main.printPanel.numericUpDownExtruder.Value = int.Parse(textDefaultExtruderTemp.Text);
+                    Main.main.printPanel.numericUpDownExtruder.Value = int.Parse(textDefaultExtruderTemp.Text);
                 }
                 catch (FormatException)
                 {
@@ -381,8 +368,7 @@ namespace RepetierHost.view
                 }
                 try
                 {
-                    if(!(con.analyzer.bedTemp>0))
-                        Main.main.printPanel.numericPrintBed.Value = int.Parse(textDefaultHeatedBedTemp.Text);
+                    Main.main.printPanel.numericPrintBed.Value = int.Parse(textDefaultHeatedBedTemp.Text);
                 }
                 catch (FormatException)
                 {
@@ -483,17 +469,6 @@ namespace RepetierHost.view
             formToCon();
             UpdateDimensions(); 
             repetierKey.SetValue("currentPrinter", comboPrinter.Text);
-            if (Main.main != null && Main.main.printerIdLabel!=null)
-            {
-                bool updateName = false;
-                foreach (object o in comboPrinter.Items)
-                {
-                    if (o.ToString() == Main.main.printerIdLabel.Text)
-                        updateName = true;
-                }
-                if(updateName == true)
-                    Main.main.printerIdLabel.Text = comboPrinter.Text;
-            }
             if (Main.main != null && Main.main.editor != null)
                 Main.main.editor.Changed();
         }
@@ -613,14 +588,13 @@ namespace RepetierHost.view
 
         private void comboConnector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("comboConnector_SelectedIndexChanged");
             if (Main.conn.connector != null)
                 Main.conn.connector.Deactivate();
             if (connectorPanel != null)
             {
                tabPageConnection.Controls.Remove(connectorPanel);
             }
-            Main.conn.connector = (PrinterConnectorBase)connectors[comboConnector.SelectedIndex];
+            Main.conn.connector = (PrinterConnectorBase)comboConnector.SelectedItem;
             if (currentPrinterKey != null)
             {
                 Main.conn.connector.SetConfiguration(currentPrinterKey);
@@ -631,7 +605,6 @@ namespace RepetierHost.view
             tabPageConnection.Controls.Add(connectorPanel);
             tabPageConnection.Controls.SetChildIndex(connectorPanel,0);
             Main.conn.connector.Activate();
-            tabPageConnection.Refresh();
         }
     }
 }

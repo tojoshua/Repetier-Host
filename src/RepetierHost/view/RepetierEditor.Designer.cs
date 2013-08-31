@@ -45,6 +45,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolPreview = new System.Windows.Forms.ToolStripButton();
             this.toolFile = new System.Windows.Forms.ToolStripComboBox();
+            this.addFiberMotorRotation = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolRow = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolColumn = new System.Windows.Forms.ToolStripStatusLabel();
@@ -55,24 +56,24 @@
             this.toolUpdating = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.editor = new RepetierHost.view.DoubleBufferPanel();
             this.scrollRows = new System.Windows.Forms.VScrollBar();
             this.scrollColumns = new System.Windows.Forms.HScrollBar();
             this.tabHelpview = new System.Windows.Forms.TabControl();
             this.tabPageVisualization = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.radioShowAll = new System.Windows.Forms.RadioButton();
+            this.radioShowSingleLayer = new System.Windows.Forms.RadioButton();
+            this.radioShowLayerRange = new System.Windows.Forms.RadioButton();
             this.buttonGoLastLayer = new System.Windows.Forms.Button();
             this.buttonGoFirstLayer = new System.Windows.Forms.Button();
             this.labelMaxLayer = new System.Windows.Forms.Label();
             this.numericShowMaxLayer = new System.Windows.Forms.NumericUpDown();
             this.numericShowMinLayer = new System.Windows.Forms.NumericUpDown();
-            this.radioShowLayerRange = new System.Windows.Forms.RadioButton();
-            this.radioShowSingleLayer = new System.Windows.Forms.RadioButton();
-            this.radioShowAll = new System.Windows.Forms.RadioButton();
-            this.tabPageHelp = new System.Windows.Forms.TabPage();
-            this.help = new System.Windows.Forms.RichTextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.editor = new RepetierHost.view.DoubleBufferPanel();
             this.sliderShowMaxLayer = new MB.Controls.ColorSlider();
             this.sliderShowFirstLayer = new MB.Controls.ColorSlider();
+            this.tabPageHelp = new System.Windows.Forms.TabPage();
+            this.help = new System.Windows.Forms.RichTextBox();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.splitContainer.Panel1.SuspendLayout();
@@ -80,10 +81,10 @@
             this.splitContainer.SuspendLayout();
             this.tabHelpview.SuspendLayout();
             this.tabPageVisualization.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericShowMaxLayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericShowMinLayer)).BeginInit();
             this.tabPageHelp.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -101,7 +102,8 @@
             this.toolRedo,
             this.toolStripSeparator3,
             this.toolPreview,
-            this.toolFile});
+            this.toolFile,
+            this.addFiberMotorRotation});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(615, 25);
@@ -228,6 +230,17 @@
             this.toolFile.Size = new System.Drawing.Size(110, 25);
             this.toolFile.SelectedIndexChanged += new System.EventHandler(this.toolFile_SelectedIndexChanged);
             // 
+            // addFiberMotorRotation
+            // 
+            this.addFiberMotorRotation.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.addFiberMotorRotation.Image = ((System.Drawing.Image)(resources.GetObject("addFiberMotorRotation.Image")));
+            this.addFiberMotorRotation.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.addFiberMotorRotation.Name = "addFiberMotorRotation";
+            this.addFiberMotorRotation.Size = new System.Drawing.Size(23, 22);
+            this.addFiberMotorRotation.Text = "addFiberMotorRotation";
+            this.addFiberMotorRotation.ToolTipText = "Add Fiber Motor Rotation";
+            this.addFiberMotorRotation.Click += new System.EventHandler(this.addFiberMotorRotation_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -315,14 +328,39 @@
             this.splitContainer.Size = new System.Drawing.Size(615, 443);
             this.splitContainer.SplitterDistance = 318;
             this.splitContainer.TabIndex = 2;
-            this.splitContainer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.splitContainer_KeyUp);
-            this.splitContainer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepetierEditor_KeyPress);
             this.splitContainer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RepetierEditor_KeyDown);
+            this.splitContainer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepetierEditor_KeyPress);
+            this.splitContainer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.splitContainer_KeyUp);
+            // 
+            // editor
+            // 
+            this.editor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.editor.Location = new System.Drawing.Point(3, 3);
+            this.editor.Name = "editor";
+            this.editor.Size = new System.Drawing.Size(595, 298);
+            this.editor.TabIndex = 2;
+            this.editor.SizeChanged += new System.EventHandler(this.editor_SizeChanged);
+            this.editor.Click += new System.EventHandler(this.editor_Click);
+            this.editor.Paint += new System.Windows.Forms.PaintEventHandler(this.editor_Paint);
+            this.editor.Enter += new System.EventHandler(this.RepetierEditor_Enter);
+            this.editor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RepetierEditor_KeyDown);
+            this.editor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepetierEditor_KeyPress);
+            this.editor.KeyUp += new System.Windows.Forms.KeyEventHandler(this.editor_KeyUp);
+            this.editor.Leave += new System.EventHandler(this.RepetierEditor_Leave);
+            this.editor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.editor_MouseClick);
+            this.editor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.editor_MouseDown);
+            this.editor.MouseEnter += new System.EventHandler(this.editor_MouseEnter);
+            this.editor.MouseLeave += new System.EventHandler(this.editor_MouseLeave);
+            this.editor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.editor_MouseMove);
+            this.editor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.editor_MouseUp);
+            this.editor.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.editor_PreviewKeyDown);
             // 
             // scrollRows
             // 
-            this.scrollRows.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.scrollRows.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.scrollRows.Location = new System.Drawing.Point(598, 0);
             this.scrollRows.Name = "scrollRows";
             this.scrollRows.Size = new System.Drawing.Size(17, 301);
@@ -331,8 +369,8 @@
             // 
             // scrollColumns
             // 
-            this.scrollColumns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.scrollColumns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.scrollColumns.Location = new System.Drawing.Point(3, 301);
             this.scrollColumns.Name = "scrollColumns";
             this.scrollColumns.Size = new System.Drawing.Size(595, 18);
@@ -367,6 +405,56 @@
             this.tabPageVisualization.TabIndex = 1;
             this.tabPageVisualization.Text = "Visualization";
             this.tabPageVisualization.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Controls.Add(this.radioShowAll);
+            this.flowLayoutPanel1.Controls.Add(this.radioShowSingleLayer);
+            this.flowLayoutPanel1.Controls.Add(this.radioShowLayerRange);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(607, 31);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
+            // radioShowAll
+            // 
+            this.radioShowAll.AutoSize = true;
+            this.radioShowAll.Checked = true;
+            this.radioShowAll.Location = new System.Drawing.Point(3, 3);
+            this.radioShowAll.Name = "radioShowAll";
+            this.radioShowAll.Size = new System.Drawing.Size(125, 17);
+            this.radioShowAll.TabIndex = 0;
+            this.radioShowAll.TabStop = true;
+            this.radioShowAll.Tag = "0";
+            this.radioShowAll.Text = "Show complete code";
+            this.radioShowAll.UseVisualStyleBackColor = true;
+            this.radioShowAll.Click += new System.EventHandler(this.radioShowMode_Click);
+            // 
+            // radioShowSingleLayer
+            // 
+            this.radioShowSingleLayer.AutoSize = true;
+            this.radioShowSingleLayer.Location = new System.Drawing.Point(134, 3);
+            this.radioShowSingleLayer.Name = "radioShowSingleLayer";
+            this.radioShowSingleLayer.Size = new System.Drawing.Size(107, 17);
+            this.radioShowSingleLayer.TabIndex = 1;
+            this.radioShowSingleLayer.Tag = "1";
+            this.radioShowSingleLayer.Text = "Show single layer";
+            this.radioShowSingleLayer.UseVisualStyleBackColor = true;
+            this.radioShowSingleLayer.Click += new System.EventHandler(this.radioShowMode_Click);
+            // 
+            // radioShowLayerRange
+            // 
+            this.radioShowLayerRange.AutoSize = true;
+            this.radioShowLayerRange.Location = new System.Drawing.Point(247, 3);
+            this.radioShowLayerRange.Name = "radioShowLayerRange";
+            this.radioShowLayerRange.Size = new System.Drawing.Size(107, 17);
+            this.radioShowLayerRange.TabIndex = 2;
+            this.radioShowLayerRange.Tag = "2";
+            this.radioShowLayerRange.Text = "Show layer range";
+            this.radioShowLayerRange.UseVisualStyleBackColor = true;
+            this.radioShowLayerRange.Click += new System.EventHandler(this.radioShowMode_Click);
             // 
             // buttonGoLastLayer
             // 
@@ -415,43 +503,47 @@
             this.numericShowMinLayer.TabIndex = 3;
             this.numericShowMinLayer.ValueChanged += new System.EventHandler(this.numericShowMinLayer_ValueChanged);
             // 
-            // radioShowLayerRange
+            // sliderShowMaxLayer
             // 
-            this.radioShowLayerRange.AutoSize = true;
-            this.radioShowLayerRange.Location = new System.Drawing.Point(247, 3);
-            this.radioShowLayerRange.Name = "radioShowLayerRange";
-            this.radioShowLayerRange.Size = new System.Drawing.Size(107, 17);
-            this.radioShowLayerRange.TabIndex = 2;
-            this.radioShowLayerRange.Tag = "2";
-            this.radioShowLayerRange.Text = "Show layer range";
-            this.radioShowLayerRange.UseVisualStyleBackColor = true;
-            this.radioShowLayerRange.Click += new System.EventHandler(this.radioShowMode_Click);
+            this.sliderShowMaxLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sliderShowMaxLayer.BackColor = System.Drawing.Color.Transparent;
+            this.sliderShowMaxLayer.BarInnerColor = System.Drawing.Color.DimGray;
+            this.sliderShowMaxLayer.BarOuterColor = System.Drawing.Color.LightGray;
+            this.sliderShowMaxLayer.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.sliderShowMaxLayer.DrawFocusRectangle = false;
+            this.sliderShowMaxLayer.ElapsedInnerColor = System.Drawing.Color.DarkGray;
+            this.sliderShowMaxLayer.ElapsedOuterColor = System.Drawing.Color.LightGray;
+            this.sliderShowMaxLayer.LargeChange = ((uint)(5u));
+            this.sliderShowMaxLayer.Location = new System.Drawing.Point(209, 64);
+            this.sliderShowMaxLayer.Name = "sliderShowMaxLayer";
+            this.sliderShowMaxLayer.Size = new System.Drawing.Size(357, 22);
+            this.sliderShowMaxLayer.SmallChange = ((uint)(1u));
+            this.sliderShowMaxLayer.TabIndex = 6;
+            this.sliderShowMaxLayer.Text = "colorSlider1";
+            this.sliderShowMaxLayer.ThumbRoundRectSize = new System.Drawing.Size(8, 8);
+            this.sliderShowMaxLayer.ValueChanged += new System.EventHandler(this.sliderShowMaxLayer_ValueChanged);
             // 
-            // radioShowSingleLayer
+            // sliderShowFirstLayer
             // 
-            this.radioShowSingleLayer.AutoSize = true;
-            this.radioShowSingleLayer.Location = new System.Drawing.Point(134, 3);
-            this.radioShowSingleLayer.Name = "radioShowSingleLayer";
-            this.radioShowSingleLayer.Size = new System.Drawing.Size(107, 17);
-            this.radioShowSingleLayer.TabIndex = 1;
-            this.radioShowSingleLayer.Tag = "1";
-            this.radioShowSingleLayer.Text = "Show single layer";
-            this.radioShowSingleLayer.UseVisualStyleBackColor = true;
-            this.radioShowSingleLayer.Click += new System.EventHandler(this.radioShowMode_Click);
-            // 
-            // radioShowAll
-            // 
-            this.radioShowAll.AutoSize = true;
-            this.radioShowAll.Checked = true;
-            this.radioShowAll.Location = new System.Drawing.Point(3, 3);
-            this.radioShowAll.Name = "radioShowAll";
-            this.radioShowAll.Size = new System.Drawing.Size(125, 17);
-            this.radioShowAll.TabIndex = 0;
-            this.radioShowAll.TabStop = true;
-            this.radioShowAll.Tag = "0";
-            this.radioShowAll.Text = "Show complete code";
-            this.radioShowAll.UseVisualStyleBackColor = true;
-            this.radioShowAll.Click += new System.EventHandler(this.radioShowMode_Click);
+            this.sliderShowFirstLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sliderShowFirstLayer.BackColor = System.Drawing.Color.Transparent;
+            this.sliderShowFirstLayer.BarInnerColor = System.Drawing.Color.DimGray;
+            this.sliderShowFirstLayer.BarOuterColor = System.Drawing.Color.LightGray;
+            this.sliderShowFirstLayer.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.sliderShowFirstLayer.DrawFocusRectangle = false;
+            this.sliderShowFirstLayer.ElapsedInnerColor = System.Drawing.Color.DarkGray;
+            this.sliderShowFirstLayer.ElapsedOuterColor = System.Drawing.Color.LightGray;
+            this.sliderShowFirstLayer.LargeChange = ((uint)(5u));
+            this.sliderShowFirstLayer.Location = new System.Drawing.Point(209, 40);
+            this.sliderShowFirstLayer.Name = "sliderShowFirstLayer";
+            this.sliderShowFirstLayer.Size = new System.Drawing.Size(357, 22);
+            this.sliderShowFirstLayer.SmallChange = ((uint)(1u));
+            this.sliderShowFirstLayer.TabIndex = 5;
+            this.sliderShowFirstLayer.Text = "colorSlider1";
+            this.sliderShowFirstLayer.ThumbRoundRectSize = new System.Drawing.Size(8, 8);
+            this.sliderShowFirstLayer.ValueChanged += new System.EventHandler(this.sliderShowFirstLayer_ValueChanged);
             // 
             // tabPageHelp
             // 
@@ -476,85 +568,6 @@
             this.help.TabStop = false;
             this.help.Text = "";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.Controls.Add(this.radioShowAll);
-            this.flowLayoutPanel1.Controls.Add(this.radioShowSingleLayer);
-            this.flowLayoutPanel1.Controls.Add(this.radioShowLayerRange);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(607, 31);
-            this.flowLayoutPanel1.TabIndex = 8;
-            // 
-            // editor
-            // 
-            this.editor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.editor.Location = new System.Drawing.Point(3, 3);
-            this.editor.Name = "editor";
-            this.editor.Size = new System.Drawing.Size(595, 298);
-            this.editor.TabIndex = 2;
-            this.editor.MouseLeave += new System.EventHandler(this.editor_MouseLeave);
-            this.editor.Paint += new System.Windows.Forms.PaintEventHandler(this.editor_Paint);
-            this.editor.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.editor_PreviewKeyDown);
-            this.editor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.editor_MouseMove);
-            this.editor.Click += new System.EventHandler(this.editor_Click);
-            this.editor.Leave += new System.EventHandler(this.RepetierEditor_Leave);
-            this.editor.KeyUp += new System.Windows.Forms.KeyEventHandler(this.editor_KeyUp);
-            this.editor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.editor_MouseClick);
-            this.editor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.editor_MouseDown);
-            this.editor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepetierEditor_KeyPress);
-            this.editor.Enter += new System.EventHandler(this.RepetierEditor_Enter);
-            this.editor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.editor_MouseUp);
-            this.editor.SizeChanged += new System.EventHandler(this.editor_SizeChanged);
-            this.editor.MouseEnter += new System.EventHandler(this.editor_MouseEnter);
-            this.editor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RepetierEditor_KeyDown);
-            // 
-            // sliderShowMaxLayer
-            // 
-            this.sliderShowMaxLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.sliderShowMaxLayer.BackColor = System.Drawing.Color.Transparent;
-            this.sliderShowMaxLayer.BarInnerColor = System.Drawing.Color.DimGray;
-            this.sliderShowMaxLayer.BarOuterColor = System.Drawing.Color.LightGray;
-            this.sliderShowMaxLayer.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-            this.sliderShowMaxLayer.DrawFocusRectangle = false;
-            this.sliderShowMaxLayer.ElapsedInnerColor = System.Drawing.Color.DarkGray;
-            this.sliderShowMaxLayer.ElapsedOuterColor = System.Drawing.Color.LightGray;
-            this.sliderShowMaxLayer.LargeChange = ((uint)(5u));
-            this.sliderShowMaxLayer.Location = new System.Drawing.Point(209, 64);
-            this.sliderShowMaxLayer.Name = "sliderShowMaxLayer";
-            this.sliderShowMaxLayer.Size = new System.Drawing.Size(357, 22);
-            this.sliderShowMaxLayer.SmallChange = ((uint)(1u));
-            this.sliderShowMaxLayer.TabIndex = 6;
-            this.sliderShowMaxLayer.Text = "colorSlider1";
-            this.sliderShowMaxLayer.ThumbRoundRectSize = new System.Drawing.Size(8, 8);
-            this.sliderShowMaxLayer.ValueChanged += new System.EventHandler(this.sliderShowMaxLayer_ValueChanged);
-            // 
-            // sliderShowFirstLayer
-            // 
-            this.sliderShowFirstLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.sliderShowFirstLayer.BackColor = System.Drawing.Color.Transparent;
-            this.sliderShowFirstLayer.BarInnerColor = System.Drawing.Color.DimGray;
-            this.sliderShowFirstLayer.BarOuterColor = System.Drawing.Color.LightGray;
-            this.sliderShowFirstLayer.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-            this.sliderShowFirstLayer.DrawFocusRectangle = false;
-            this.sliderShowFirstLayer.ElapsedInnerColor = System.Drawing.Color.DarkGray;
-            this.sliderShowFirstLayer.ElapsedOuterColor = System.Drawing.Color.LightGray;
-            this.sliderShowFirstLayer.LargeChange = ((uint)(5u));
-            this.sliderShowFirstLayer.Location = new System.Drawing.Point(209, 40);
-            this.sliderShowFirstLayer.Name = "sliderShowFirstLayer";
-            this.sliderShowFirstLayer.Size = new System.Drawing.Size(357, 22);
-            this.sliderShowFirstLayer.SmallChange = ((uint)(1u));
-            this.sliderShowFirstLayer.TabIndex = 5;
-            this.sliderShowFirstLayer.Text = "colorSlider1";
-            this.sliderShowFirstLayer.ThumbRoundRectSize = new System.Drawing.Size(8, 8);
-            this.sliderShowFirstLayer.ValueChanged += new System.EventHandler(this.sliderShowFirstLayer_ValueChanged);
-            // 
             // RepetierEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -575,11 +588,11 @@
             this.tabHelpview.ResumeLayout(false);
             this.tabPageVisualization.ResumeLayout(false);
             this.tabPageVisualization.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericShowMaxLayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericShowMinLayer)).EndInit();
             this.tabPageHelp.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -628,5 +641,6 @@
         private System.Windows.Forms.Button buttonGoLastLayer;
         private System.Windows.Forms.Button buttonGoFirstLayer;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ToolStripButton addFiberMotorRotation;
     }
 }

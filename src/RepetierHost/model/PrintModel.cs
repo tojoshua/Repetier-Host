@@ -71,8 +71,8 @@ namespace RepetierHost.model
             if (repairedModel == null)
                 repairedModel = originalModel.Copy();
             repairedModel.UpdateNormals();
-            repairedModel.AnalyseFast();
-            //repairedModel.updateBad();
+            repairedModel.Analyse();
+            repairedModel.updateBad();
             ShowRepaired(true);
         }
         public void ShowRepaired(bool showRepaired)
@@ -193,13 +193,13 @@ namespace RepetierHost.model
                 originalModel.importObj(filename);
             FileInfo info = new FileInfo(file);
             name = info.Name;
-            originalModel.AnalyseFast();
+            originalModel.Analyse();
             if (ipp.IsKilled)
             {
                 originalModel.clear();
                 return;
             }
-            /*
+            originalModel.Analyse();
             if (ipp.IsKilled)
             {
                 originalModel.clear();
@@ -207,36 +207,6 @@ namespace RepetierHost.model
             }
             originalModel.updateBad();
             if (originalModel.intersectingTriangles.Count>0 || originalModel.badTriangles>0 || originalModel.manifold == false || originalModel.manyShardEdges != 0 || originalModel.loopEdges != 0 || originalModel.normalsOriented==false)
-            {
-                if (repairedModel == null)
-                    repairedModel = originalModel.Copy();
-                repairedModel.ipp = ipp;
-                repairedModel.RepairUnobtrusive();
-                repairedModel.Analyse();
-                originalModel.Analyse();
-                if (ipp.IsKilled)
-                {
-                    originalModel.clear();
-                    repairedModel.clear();
-                    return;
-                }
-                repairedModel.updateBad();
-                ShowRepaired(true);
-                repairedModel.ipp = null;
-            }*/
-            originalModel.ipp = null;
-        }
-
-        public void DeepAnalysis(InfoProgressPanel ipp)
-        {
-            originalModel.ipp = ipp;
-            originalModel.Analyse();
-            if (ipp.IsKilled)
-            {
-                return;
-            }
-            originalModel.updateBad();
-            if (originalModel.intersectingTriangles.Count > 0 || originalModel.badTriangles > 0 || originalModel.manifold == false || originalModel.manyShardEdges != 0 || originalModel.loopEdges != 0 || originalModel.normalsOriented == false)
             {
                 if (repairedModel == null)
                     repairedModel = originalModel.Copy();

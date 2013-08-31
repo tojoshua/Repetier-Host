@@ -73,9 +73,18 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
-    <Reference Include="OpenTK.Compatibility, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
-    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
+    <Reference Include="OpenTK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\kok\Documents\OpenTK\1.0\Binaries\OpenTK\Release\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.Compatibility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\kok\Documents\OpenTK\1.0\Binaries\OpenTK\Release\OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\kok\Documents\OpenTK\1.0\Binaries\OpenTK\Release\OpenTK.GLControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -131,7 +140,6 @@
     <Compile Include="model\EEPROMParameter.cs" />
     <Compile Include="model\GCode.cs" />
     <Compile Include="model\GCodeAnalyzer.cs" />
-    <Compile Include="model\GCodeExecutor.cs" />
     <Compile Include="model\GCodeGenerator.cs" />
     <Compile Include="model\GCodeShort.cs" />
     <Compile Include="model\GCodeVisual.cs" />
@@ -151,10 +159,8 @@
     <Compile Include="model\IniManager.cs" />
     <Compile Include="model\LogLine.cs" />
     <Compile Include="model\ModelAnimation.cs" />
-    <Compile Include="model\PendingPrintJobs.cs" />
     <Compile Include="model\PrinterConnection.cs" />
     <Compile Include="model\PrinterModel.cs" />
-    <Compile Include="model\PrintingStateSnapshot.cs" />
     <Compile Include="model\Printjob.cs" />
     <Compile Include="model\ProtectedSerialPort.cs">
       <SubType>Component</SubType>
@@ -168,10 +174,6 @@
     <Compile Include="model\ThreeDView.cs" />
     <Compile Include="model\Translation.cs" />
     <Compile Include="model\VirtualPrinter.cs" />
-    <Compile Include="view\PendingPrintJobsDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\PendingPrintJobsDialog.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="connector\SerialConnectionPanel.resx">
@@ -184,7 +186,6 @@
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\PendingPrintJobsDialog.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -319,9 +320,6 @@
       <DependentUpon>ColorSlider.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\utils\EditInstanceName.resx">
-      <DependentUpon>EditInstanceName.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\utils\InfoProgressPanel.resx">
       <DependentUpon>InfoProgressPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,7 +335,6 @@
       <DependentUpon>SlicingInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\utils\SnapshotDialog.resx" />
     <EmbeddedResource Include="view\utils\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -575,12 +572,6 @@
       <DependentUpon>ColorSlider.cs</DependentUpon>
     </Compile>
     <Compile Include="view\utils\CommandExecutioner.cs" />
-    <Compile Include="view\utils\EditInstanceName.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\utils\EditInstanceName.Designer.cs">
-      <DependentUpon>EditInstanceName.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\utils\InfoProgressPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -610,10 +601,6 @@
     <Compile Include="view\utils\SlicingInfo.Designer.cs">
       <DependentUpon>SlicingInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\utils\SnapshotDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\utils\SnapshotDialog.Designer.cs" />
     <Compile Include="view\utils\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>

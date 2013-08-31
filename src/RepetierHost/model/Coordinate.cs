@@ -60,7 +60,6 @@ namespace RepetierHost.model
 
         internal void Draw(int viewport_x, int viewport_y, double rotX, double rotZ)
         {
-            GL.Clear(ClearBufferMask.DepthBufferBit);
             GL.MatrixMode(MatrixMode.Projection);
             GL.PushMatrix(); // push projection
             GL.LoadIdentity();

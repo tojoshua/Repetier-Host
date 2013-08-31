@@ -34,7 +34,6 @@
             this.comboBaud = new System.Windows.Forms.ComboBox();
             this.labelBaudRate = new System.Windows.Forms.Label();
             this.comboPort = new System.Windows.Forms.ComboBox();
-            this.bindingConnection = new System.Windows.Forms.BindingSource(this.components);
             this.labelPort = new System.Windows.Forms.Label();
             this.labelCacheSizeHint = new System.Windows.Forms.Label();
             this.checkPingPong = new System.Windows.Forms.CheckBox();
@@ -48,8 +47,9 @@
             this.comboResetOnEmergency = new System.Windows.Forms.ComboBox();
             this.labelResetOnEmergency = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingConnection)).BeginInit();
+            this.bindingConnection = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingConnection)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonRefreshPorts
@@ -103,20 +103,12 @@
             // 
             // comboPort
             // 
+            this.comboPort.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingConnection, "Port", true));
             this.comboPort.FormattingEnabled = true;
             this.comboPort.Location = new System.Drawing.Point(140, 8);
             this.comboPort.Name = "comboPort";
             this.comboPort.Size = new System.Drawing.Size(129, 21);
             this.comboPort.TabIndex = 17;
-            this.comboPort.TextChanged += new System.EventHandler(this.comboPort_TextChanged);
-            // 
-            // bindingConnection
-            // 
-            this.bindingConnection.DataSource = typeof(RepetierHost.connector.SerialConnector);
-            this.bindingConnection.DataSourceChanged += new System.EventHandler(this.bindingConnection_CurrentItemChanged);
-            this.bindingConnection.DataMemberChanged += new System.EventHandler(this.bindingConnection_CurrentItemChanged);
-            this.bindingConnection.CurrentChanged += new System.EventHandler(this.bindingConnection_CurrentItemChanged);
-            this.bindingConnection.CurrentItemChanged += new System.EventHandler(this.bindingConnection_CurrentItemChanged);
             // 
             // labelPort
             // 
@@ -144,13 +136,13 @@
             this.checkPingPong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkPingPong.AutoSize = true;
+            this.checkPingPong.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingConnection, "PingPong", true));
             this.checkPingPong.Location = new System.Drawing.Point(18, 190);
             this.checkPingPong.Name = "checkPingPong";
             this.checkPingPong.Size = new System.Drawing.Size(264, 17);
             this.checkPingPong.TabIndex = 27;
             this.checkPingPong.Text = "Use Ping-Pong communication (send only after ok)";
             this.checkPingPong.UseVisualStyleBackColor = true;
-            this.checkPingPong.CheckedChanged += new System.EventHandler(this.checkPingPong_CheckedChanged);
             // 
             // labelReceiveCacheSize
             // 
@@ -167,12 +159,12 @@
             // 
             this.textReceiveCacheSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textReceiveCacheSize.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingConnection, "ReceiveCacheSizeString", true));
             this.textReceiveCacheSize.Location = new System.Drawing.Point(140, 140);
             this.textReceiveCacheSize.Name = "textReceiveCacheSize";
             this.textReceiveCacheSize.Size = new System.Drawing.Size(75, 20);
             this.textReceiveCacheSize.TabIndex = 23;
             this.textReceiveCacheSize.Text = "63";
-            this.textReceiveCacheSize.TextChanged += new System.EventHandler(this.textReceiveCacheSize_TextChanged);
             this.textReceiveCacheSize.Validating += new System.ComponentModel.CancelEventHandler(this.int_Validating);
             // 
             // labelConnectionInfo
@@ -265,6 +257,11 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // bindingConnection
+            // 
+            this.bindingConnection.DataSource = typeof(RepetierHost.connector.SerialConnector);
+            this.bindingConnection.CurrentItemChanged += new System.EventHandler(this.bindingConnection_CurrentItemChanged);
+            // 
             // SerialConnectionPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,8 +285,8 @@
             this.Name = "SerialConnectionPanel";
             this.Size = new System.Drawing.Size(460, 365);
             this.Load += new System.EventHandler(this.SerialConnectionPanel_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingConnection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

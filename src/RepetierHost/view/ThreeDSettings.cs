@@ -131,12 +131,6 @@ Immediate (slow)*/
             buttonGeneralColorDefaults.Text = Trans.T("L_RESET_DEFAULTS");
             buttonModelColorsDefaults.Text = Trans.T("L_RESET_DEFAULTS");
         }
-        
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
 
         public bool ShowEdges
         {
@@ -147,8 +141,6 @@ Immediate (slow)*/
                 _showEdges = value;
                 threedKey.SetValue("showEdges", _showEdges ? 1 : 0);
                 OnPropertyChanged(new PropertyChangedEventArgs("ShowEdges"));
-                if (Main.IsMono)
-                    Main.main.tdSettings_CurrentChanged(null, null);
                 Main.main.Update3D();
             }
         }
@@ -162,8 +154,6 @@ Immediate (slow)*/
                 _showFaces = value;
                 threedKey.SetValue("showFaces", _showFaces ? 1 : 0);
                 OnPropertyChanged(new PropertyChangedEventArgs("ShowFaces"));
-                if (Main.IsMono)
-                    Main.main.tdSettings_CurrentChanged(null, null);
                 Main.main.Update3D();
             }
         }
@@ -177,8 +167,6 @@ Immediate (slow)*/
                 _showCompass = value;
                 threedKey.SetValue("showCompass", _showCompass ? 1 : 0);
                 OnPropertyChanged(new PropertyChangedEventArgs("ShowCompass"));
-                if (Main.IsMono)
-                    Main.main.tdSettings_CurrentChanged(null, null);
                 Main.main.Update3D();
             }
         }

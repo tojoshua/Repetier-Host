@@ -33,12 +33,8 @@
             this.panelPrinterSelect = new System.Windows.Forms.Panel();
             this.comboPrinter = new System.Windows.Forms.ComboBox();
             this.labelPrinter = new System.Windows.Forms.Label();
-            this.buttonDelete = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageConnection = new System.Windows.Forms.TabPage();
-            this.panelConnector = new System.Windows.Forms.Panel();
-            this.comboConnector = new System.Windows.Forms.ComboBox();
-            this.labelConnector = new System.Windows.Forms.Label();
             this.tabPagePrinter = new System.Windows.Forms.TabPage();
             this.numericNumExtruder = new System.Windows.Forms.NumericUpDown();
             this.labelNumberOfExtruder = new System.Windows.Forms.Label();
@@ -142,11 +138,14 @@
             this.buttonAbort = new System.Windows.Forms.Button();
             this.buttonOK = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.panelConnector = new System.Windows.Forms.Panel();
+            this.labelConnector = new System.Windows.Forms.Label();
+            this.comboConnector = new System.Windows.Forms.ComboBox();
             this.bindingConnectors = new System.Windows.Forms.BindingSource(this.components);
             this.panelPrinterSelect.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageConnection.SuspendLayout();
-            this.panelConnector.SuspendLayout();
             this.tabPagePrinter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumExtruder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackTempPeriod)).BeginInit();
@@ -161,6 +160,7 @@
             this.groupBoxPostSliceFilter.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.panelConnector.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingConnectors)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,18 +193,6 @@
             this.labelPrinter.TabIndex = 0;
             this.labelPrinter.Text = "Printer";
             // 
-            // buttonDelete
-            // 
-            this.buttonDelete.FlatAppearance.BorderSize = 0;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Image = ((System.Drawing.Image)(resources.GetObject("buttonDelete.Image")));
-            this.buttonDelete.Location = new System.Drawing.Point(452, 3);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(25, 26);
-            this.buttonDelete.TabIndex = 6;
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -232,35 +220,6 @@
             this.tabPageConnection.TabIndex = 0;
             this.tabPageConnection.Text = "Connection";
             this.tabPageConnection.UseVisualStyleBackColor = true;
-            // 
-            // panelConnector
-            // 
-            this.panelConnector.Controls.Add(this.comboConnector);
-            this.panelConnector.Controls.Add(this.labelConnector);
-            this.panelConnector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelConnector.Location = new System.Drawing.Point(3, 3);
-            this.panelConnector.Name = "panelConnector";
-            this.panelConnector.Size = new System.Drawing.Size(475, 37);
-            this.panelConnector.TabIndex = 18;
-            // 
-            // comboConnector
-            // 
-            this.comboConnector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboConnector.FormattingEnabled = true;
-            this.comboConnector.Location = new System.Drawing.Point(94, 4);
-            this.comboConnector.Name = "comboConnector";
-            this.comboConnector.Size = new System.Drawing.Size(188, 21);
-            this.comboConnector.TabIndex = 1;
-            this.comboConnector.SelectedIndexChanged += new System.EventHandler(this.comboConnector_SelectedIndexChanged);
-            // 
-            // labelConnector
-            // 
-            this.labelConnector.AutoSize = true;
-            this.labelConnector.Location = new System.Drawing.Point(5, 7);
-            this.labelConnector.Name = "labelConnector";
-            this.labelConnector.Size = new System.Drawing.Size(59, 13);
-            this.labelConnector.TabIndex = 0;
-            this.labelConnector.Text = "Connector:";
             // 
             // tabPagePrinter
             // 
@@ -1330,6 +1289,47 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Image = ((System.Drawing.Image)(resources.GetObject("buttonDelete.Image")));
+            this.buttonDelete.Location = new System.Drawing.Point(452, 3);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(25, 26);
+            this.buttonDelete.TabIndex = 6;
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // panelConnector
+            // 
+            this.panelConnector.Controls.Add(this.comboConnector);
+            this.panelConnector.Controls.Add(this.labelConnector);
+            this.panelConnector.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelConnector.Location = new System.Drawing.Point(3, 3);
+            this.panelConnector.Name = "panelConnector";
+            this.panelConnector.Size = new System.Drawing.Size(475, 37);
+            this.panelConnector.TabIndex = 18;
+            // 
+            // labelConnector
+            // 
+            this.labelConnector.AutoSize = true;
+            this.labelConnector.Location = new System.Drawing.Point(5, 7);
+            this.labelConnector.Name = "labelConnector";
+            this.labelConnector.Size = new System.Drawing.Size(59, 13);
+            this.labelConnector.TabIndex = 0;
+            this.labelConnector.Text = "Connector;";
+            // 
+            // comboConnector
+            // 
+            this.comboConnector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboConnector.FormattingEnabled = true;
+            this.comboConnector.Location = new System.Drawing.Point(94, 4);
+            this.comboConnector.Name = "comboConnector";
+            this.comboConnector.Size = new System.Drawing.Size(188, 21);
+            this.comboConnector.TabIndex = 1;
+            this.comboConnector.SelectedIndexChanged += new System.EventHandler(this.comboConnector_SelectedIndexChanged);
+            // 
             // FormPrinterSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1354,8 +1354,6 @@
             this.panelPrinterSelect.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPageConnection.ResumeLayout(false);
-            this.panelConnector.ResumeLayout(false);
-            this.panelConnector.PerformLayout();
             this.tabPagePrinter.ResumeLayout(false);
             this.tabPagePrinter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumExtruder)).EndInit();
@@ -1377,6 +1375,8 @@
             this.groupBoxPostSliceFilter.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.panelConnector.ResumeLayout(false);
+            this.panelConnector.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingConnectors)).EndInit();
             this.ResumeLayout(false);
 

@@ -72,11 +72,6 @@ namespace RepetierHost.view
             groupFileAssociations.Text = Trans.T("L_FILE_ASSOCIATIONS");
             buttonAssociate.Text = Trans.T("L_ASSOCIATE_EXTENSIONS");
         }
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
-        } 
         public bool WorkdirOK()
         {
             string wd = Workdir;
